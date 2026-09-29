@@ -1,0 +1,35 @@
+# ai.txt - Instructions for AI crawlers and search agents
+# Prime One Cleaning Ltd - https://primeonecleaning.co.uk
+
+User-agent: *
+Allow: /
+Allow: /about
+Allow: /services
+Allow: /services/residential-cleaning
+Allow: /services/end-of-tenancy-cleaning
+Allow: /services/after-builders-cleaning
+Allow: /services/commercial-cleaning
+Allow: /services/carpet-upholstery-cleaning
+Allow: /areas
+Allow: /areas/milton-keynes
+Allow: /areas/bedford
+Allow: /areas/leighton-buzzard
+Allow: /areas/luton
+Allow: /areas/dunstable
+Allow: /areas/hitchin
+Allow: /areas/st-albans
+Allow: /areas/hemel-hempstead
+Allow: /areas/watford
+Allow: /areas/aylesbury
+Allow: /gallery
+Allow: /reviews
+Allow: /contact
+
+# AI crawlers may index and summarise all public content
+# Business: Prime One Cleaning Ltd
+# Type: Professional cleaning company
+# Location: Luton, Bedfordshire, UK
+# Phone: 07512 345 678
+# Email: info@primeonecleaning.co.uk
+# Hours: Monday-Saturday 08:00-18:00
+# Services: Residential, End of Tenancy, After Builders, Commercial, Carpet & Upholstery Cleaning

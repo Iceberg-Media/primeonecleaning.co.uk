@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# AI crawlers
+Ai.txt: https://primeonecleaning.co.uk/ai.txt
+
+Sitemap: https://primeonecleaning.co.uk/sitemap.xml

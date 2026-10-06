@@ -53,8 +53,8 @@ function ServiceSchema() {
       ],
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Luton",
-        "addressRegion": "Bedfordshire",
+        "addressLocality": "Milton Keynes",
+        "addressRegion": "Buckinghamshire",
         "addressCountry": "GB"
       }
     },
@@ -150,13 +150,7 @@ export default function CommercialCleaningPage({ onNavigate }: ServicePageProps)
 
       {/* Band-style hero */}
       <section className="relative flex items-center overflow-hidden bg-[#0a1f44] py-10 sm:py-12">
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-20"
-          style={{
-            backgroundImage:
-              "url('https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')",
-          }}
-        />
+        
         <div className="absolute inset-0 bg-gradient-to-r from-[#0a1f44] via-[#0a1f44]/95 to-[#0a1f44]/60" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl">
@@ -170,8 +164,7 @@ export default function CommercialCleaningPage({ onNavigate }: ServicePageProps)
             <p className="mt-4 text-lg text-slate-300 sm:text-xl">
               Reliable, flexible cleaning for offices, clinics, retail and gyms
             </p>
-            <p>
-              We also provide homes with the same high standard through our <button onClick={() => onNavigate("/services/residential-cleaning")} className="font-semibold text-[#3b82f6] hover:text-[#2563eb] underline">residential cleaning services</button> across Luton &amp; Bedfordshire.
+            <p className="mt-4 text-base text-slate-300"> provide homes with the same high standard through our <button onClick={() => onNavigate("/services/residential-cleaning")} className="font-semibold text-[#3b82f6] hover:text-[#2563eb] underline">residential cleaning services</button> across Luton &amp; Bedfordshire.
             </p>
           </div>
         </div>
@@ -227,8 +220,7 @@ export default function CommercialCleaningPage({ onNavigate }: ServicePageProps)
               environments demand — from equipment wipe-downs to changing room
               and shower sanitisation.
             </p>
-            <p>
-              Whether you need a daily visit, a weekly refresh or a one-off deep
+            <p className="mt-4 text-base text-slate-300"> you need a daily visit, a weekly refresh or a one-off deep
               clean, we'll build a schedule that fits. Our team is fully insured,
               trained and reliable, and we work with everyone from single-unit
               independents to multi-site operators. With transparent pricing and

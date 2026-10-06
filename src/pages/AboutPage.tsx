@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Image } from "lucide-react";
 import TrustBar from "@/components/TrustBar";
 import CtaBlock from "@/components/CtaBlock";
 
@@ -11,14 +11,7 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
     <div>
       {/* Band-style hero */}
       <section className="relative flex items-center overflow-hidden bg-[#0a1f44] py-10 sm:py-12">
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-20"
-          style={{
-            backgroundImage:
-              "url('https://images.pexels.com/photos/6195121/pexels-photo-6195121.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')",
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0a1f44] via-[#0a1f44]/95 to-[#0a1f44]/60" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0a1f44] via-[#0a1f44] to-[#102a5c]" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl">
             <h1 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
@@ -31,7 +24,7 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
         </div>
       </section>
 
-      {/* Story + image */}
+      {/* Story */}
       <section className="bg-white py-8 sm:py-10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-2">
@@ -64,13 +57,9 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
               </button>
             </div>
             <div className="relative">
-              <div className="flex h-full min-h-[24rem] w-full overflow-hidden rounded-2xl bg-slate-100 shadow-xl">
-                <img
-                  src="https://images.pexels.com/photos/6195121/pexels-photo-6195121.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
-                  alt="Prime One Cleaning team at work in a Luton home"
-                  className="h-full w-full object-cover"
-                  loading="lazy"
-                />
+              <div className="flex h-full min-h-[24rem] w-full flex-col items-center justify-center overflow-hidden rounded-2xl bg-slate-100 shadow-xl">
+                <Image className="h-12 w-12 text-slate-300" />
+                <p className="mt-3 text-sm text-slate-400">Photo coming soon</p>
               </div>
               <div className="absolute -bottom-6 -left-6 hidden rounded-xl bg-[#0a1f44] px-6 py-4 shadow-xl ring-1 ring-black/5 sm:block">
                 <p className="text-2xl font-bold text-white">100%</p>

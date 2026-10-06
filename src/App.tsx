@@ -28,8 +28,7 @@ import TermsConditionsPage from "@/pages/TermsConditionsPage";
 import NotFoundPage from "@/pages/NotFoundPage";
 
 const SITE_URL = "https://primeonecleaning.co.uk";
-const DEFAULT_OG_IMAGE =
-  "https://images.pexels.com/photos/6195949/pexels-photo-6195949.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop";
+const DEFAULT_OG_IMAGE = "https://primeonecleaning.co.uk/WhatsApp_Image_2026-07-30_at_13.16.18.jpeg";
 
 interface SeoEntry {
   title: string;
@@ -59,36 +58,26 @@ const SEO_MAP: Record<string, SeoEntry> = {
     title: "Residential Cleaning in Luton & Bedfordshire | Prime One Cleaning",
     description:
       "Professional residential cleaning for homes in Luton & Bedfordshire. Regular, deep and one-off cleans by insured staff. Call 07512 345 678.",
-    ogImage:
-      "https://images.pexels.com/photos/7601135/pexels-photo-7601135.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop",
   },
   "/services/end-of-tenancy-cleaning": {
     title: "End of Tenancy Cleaning in Luton & Bedfordshire | Prime One Cleaning",
     description:
       "Thorough end of tenancy cleaning in Luton & Bedfordshire. Get your full deposit back. Free quote — call 07512 345 678 today.",
-    ogImage:
-      "https://images.pexels.com/photos/3983719/pexels-photo-3983719.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop",
   },
   "/services/after-builders-cleaning": {
     title: "After Builders Cleaning in Luton & Bedfordshire | Prime One Cleaning",
     description:
       "Post-construction and renovation cleaning in Luton & Bedfordshire. Dust & debris removal by insured professionals. Call 07512 345 678.",
-    ogImage:
-      "https://images.pexels.com/photos/3990359/pexels-photo-3990359.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop",
   },
   "/services/commercial-cleaning": {
     title: "Commercial Cleaning in Luton & Bedfordshire | Prime One Cleaning",
     description:
       "Office, clinic, retail & gym cleaning in Luton & Bedfordshire. Reliable commercial cleaning contracts. Call 07512 345 678 for a free quote.",
-    ogImage:
-      "https://images.pexels.com/photos/6794970/pexels-photo-6794970.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop",
   },
   "/services/carpet-upholstery-cleaning": {
     title: "Carpet & Upholstery Cleaning in Luton & Bedfordshire | Prime One Cleaning",
     description:
       "Carpet, rug & upholstery cleaning in Luton & Bedfordshire. Deep clean by insured professionals. Call 07512 345 678 for a free quote.",
-    ogImage:
-      "https://images.pexels.com/photos/4107284/pexels-photo-4107284.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop",
   },
   "/areas": {
     title: "Areas We Cover | Prime One Cleaning",
@@ -153,12 +142,12 @@ const SEO_MAP: Record<string, SeoEntry> = {
   "/reviews": {
     title: "Customer Reviews | Prime One Cleaning",
     description:
-      "Read what our clients say about Prime One Cleaning. 5-star reviews from happy customers across Luton & Bedfordshire. Call 07512 345 678.",
+      "Read what our clients say about Prime One Cleaning. Happy customers across Luton & Bedfordshire. Call 07512 345 678 for a free quote.",
   },
   "/contact": {
     title: "Contact Us | Prime One Cleaning",
     description:
-      "Contact Prime One Cleaning for a free, no-obligation quote. Call 07512 345 678 or email info@primeonecleaning.co.uk. We reply fast!",
+      "Contact Prime One Cleaning for a free, no-obligation quote. Call 07512 345 678. We reply fast!",
   },
   "/privacy-policy": {
     title: "Privacy Policy | Prime One Cleaning",

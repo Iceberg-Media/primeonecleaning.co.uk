@@ -53,8 +53,8 @@ function ServiceSchema() {
       ],
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Luton",
-        "addressRegion": "Bedfordshire",
+        "addressLocality": "Milton Keynes",
+        "addressRegion": "Buckinghamshire",
         "addressCountry": "GB"
       }
     },
@@ -150,13 +150,7 @@ export default function CarpetUpholsteryCleaningPage({ onNavigate }: ServicePage
 
       {/* Band-style hero */}
       <section className="relative flex items-center overflow-hidden bg-[#0a1f44] py-10 sm:py-12">
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-20"
-          style={{
-            backgroundImage:
-              "url('https://images.pexels.com/photos/4108715/pexels-photo-4108715.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')",
-          }}
-        />
+        
         <div className="absolute inset-0 bg-gradient-to-r from-[#0a1f44] via-[#0a1f44]/95 to-[#0a1f44]/60" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl">
@@ -227,8 +221,7 @@ export default function CarpetUpholsteryCleaningPage({ onNavigate }: ServicePage
               collection available for bigger rugs that need deeper treatment off-
               site.
             </p>
-            <p>
-              Whether you're refreshing a single room, dealing with a specific
+            <p className="mt-4 text-base text-slate-300"> you're refreshing a single room, dealing with a specific
               spill or bringing a whole property back to its best, we tailor the
               clean to the job. Stains are pre-treated before the main clean,
               deodorising is included as standard, and our extraction method keeps

@@ -73,7 +73,7 @@ function AreaSchema() {
       address: {
         "@type": "PostalAddress",
         addressLocality: "Leighton Buzzard",
-        addressRegion: "Bedfordshire",
+        addressRegion: "Buckinghamshire",
         addressCountry: "GB",
       },
       makesOffer: {
@@ -146,13 +146,7 @@ export default function LeightonBuzzardAreaPage({ onNavigate }: AreaPageProps) {
 
       {/* Band-style hero */}
       <section className="relative flex items-center overflow-hidden bg-[#0a1f44] py-10 sm:py-12">
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-20"
-          style={{
-            backgroundImage:
-              "url('https://images.pexels.com/photos/6195186/pexels-photo-6195186.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')",
-          }}
-        />
+        
         <div className="absolute inset-0 bg-gradient-to-r from-[#0a1f44] via-[#0a1f44]/95 to-[#0a1f44]/60" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl">
@@ -167,11 +161,9 @@ export default function LeightonBuzzardAreaPage({ onNavigate }: AreaPageProps) {
               Reliable residential and commercial cleaning for homes and
               businesses across Leighton Buzzard
             </p>
-            <p>
-              Searching for <strong>cleaning services near me</strong> in Leighton Buzzard? As a locally based company, Prime One Cleaning offers reliable <strong>local cleaners in Leighton Buzzard</strong> who know the area and can reach you quickly. Whether you need a one-off deep clean, a regular weekly schedule or an end of tenancy clean, our insured and vetted team delivers consistent, high-quality results every time.
+            <p className="mt-4 text-base text-slate-300"> for <strong>cleaning services near me</strong> in Leighton Buzzard? As a locally based company, Prime One Cleaning offers reliable <strong>local cleaners in Leighton Buzzard</strong> who know the area and can reach you quickly. Whether you need a one-off deep clean, a regular weekly schedule or an end of tenancy clean, our insured and vetted team delivers consistent, high-quality results every time.
             </p>
-            <p>
-              Looking for a specific service in Leighton Buzzard? Explore our <button onClick={() => onNavigate("/services/residential-cleaning")} className="font-semibold text-[#3b82f6] hover:text-[#2563eb] underline">residential cleaning services</button> designed for homes and businesses across the area.
+            <p className="mt-4 text-base text-slate-300"> for a specific service in Leighton Buzzard? Explore our <button onClick={() => onNavigate("/services/residential-cleaning")} className="font-semibold text-[#3b82f6] hover:text-[#2563eb] underline">residential cleaning services</button> designed for homes and businesses across the area.
             </p>
           </div>
         </div>
@@ -240,10 +232,7 @@ export default function LeightonBuzzardAreaPage({ onNavigate }: AreaPageProps) {
                 <h3 className="mt-5 text-lg font-bold text-[#0a1f44]">
                   {s.title}
                 </h3>
-                <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[#3b82f6]">
-                  Learn More
-                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </span>
+                <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[#3b82f6]">{s.title}<ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" /></span>
               </button>
             ))}
           </div>

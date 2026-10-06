@@ -28,8 +28,7 @@ Allow: /contact
 # AI crawlers may index and summarise all public content
 # Business: Prime One Cleaning Ltd
 # Type: Professional cleaning company
-# Location: Luton, Bedfordshire, UK
+# Location: Milton Keynes, Buckinghamshire, UK
 # Phone: 07512 345 678
-# Email: info@primeonecleaning.co.uk
 # Hours: Monday-Saturday 08:00-18:00
 # Services: Residential, End of Tenancy, After Builders, Commercial, Carpet & Upholstery Cleaning

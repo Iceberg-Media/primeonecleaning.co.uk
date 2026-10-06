@@ -53,8 +53,8 @@ function ServiceSchema() {
       ],
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Luton",
-        "addressRegion": "Bedfordshire",
+        "addressLocality": "Milton Keynes",
+        "addressRegion": "Buckinghamshire",
         "addressCountry": "GB"
       }
     },
@@ -150,13 +150,7 @@ export default function AfterBuildersCleaningPage({ onNavigate }: ServicePagePro
 
       {/* Band-style hero */}
       <section className="relative flex items-center overflow-hidden bg-[#0a1f44] py-10 sm:py-12">
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-20"
-          style={{
-            backgroundImage:
-              "url('https://images.pexels.com/photos/585419/pexels-photo-585419.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')",
-          }}
-        />
+        
         <div className="absolute inset-0 bg-gradient-to-r from-[#0a1f44] via-[#0a1f44]/95 to-[#0a1f44]/60" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl">
@@ -226,8 +220,7 @@ export default function AfterBuildersCleaningPage({ onNavigate }: ServicePagePro
               handling of post-construction waste, and used to working alongside
               contractors, developers and homeowners to tight deadlines.
             </p>
-            <p>
-              Whether it's a home renovation, a new-build handover or a
+            <p className="mt-4 text-base text-slate-300"> it's a home renovation, a new-build handover or a
               commercial refurbishment, we tailor the scope to what's needed —
               from a light dust-down to a full deep clean with floor and grout
               treatment. Every clean includes debris removal, dusting of all

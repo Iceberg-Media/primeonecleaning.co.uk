@@ -113,10 +113,10 @@ export default function TermsConditionsPage({ onNavigate }: TermsConditionsPageP
                 If you have any questions about these Terms &amp; Conditions,
                 please contact us at{" "}
                 <a
-                  href="mailto:info@primeonecleaning.co.uk"
+                  href="tel:07512345678"
                   className="font-semibold text-[#3b82f6] hover:text-[#2563eb]"
                 >
-                  info@primeonecleaning.co.uk
+                  07512 345 678
                 </a>
                 .
               </p>

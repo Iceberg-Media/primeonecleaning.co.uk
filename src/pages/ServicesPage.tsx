@@ -75,13 +75,7 @@ export default function ServicesPage({ onNavigate }: ServicesPageProps) {
     <div>
       {/* Band-style hero */}
       <section className="relative flex items-center overflow-hidden bg-[#0a1f44] py-10 sm:py-12">
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-20"
-          style={{
-            backgroundImage:
-              "url('https://images.pexels.com/photos/6197108/pexels-photo-6197108.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')",
-          }}
-        />
+        
         <div className="absolute inset-0 bg-gradient-to-r from-[#0a1f44] via-[#0a1f44]/95 to-[#0a1f44]/60" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl">
@@ -133,8 +127,7 @@ export default function ServicesPage({ onNavigate }: ServicesPageProps) {
                       onClick={() => onNavigate(`/services/${s.slug}`)}
                       className="inline-flex items-center gap-2 self-start rounded-lg bg-[#3b82f6] px-5 py-3 text-sm font-semibold text-white transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-[#2563eb] hover:shadow-lg hover:shadow-blue-500/30"
                     >
-                      Learn More
-                      <ArrowRight className="h-4 w-4" />
+                      {s.title}<ArrowRight className="h-4 w-4" />
                     </button>
                   </div>
                 </div>

@@ -1,19 +1,18 @@
 # llms.txt - Structured information for Large Language Models
 # Prime One Cleaning Ltd
 
-> Prime One Cleaning Ltd is a professional cleaning company based in Luton, Bedfordshire, UK. We provide residential, commercial, end of tenancy, after builders, and carpet & upholstery cleaning services to homes and businesses across Luton, Milton Keynes, Bedford, Leighton Buzzard, Dunstable, Hitchin, St Albans, Hemel Hempstead, Watford, and Aylesbury.
+> Prime One Cleaning Ltd is a professional cleaning company based in Milton Keynes, Buckinghamshire, UK. We provide residential, commercial, end of tenancy, after builders, and carpet & upholstery cleaning services to homes and businesses across Luton, Milton Keynes, Bedford, Leighton Buzzard, Dunstable, Hitchin, St Albans, Hemel Hempstead, Watford, and Aylesbury.
 
 ## Business Details
 - Name: Prime One Cleaning Ltd
 - Type: Professional cleaning company
 - Phone: 07512 345 678
-- Email: info@primeonecleaning.co.uk
 - Website: https://primeonecleaning.co.uk
-- Location: Luton, Bedfordshire, UK
+- Location: Milton Keynes, Buckinghamshire, UK
+- Address: 4 Manhattan House, 401 Witan Gate, Milton Keynes, MK9 2BQ
 - Hours: Monday-Saturday, 08:00-18:00
 - Fully insured, DBS-checked, vetted team
 - Eco-friendly cleaning products
-- 5.0 Google rating, 100+ reviews
 
 ## Services
 1. Residential Cleaning — Regular weekly/fortnightly cleans, deep cleaning, one-off cleans, spring cleaning for homes across Luton & Bedfordshire.

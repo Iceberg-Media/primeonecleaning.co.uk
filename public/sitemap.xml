@@ -1,48 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://primeonecleaning.co.uk/</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://images.pexels.com/photos/6195949/pexels-photo-6195949.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1920&amp;h=1080&amp;fit=crop</image:loc>
-      <image:title>Professional cleaning services in Luton &amp; Bedfordshire by Prime One Cleaning</image:title>
-      <image:caption>Prime One Cleaning — professional cleaning for homes and offices in Luton &amp; Bedfordshire</image:caption>
-    </image:image>
   </url>
   <url><loc>https://primeonecleaning.co.uk/about</loc><lastmod>2026-10-06</lastmod><priority>0.8</priority></url>
   <url><loc>https://primeonecleaning.co.uk/services</loc><lastmod>2026-10-06</lastmod><priority>0.9</priority></url>
-  <url><loc>https://primeonecleaning.co.uk/services/residential-cleaning</loc><lastmod>2026-10-06</lastmod><priority>0.8</priority>
-    <image:image>
-      <image:loc>https://images.pexels.com/photos/7601135/pexels-photo-7601135.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;h=400</image:loc>
-      <image:title>Residential cleaning in Luton &amp; Bedfordshire</image:title>
-    </image:image>
-  </url>
-  <url><loc>https://primeonecleaning.co.uk/services/end-of-tenancy-cleaning</loc><lastmod>2026-10-06</lastmod><priority>0.8</priority>
-    <image:image>
-      <image:loc>https://images.pexels.com/photos/3983719/pexels-photo-3983719.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;h=400</image:loc>
-      <image:title>End of tenancy cleaning in Luton &amp; Bedfordshire</image:title>
-    </image:image>
-  </url>
-  <url><loc>https://primeonecleaning.co.uk/services/after-builders-cleaning</loc><lastmod>2026-10-06</lastmod><priority>0.8</priority>
-    <image:image>
-      <image:loc>https://images.pexels.com/photos/3990359/pexels-photo-3990359.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;h=400</image:loc>
-      <image:title>After builders cleaning in Luton &amp; Bedfordshire</image:title>
-    </image:image>
-  </url>
-  <url><loc>https://primeonecleaning.co.uk/services/commercial-cleaning</loc><lastmod>2026-10-06</lastmod><priority>0.8</priority>
-    <image:image>
-      <image:loc>https://images.pexels.com/photos/6794970/pexels-photo-6794970.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;h=400</image:loc>
-      <image:title>Commercial cleaning in Luton &amp; Bedfordshire</image:title>
-    </image:image>
-  </url>
-  <url><loc>https://primeonecleaning.co.uk/services/carpet-upholstery-cleaning</loc><lastmod>2026-10-06</lastmod><priority>0.8</priority>
-    <image:image>
-      <image:loc>https://images.pexels.com/photos/4107284/pexels-photo-4107284.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;h=400</image:loc>
-      <image:title>Carpet &amp; upholstery cleaning in Luton &amp; Bedfordshire</image:title>
-    </image:image>
-  </url>
+  <url><loc>https://primeonecleaning.co.uk/services/residential-cleaning</loc><lastmod>2026-10-06</lastmod><priority>0.8</priority></url>
+  <url><loc>https://primeonecleaning.co.uk/services/end-of-tenancy-cleaning</loc><lastmod>2026-10-06</lastmod><priority>0.8</priority></url>
+  <url><loc>https://primeonecleaning.co.uk/services/after-builders-cleaning</loc><lastmod>2026-10-06</lastmod><priority>0.8</priority></url>
+  <url><loc>https://primeonecleaning.co.uk/services/commercial-cleaning</loc><lastmod>2026-10-06</lastmod><priority>0.8</priority></url>
+  <url><loc>https://primeonecleaning.co.uk/services/carpet-upholstery-cleaning</loc><lastmod>2026-10-06</lastmod><priority>0.8</priority></url>
   <url><loc>https://primeonecleaning.co.uk/areas</loc><lastmod>2026-10-06</lastmod><priority>0.8</priority></url>
   <url><loc>https://primeonecleaning.co.uk/areas/milton-keynes</loc><lastmod>2026-10-06</lastmod><priority>0.7</priority></url>
   <url><loc>https://primeonecleaning.co.uk/areas/bedford</loc><lastmod>2026-10-06</lastmod><priority>0.7</priority></url>

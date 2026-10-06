@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Phone, Mail, Clock, MapPin, Send } from "lucide-react";
+import { Phone, Clock, MapPin, Send } from "lucide-react";
 
 interface ContactPageProps {
   onNavigate: (path: string) => void;
@@ -16,6 +16,8 @@ const services = [
 
 type Status = "idle" | "submitting" | "success" | "error";
 
+const BASIN_ENDPOINT = "https://usebasin.com/f/1647597a42fb";
+
 export default function ContactPage({ onNavigate: _onNavigate }: ContactPageProps) {
   const [status, setStatus] = useState<Status>("idle");
 
@@ -25,7 +27,7 @@ export default function ContactPage({ onNavigate: _onNavigate }: ContactPageProp
     setStatus("submitting");
     try {
       const formData = new FormData(form);
-      const response = await fetch("https://usebasin.com/f/6406ff2a1160", {
+      const response = await fetch(BASIN_ENDPOINT, {
         method: "POST",
         body: formData,
         headers: { Accept: "application/json" },
@@ -79,7 +81,7 @@ export default function ContactPage({ onNavigate: _onNavigate }: ContactPageProp
               ) : (
                 <form
                   onSubmit={handleSubmit}
-                  action="https://usebasin.com/f/6406ff2a1160"
+                  action={BASIN_ENDPOINT}
                   method="POST"
                   className="mt-6 space-y-5"
                 >
@@ -188,20 +190,6 @@ export default function ContactPage({ onNavigate: _onNavigate }: ContactPageProp
                   </li>
                   <li className="flex items-center gap-4">
                     <span className="flex h-12 w-12 items-center justify-center rounded-full bg-[#0a1f44]">
-                      <Mail className="h-6 w-6 text-[#60a5fa]" />
-                    </span>
-                    <div>
-                      <p className="text-sm text-slate-500">Email</p>
-                      <a
-                        href="mailto:info@primeonecleaning.co.uk"
-                        className="text-lg font-semibold text-[#0a1f44] hover:text-[#3b82f6]"
-                      >
-                        info@primeonecleaning.co.uk
-                      </a>
-                    </div>
-                  </li>
-                  <li className="flex items-center gap-4">
-                    <span className="flex h-12 w-12 items-center justify-center rounded-full bg-[#0a1f44]">
                       <Clock className="h-6 w-6 text-[#60a5fa]" />
                     </span>
                     <div>
@@ -228,8 +216,8 @@ export default function ContactPage({ onNavigate: _onNavigate }: ContactPageProp
 
           <div className="mt-8 overflow-hidden rounded-2xl border border-slate-200 shadow-sm">
             <iframe
-              title="Prime One Cleaning service area — Luton, Bedfordshire"
-              src="https://www.google.com/maps?q=Luton,%20Bedfordshire,%20UK&output=embed"
+              title="Prime One Cleaning service area — Milton Keynes"
+              src="https://www.google.com/maps?q=Milton%20Keynes,MK9%202BQ,UK&output=embed"
               width="100%"
               height="360"
               style={{ border: 0 }}
@@ -251,24 +239,24 @@ export default function ContactPage({ onNavigate: _onNavigate }: ContactPageProp
             legalName: "Prime One Cleaning Ltd",
             description: "Professional cleaning services for homes, offices and commercial spaces in Luton & Bedfordshire.",
             telephone: "07512345678",
-            email: "info@primeonecleaning.co.uk",
             url: "https://primeonecleaning.co.uk",
-            image: "https://images.pexels.com/photos/6195949/pexels-photo-6195949.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop",
+            image: "https://primeonecleaning.co.uk/WhatsApp_Image_2026-07-30_at_13.16.18.jpeg",
             logo: "https://primeonecleaning.co.uk/WhatsApp_Image_2026-07-30_at_13.16.18.jpeg",
             priceRange: "££",
             address: {
               "@type": "PostalAddress",
-              addressLocality: "Luton",
-              addressRegion: "Bedfordshire",
-              postalCode: "LU1",
+              streetAddress: "4 Manhattan House, 401 Witan Gate",
+              addressLocality: "Milton Keynes",
+              addressRegion: "Buckinghamshire",
+              postalCode: "MK9 2BQ",
               addressCountry: "GB",
             },
             geo: {
               "@type": "GeoCoordinates",
-              latitude: "51.8786",
-              longitude: "-0.4200",
+              latitude: "52.0406",
+              longitude: "-0.7554",
             },
-            hasMap: "https://www.google.com/maps?q=Luton,%20Bedfordshire,%20UK",
+            hasMap: "https://www.google.com/maps?q=Milton+Keynes,MK9+2BQ,UK",
             areaServed: [
               "Luton",
               "Milton Keynes",
@@ -291,13 +279,6 @@ export default function ContactPage({ onNavigate: _onNavigate }: ContactPageProp
                 closes: "18:00",
               },
             ],
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "5.0",
-              reviewCount: "100",
-              bestRating: "5",
-              worstRating: "1",
-            },
           }),
         }}
       />

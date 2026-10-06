@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, MapPin } from "lucide-react";
 
 interface FooterProps {
   onNavigate: (path: string) => void;
@@ -53,17 +53,17 @@ export default function Footer({ onNavigate }: FooterProps) {
             </p>
             <div className="mt-5 flex items-center gap-3">
               <a
-                href="https://www.google.com/maps/search/?api=1&query=Prime+One+Cleaning+Luton"
+                href="https://www.google.com/maps/search/?api=1&query=Prime+One+Cleaning+Milton+Keynes"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Google Maps listing"
                 className="flex h-9 w-9 items-center justify-center rounded-full bg-white/5 transition-colors hover:text-[#60a5fa]"
               >
-                <svg viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor" aria-hidden="true">
-                  <path d="M12.48 10.12v3.85h5.36c-.24 1.37-.89 2.53-1.88 3.32l3.04 2.36c1.78-1.64 2.8-4.06 2.8-6.94 0-.67-.06-1.32-.17-1.94-.86-.05-7.15-.65-9.15-.65z" />
-                  <path d="M12.48 20c2.43 0 4.47-.81 5.96-2.18l-3.04-2.36c-.81.55-1.84.87-2.92.87-2.25 0-4.15-1.52-4.83-3.56l-3.18 2.46C5.99 18.55 8.97 20 12.48 20z" />
-                  <path d="M7.65 12.77c-.17-.52-.27-1.08-.27-1.77s.1-1.25.26-1.77l-3.18-2.46C3.92 8.85 3.48 10.37 3.48 12s.44 3.15 1.99 4.23l3.18-2.46z" />
-                  <path d="M12.48 8.18c1.32 0 2.51.46 3.44 1.35l2.31-2.31C16.97 5.75 14.93 5 12.48 5 8.97 5 5.99 6.45 4.46 8.77l3.18 2.46c.68-2.04 2.58-3.05 4.84-3.05z" />
+                <svg viewBox="0 0 48 48" className="h-5 w-5" aria-hidden="true">
+                  <path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z" />
+                  <path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.43v5.69C8.05 41.15 15.45 46 24 46z" />
+                  <path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.69H4.43C3.02 16.94 2.24 20.38 2.24 24s.78 7.06 2.19 9.87l7.26-5.69z" />
+                  <path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.45 2 8.05 6.85 4.43 14.13l7.26 5.69c1.73-5.2 6.58-9.07 12.31-9.07z" />
                 </svg>
               </a>
             </div>
@@ -132,12 +132,8 @@ export default function Footer({ onNavigate }: FooterProps) {
                 <a href="tel:07512345678" className="hover:text-white">07512 345 678</a>
               </li>
               <li className="flex items-center gap-2">
-                <Mail className="h-4 w-4 text-[#60a5fa]" />
-                <a href="mailto:info@primeonecleaning.co.uk" className="hover:text-white">info@primeonecleaning.co.uk</a>
-              </li>
-              <li className="flex items-center gap-2">
                 <MapPin className="h-4 w-4 text-[#60a5fa]" />
-                Luton, Bedfordshire
+                Milton Keynes, Buckinghamshire
               </li>
             </ul>
           </div>

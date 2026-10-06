@@ -109,13 +109,13 @@ function AreaSchema() {
         "@type": "ListItem",
         "position": 2,
         "name": "Areas We Cover",
-        "item": "https://primeonecleaning.co.uk/#/areas"
+        "item": "https://primeonecleaning.co.uk/areas"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "St Albans",
-        "item": "https://primeonecleaning.co.uk/#/areas/st-albans"
+        "item": "https://primeonecleaning.co.uk/areas/st-albans"
       }
     ]
   }

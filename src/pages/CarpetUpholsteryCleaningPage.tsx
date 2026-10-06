@@ -77,13 +77,13 @@ function ServiceSchema() {
         "@type": "ListItem",
         "position": 2,
         "name": "Services",
-        "item": "https://primeonecleaning.co.uk/#/services"
+        "item": "https://primeonecleaning.co.uk/services"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Carpet & Upholstery Cleaning",
-        "item": "https://primeonecleaning.co.uk/#/services/carpet-upholstery-cleaning"
+        "item": "https://primeonecleaning.co.uk/services/carpet-upholstery-cleaning"
       }
     ]
   },

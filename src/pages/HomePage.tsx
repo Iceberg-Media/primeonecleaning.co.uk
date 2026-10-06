@@ -479,10 +479,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               "Aylesbury",
               "Bedfordshire",
             ],
-            sameAs: [
-              "https://facebook.com",
-              "https://instagram.com",
-            ],
+            sameAs: [],
             openingHoursSpecification: [
               {
                 "@type": "OpeningHoursSpecification",

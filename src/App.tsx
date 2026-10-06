@@ -177,15 +177,21 @@ const NOT_FOUND_SEO = {
   description: "The page you are looking for does not exist. Please return to the homepage.",
 };
 
-function upsertMeta(selector: string, attr: string, createName: string, content: string) {
-  let el = document.querySelector(selector) as HTMLMetaElement | HTMLLinkElement | null;
+function upsertMetaName(name: string, content: string) {
+  let el = document.querySelector(`meta[name="${name}"]`) as HTMLMetaElement | null;
   if (!el) {
-    el = document.createElement(attr === "property" ? "meta" : "link") as HTMLMetaElement | HTMLLinkElement;
-    if (attr === "property") {
-      (el as HTMLMetaElement).setAttribute("property", createName);
-    } else {
-      (el as HTMLLinkElement).setAttribute("rel", createName);
-    }
+    el = document.createElement("meta");
+    el.setAttribute("name", name);
+    document.head.appendChild(el);
+  }
+  el.setAttribute("content", content);
+}
+
+function upsertMetaProperty(property: string, content: string) {
+  let el = document.querySelector(`meta[property="${property}"]`) as HTMLMetaElement | null;
+  if (!el) {
+    el = document.createElement("meta");
+    el.setAttribute("property", property);
     document.head.appendChild(el);
   }
   el.setAttribute("content", content);
@@ -204,50 +210,65 @@ function upsertLink(rel: string, href: string) {
 function useDocumentSeo(path: string) {
   useEffect(() => {
     const seo = SEO_MAP[path] ?? NOT_FOUND_SEO;
-    const canonicalUrl = `${SITE_URL}/${path === "/" ? "" : "#/" + path}`;
+    const canonicalUrl = `${SITE_URL}${path === "/" ? "/" : path}`;
     const ogImage = seo.ogImage ?? DEFAULT_OG_IMAGE;
     const ogType = seo.ogType ?? "article";
 
     document.title = seo.title;
 
-    upsertMeta('meta[name="description"]', "name", "description", seo.description);
+    upsertMetaName("description", seo.description);
 
-    upsertMeta('meta[property="og:title"]', "property", "og:title", seo.title);
-    upsertMeta('meta[property="og:description"]', "property", "og:description", seo.description);
-    upsertMeta('meta[property="og:url"]', "property", "og:url", canonicalUrl);
-    upsertMeta('meta[property="og:type"]', "property", "og:type", ogType);
-    upsertMeta('meta[property="og:image"]', "property", "og:image", ogImage);
-    upsertMeta('meta[property="og:site_name"]', "property", "og:site_name", "Prime One Cleaning");
+    upsertMetaProperty("og:title", seo.title);
+    upsertMetaProperty("og:description", seo.description);
+    upsertMetaProperty("og:url", canonicalUrl);
+    upsertMetaProperty("og:type", ogType);
+    upsertMetaProperty("og:image", ogImage);
+    upsertMetaProperty("og:site_name", "Prime One Cleaning");
 
-    upsertMeta('meta[name="twitter:card"]', "name", "twitter:card", "summary_large_image");
-    upsertMeta('meta[name="twitter:title"]', "name", "twitter:title", seo.title);
-    upsertMeta('meta[name="twitter:description"]', "name", "twitter:description", seo.description);
-    upsertMeta('meta[name="twitter:image"]', "name", "twitter:image", ogImage);
+    upsertMetaName("twitter:card", "summary_large_image");
+    upsertMetaName("twitter:title", seo.title);
+    upsertMetaName("twitter:description", seo.description);
+    upsertMetaName("twitter:image", ogImage);
 
     upsertLink("canonical", canonicalUrl);
   }, [path]);
 }
 
+function getCurrentPath(): string {
+  const hash = window.location.hash;
+  if (hash.startsWith("#/")) {
+    return hash.slice(1);
+  }
+  return window.location.pathname || "/";
+}
+
 function App() {
-  const [path, setPath] = useState<string>(() => {
-    const hash = window.location.hash.replace("#", "");
-    return hash || "/";
-  });
+  const [path, setPath] = useState<string>(() => getCurrentPath());
 
   useEffect(() => {
-    const onHashChange = () => {
-      const hash = window.location.hash.replace("#", "");
-      setPath(hash || "/");
+    const onPopState = () => {
+      setPath(getCurrentPath());
       window.scrollTo(0, 0);
     };
-    window.addEventListener("hashchange", onHashChange);
-    return () => window.removeEventListener("hashchange", onHashChange);
+    window.addEventListener("popstate", onPopState);
+    return () => window.removeEventListener("popstate", onPopState);
+  }, []);
+
+  useEffect(() => {
+    if (window.location.hash.startsWith("#/")) {
+      const cleanPath = window.location.hash.slice(1);
+      window.history.replaceState(null, "", cleanPath);
+      setPath(cleanPath);
+    }
   }, []);
 
   useDocumentSeo(path);
 
   const navigate = (newPath: string) => {
-    window.location.hash = newPath;
+    if (newPath === path) return;
+    window.history.pushState(null, "", newPath);
+    setPath(newPath);
+    window.scrollTo(0, 0);
   };
 
   const renderPage = () => {

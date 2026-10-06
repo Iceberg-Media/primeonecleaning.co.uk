@@ -109,13 +109,13 @@ function AreaSchema() {
         "@type": "ListItem",
         "position": 2,
         "name": "Areas We Cover",
-        "item": "https://primeonecleaning.co.uk/#/areas"
+        "item": "https://primeonecleaning.co.uk/areas"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Aylesbury",
-        "item": "https://primeonecleaning.co.uk/#/areas/aylesbury"
+        "item": "https://primeonecleaning.co.uk/areas/aylesbury"
       }
     ]
   }

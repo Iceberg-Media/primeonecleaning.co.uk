@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Camera, X, ChevronLeft, ChevronRight, ImageIcon } from "lucide-react";
+import { Camera, X, ChevronLeft, ChevronRight } from "lucide-react";
 import CtaBlock from "@/components/CtaBlock";
 
 interface GalleryPageProps {
@@ -94,7 +94,7 @@ export default function GalleryPage({ onNavigate }: GalleryPageProps) {
               <button
                 key={filter}
                 onClick={() => setActiveFilter(filter)}
-                className={`rounded-lg px-5 py-2.5 text-sm font-semibold transition-colors ${
+                className={`rounded-lg px-5 py-3 text-sm font-semibold transition-colors ${
                   activeFilter === filter
                     ? "bg-[#0a1f44] text-white"
                     : "bg-slate-100 text-slate-700 hover:bg-slate-200"
@@ -114,7 +114,12 @@ export default function GalleryPage({ onNavigate }: GalleryPageProps) {
                 className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-md transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl"
               >
                 <div className="flex aspect-[4/3] items-center justify-center overflow-hidden bg-slate-100">
-                  <ImageIcon className="h-10 w-10 text-slate-300" />
+                  <img
+                    src={img.src}
+                    alt={img.alt}
+                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="absolute inset-0 flex items-end bg-gradient-to-t from-[#0a1f44]/80 via-transparent to-transparent opacity-0 transition-opacity group-hover:opacity-100">
                   <div className="p-5 text-left">
@@ -161,10 +166,14 @@ export default function GalleryPage({ onNavigate }: GalleryPageProps) {
             <ChevronLeft className="h-8 w-8" />
           </button>
           <div
-            className="flex max-h-[85vh] max-w-[90vw] items-center justify-center rounded-lg bg-slate-100 p-12"
+            className="flex max-h-[85vh] max-w-[90vw] items-center justify-center"
             onClick={(e) => e.stopPropagation()}
           >
-            <ImageIcon className="h-16 w-16 text-slate-300" />
+            <img
+              src={filteredImages[lightboxIndex].src}
+              alt={filteredImages[lightboxIndex].alt}
+              className="max-h-[85vh] max-w-[90vw] rounded-lg object-contain"
+            />
           </div>
           <button
             className="absolute right-4 flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-white/20"

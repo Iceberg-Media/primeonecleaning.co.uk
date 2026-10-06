@@ -83,13 +83,13 @@ function ServiceSchema() {
         "@type": "ListItem",
         "position": 2,
         "name": "Services",
-        "item": "https://primeonecleaning.co.uk/#/services"
+        "item": "https://primeonecleaning.co.uk/services"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Residential Cleaning",
-        "item": "https://primeonecleaning.co.uk/#/services/residential-cleaning"
+        "item": "https://primeonecleaning.co.uk/services/residential-cleaning"
       }
     ]
   },

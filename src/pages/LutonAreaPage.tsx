@@ -109,13 +109,13 @@ function AreaSchema() {
         "@type": "ListItem",
         "position": 2,
         "name": "Areas We Cover",
-        "item": "https://primeonecleaning.co.uk/#/areas"
+        "item": "https://primeonecleaning.co.uk/areas"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Luton",
-        "item": "https://primeonecleaning.co.uk/#/areas/luton"
+        "item": "https://primeonecleaning.co.uk/areas/luton"
       }
     ]
   }

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Phone, Menu, X, ChevronDown, MapPin, Sparkles, Clock, Mail, Facebook, Instagram } from "lucide-react";
+import { Phone, Menu, X, ChevronDown, MapPin, Sparkles, Clock, Mail } from "lucide-react";
 
 function GoogleIcon({ className }: { className?: string }) {
   return (
@@ -91,13 +91,7 @@ export default function Header({ currentPath, onNavigate }: HeaderProps) {
               info@primeonecleaning.co.uk
             </a>
             <div className="flex items-center gap-3">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="transition-colors hover:text-[#60a5fa]">
-                <Facebook className="h-4 w-4" />
-              </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="transition-colors hover:text-[#60a5fa]">
-                <Instagram className="h-4 w-4" />
-              </a>
-              <a href="https://google.com" target="_blank" rel="noopener noreferrer" aria-label="Google" className="transition-colors hover:text-[#60a5fa]">
+              <a href="https://www.google.com/maps/search/?api=1&query=Prime+One+Cleaning+Luton" target="_blank" rel="noopener noreferrer" aria-label="Google Maps listing" className="transition-colors hover:text-[#60a5fa]">
                 <GoogleIcon className="h-4 w-4" />
               </a>
             </div>
@@ -205,6 +199,7 @@ export default function Header({ currentPath, onNavigate }: HeaderProps) {
           <button
             onClick={() => setOpen(!open)}
             aria-label="Toggle menu"
+            className="flex h-11 w-11 items-center justify-center"
           >
             {open ? <X className="h-7 w-7 text-[#0a1f44]" /> : <Menu className="h-7 w-7 text-[#0a1f44]" />}
           </button>

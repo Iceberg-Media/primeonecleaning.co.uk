@@ -110,13 +110,13 @@ function AreaSchema() {
         "@type": "ListItem",
         "position": 2,
         "name": "Areas We Cover",
-        "item": "https://primeonecleaning.co.uk/#/areas"
+        "item": "https://primeonecleaning.co.uk/areas"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Milton Keynes",
-        "item": "https://primeonecleaning.co.uk/#/areas/milton-keynes"
+        "item": "https://primeonecleaning.co.uk/areas/milton-keynes"
       }
     ]
   }

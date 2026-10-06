@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Phone, Mail, Clock, MapPin, Send, Facebook, Instagram, Twitter } from "lucide-react";
+import { Phone, Mail, Clock, MapPin, Send } from "lucide-react";
 
 interface ContactPageProps {
   onNavigate: (path: string) => void;
@@ -222,37 +222,10 @@ export default function ContactPage({ onNavigate: _onNavigate }: ContactPageProp
                   </li>
                 </ul>
 
-                <div className="mt-8 border-t border-slate-100 pt-6">
-                  <p className="text-sm font-medium text-slate-500">Follow Us</p>
-                  <div className="mt-3 flex gap-4">
-                    <a
-                      href="#"
-                      aria-label="Facebook"
-                      className="flex h-11 w-11 items-center justify-center rounded-full bg-[#0a1f44] transition-colors hover:bg-[#3b82f6]"
-                    >
-                      <Facebook className="h-5 w-5 text-white" />
-                    </a>
-                    <a
-                      href="#"
-                      aria-label="Instagram"
-                      className="flex h-11 w-11 items-center justify-center rounded-full bg-[#0a1f44] transition-colors hover:bg-[#3b82f6]"
-                    >
-                      <Instagram className="h-5 w-5 text-white" />
-                    </a>
-                    <a
-                      href="#"
-                      aria-label="Twitter"
-                      className="flex h-11 w-11 items-center justify-center rounded-full bg-[#0a1f44] transition-colors hover:bg-[#3b82f6]"
-                    >
-                      <Twitter className="h-5 w-5 text-white" />
-                    </a>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
 
-          {/* Embedded map */}
           <div className="mt-8 overflow-hidden rounded-2xl border border-slate-200 shadow-sm">
             <iframe
               title="Prime One Cleaning service area — Luton, Bedfordshire"
@@ -309,10 +282,7 @@ export default function ContactPage({ onNavigate: _onNavigate }: ContactPageProp
               "Aylesbury",
               "Bedfordshire",
             ],
-            sameAs: [
-              "https://facebook.com",
-              "https://instagram.com",
-            ],
+            sameAs: [],
             openingHoursSpecification: [
               {
                 "@type": "OpeningHoursSpecification",

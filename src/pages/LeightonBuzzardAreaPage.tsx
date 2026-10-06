@@ -110,13 +110,13 @@ function AreaSchema() {
         "@type": "ListItem",
         "position": 2,
         "name": "Areas We Cover",
-        "item": "https://primeonecleaning.co.uk/#/areas"
+        "item": "https://primeonecleaning.co.uk/areas"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Leighton Buzzard",
-        "item": "https://primeonecleaning.co.uk/#/areas/leighton-buzzard"
+        "item": "https://primeonecleaning.co.uk/areas/leighton-buzzard"
       }
     ]
   }

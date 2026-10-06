@@ -1,4 +1,4 @@
-import { ArrowRight, ImageIcon } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import TrustBar from "@/components/TrustBar";
 import CtaBlock from "@/components/CtaBlock";
 
@@ -64,8 +64,13 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
               </button>
             </div>
             <div className="relative">
-              <div className="flex h-full min-h-[24rem] w-full items-center justify-center overflow-hidden rounded-2xl bg-slate-100 shadow-xl">
-                <ImageIcon className="h-12 w-12 text-slate-300" />
+              <div className="flex h-full min-h-[24rem] w-full overflow-hidden rounded-2xl bg-slate-100 shadow-xl">
+                <img
+                  src="https://images.pexels.com/photos/6195121/pexels-photo-6195121.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+                  alt="Prime One Cleaning team at work in a Luton home"
+                  className="h-full w-full object-cover"
+                  loading="lazy"
+                />
               </div>
               <div className="absolute -bottom-6 -left-6 hidden rounded-xl bg-[#0a1f44] px-6 py-4 shadow-xl ring-1 ring-black/5 sm:block">
                 <p className="text-2xl font-bold text-white">100%</p>

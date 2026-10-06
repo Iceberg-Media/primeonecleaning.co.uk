@@ -6,7 +6,7 @@ import {
   HardHat,
   Building2,
   Sofa,
-  ArrowRight,
+  ArrowRight
 } from "lucide-react";
 import CtaBlock from "@/components/CtaBlock";
 
@@ -39,7 +39,7 @@ const services = [
     icon: Sofa,
     title: "Carpet & Upholstery Cleaning",
     slug: "carpet-upholstery-cleaning",
-  },
+  }
 ];
 
 function AreaSchema() {
@@ -64,7 +64,7 @@ function AreaSchema() {
       "@type": "LocalBusiness",
       name: "Prime One Cleaning",
       description:
-        "Cleaning Services Milton Keynes — professional residential and commercial cleaning for homes and businesses across Milton Keynes.",
+        "Cleaning Services Milton Keynes, professional residential and commercial cleaning for homes and businesses across Milton Keynes.",
       telephone: "07512 345 678",
       areaServed: {
         "@type": "City",
@@ -86,7 +86,7 @@ function AreaSchema() {
           description:
             "Reliable residential and commercial cleaning for homes and businesses across Milton Keynes.",
         },
-      },
+      }
     };
 
     const script = document.createElement("script");
@@ -104,21 +104,21 @@ function AreaSchema() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://primeonecleaning.co.uk/"
+        "item": "https://primeonecleaning.co.uk/",
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Areas We Cover",
-        "item": "https://primeonecleaning.co.uk/areas"
+        "item": "https://primeonecleaning.co.uk/areas",
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Milton Keynes",
-        "item": "https://primeonecleaning.co.uk/areas/milton-keynes"
+        "item": "https://primeonecleaning.co.uk/areas/milton-keynes",
       }
-    ]
+    ],
   }
 ];
     const breadcrumbScript = document.createElement("script");
@@ -144,7 +144,7 @@ export default function MiltonKeynesAreaPage({ onNavigate }: AreaPageProps) {
     <div>
       <AreaSchema />
 
-      {/* Band-style hero */}
+      {/* Service icons row */}
       <section className="relative flex items-center overflow-hidden bg-[#0a1f44] py-10 sm:py-12">
         
         <div className="absolute inset-0 bg-gradient-to-r from-[#0a1f44] via-[#0a1f44]/95 to-[#0a1f44]/60" />
@@ -161,24 +161,24 @@ export default function MiltonKeynesAreaPage({ onNavigate }: AreaPageProps) {
               Reliable residential and commercial cleaning for homes and
               businesses across Milton Keynes
             </p>
-            <p className="mt-4 text-base text-slate-300"> for <strong>cleaning services near me</strong> in Milton Keynes? As a locally based company, Prime One Cleaning offers reliable <strong>local cleaners in Milton Keynes</strong> who know the area and can reach you quickly. Whether you need a one-off deep clean, a regular weekly schedule or an end of tenancy clean, our insured and vetted team delivers consistent, high-quality results every time.
+            <p className="mt-4 text-base text-slate-300">Searching for <strong>cleaning services near me</strong> in Milton Keynes? As a locally based company, Prime One Cleaning offers reliable <strong>local cleaners in Milton Keynes</strong> who know the area and can reach you quickly. Whether you need a one-off deep clean, a regular weekly schedule or an end of tenancy clean, our insured and vetted team delivers consistent, high-quality results every time.
             </p>
-            <p className="mt-4 text-base text-slate-300"> for a specific service in Milton Keynes? Explore our <button onClick={() => onNavigate("/services/commercial-cleaning")} className="font-semibold text-[#3b82f6] hover:text-[#2563eb] underline">commercial cleaning services</button> designed for homes and businesses across the area.
+            <p className="mt-4 text-base text-slate-300">Looking for a specific service in Milton Keynes? Explore our <button onClick={() => onNavigate("/services/commercial-cleaning")} className="font-semibold text-[#3b82f6] hover:text-[#2563eb] underline">commercial cleaning services</button> designed for homes and businesses across the area.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Main content */}
+      {/* Service icons row */}
       <section className="bg-white py-8 sm:py-10">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <div className="prose-content space-y-6 text-lg leading-relaxed text-slate-600">
+          <div className="prose-content space-y-6 text-lg leading-relaxed text-slate-700">
             <p>
               Prime One Cleaning brings trusted, professional cleaning services
               to homes and businesses right across Milton Keynes. As one of the
               UK's fastest-growing new towns, Milton Keynes is a unique blend of
               well-planned residential estates, modern business parks and busy
-              commercial areas — and our cleaners know the area inside out.
+              commercial areas, and our cleaners know the area inside out.
               Whether you live in one of the peaceful estates in areas like
               Great Linford, Shenley Lodge or Woughton on the Green, or run a
               business in the bustling commercial districts around Central
@@ -193,7 +193,7 @@ export default function MiltonKeynesAreaPage({ onNavigate }: AreaPageProps) {
               up its many communities, we arrive prepared and ready to deliver a
               spotless finish every time. Every cleaner on our team is fully
               insured, DBS-checked and trained to the same high standard, so
-              whether you need a regular weekly home clean, a one-off deep clean,
+              whether you need a regular weekly home clean, a one-off deep clean
               an end-of-tenancy handover or a commercial contract for your
               office or retail unit, you can book with complete confidence.
             </p>
@@ -203,7 +203,7 @@ export default function MiltonKeynesAreaPage({ onNavigate }: AreaPageProps) {
               live and work in and around Milton Keynes, we can offer flexible
               appointment times, quick response on short-notice bookings and a
               friendly, reliable service you'll want to come back to. Get in
-              touch today for a free, no-obligation quote — we'll help you find
+              touch today for a free, no-obligation quote, we'll help you find
               the right cleaning solution for your home or business in Milton
               Keynes.
             </p>
@@ -217,7 +217,7 @@ export default function MiltonKeynesAreaPage({ onNavigate }: AreaPageProps) {
           <h2 className="text-center text-3xl font-bold text-[#0a1f44]">
             Our Cleaning Services in Milton Keynes
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-center text-lg text-slate-600">
+          <p className="mx-auto mt-4 max-w-2xl text-center text-lg text-slate-700">
             Whatever your cleaning needs, we have a service to match.
           </p>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

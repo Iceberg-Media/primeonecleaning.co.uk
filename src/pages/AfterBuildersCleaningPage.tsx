@@ -9,7 +9,7 @@ interface ServicePageProps {
 const faqs = [
   {
     q: "When should I book this after building work finishes?",
-    a: "As soon as your construction or renovation work is complete — ideally before you move back in or before handover to a tenant or buyer. Booking promptly means fine dust doesn't have time to settle deeper into surfaces, vents and flooring.",
+    a: "As soon as your construction or renovation work is complete, ideally before you move back in or before handover to a tenant or buyer. Booking promptly means fine dust doesn't have time to settle deeper into surfaces, vents and flooring.",
   },
   {
     q: "Do you remove paint splashes and sticker residue?",
@@ -21,8 +21,8 @@ const faqs = [
   },
   {
     q: "How is pricing worked out?",
-    a: "Pricing is based on the size of the property and the level of building work carried out — a light renovation will need less time than a full strip-out and rebuild. We provide a free, no-obligation quote upfront so you know the cost before we start.",
-  },
+    a: "Pricing is based on the size of the property and the level of building work carried out, a light renovation will need less time than a full strip-out and rebuild. We provide a free, no-obligation quote upfront so you know the cost before we start.",
+  }
 ];
 
 const included = [
@@ -31,7 +31,7 @@ const included = [
   "Deep floor cleaning including grout where needed",
   "Window and glass cleaning to remove residue",
   "Kitchen and bathroom fixture clean-up",
-  "Appliance and fitting wipe-down",
+  "Appliance and fitting wipe-down"
 ];
 
 function ServiceSchema() {
@@ -55,13 +55,13 @@ function ServiceSchema() {
         "@type": "PostalAddress",
         "addressLocality": "Milton Keynes",
         "addressRegion": "Buckinghamshire",
-        "addressCountry": "GB"
-      }
+        "addressCountry": "GB",
+      },
     },
     "areaServed": [
       "Luton",
       "Bedfordshire"
-    ]
+    ],
   },
   {
     "@context": "https://schema.org",
@@ -71,21 +71,21 @@ function ServiceSchema() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://primeonecleaning.co.uk/"
+        "item": "https://primeonecleaning.co.uk/",
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Services",
-        "item": "https://primeonecleaning.co.uk/services"
+        "item": "https://primeonecleaning.co.uk/services",
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "After Builders Cleaning",
-        "item": "https://primeonecleaning.co.uk/services/after-builders-cleaning"
+        "item": "https://primeonecleaning.co.uk/services/after-builders-cleaning",
       }
-    ]
+    ],
   },
   {
     "@context": "https://schema.org",
@@ -96,7 +96,7 @@ function ServiceSchema() {
         "name": "When should I book this after building work finishes?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "As soon as your construction or renovation work is complete, ideally before you move back in or before handover to a tenant or buyer. Booking promptly means fine dust does not have time to settle deeper into surfaces, vents and flooring."
+          "text": "As soon as your construction or renovation work is complete, ideally before you move back in or before handover to a tenant or buyer. Booking promptly means fine dust does not have time to settle deeper into surfaces, vents and flooring.",
         }
       },
       {
@@ -104,7 +104,7 @@ function ServiceSchema() {
         "name": "Do you remove paint splashes and sticker residue?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. Removing paint spots, splashes and sticky label or sticker residue is all part of the detailed clean. We use the right products and techniques to lift these marks without damaging the surface underneath."
+          "text": "Yes. Removing paint spots, splashes and sticky label or sticker residue is all part of the detailed clean. We use the right products and techniques to lift these marks without damaging the surface underneath.",
         }
       },
       {
@@ -112,7 +112,7 @@ function ServiceSchema() {
         "name": "Can you clean commercial renovation sites too?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Absolutely. We handle post-construction cleaning for offices, shops, restaurants and other commercial spaces, not just homes. Whether it is a single unit or a larger refurbishment, we can scope the clean to suit."
+          "text": "Absolutely. We handle post-construction cleaning for offices, shops, restaurants and other commercial spaces, not just homes. Whether it is a single unit or a larger refurbishment, we can scope the clean to suit.",
         }
       },
       {
@@ -120,10 +120,10 @@ function ServiceSchema() {
         "name": "How is pricing worked out?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Pricing is based on the size of the property and the level of building work carried out. A light renovation will need less time than a full strip-out and rebuild. We provide a free, no-obligation quote upfront so you know the cost before we start."
-        }
+          "text": "Pricing is based on the size of the property and the level of building work carried out. A light renovation will need less time than a full strip-out and rebuild. We provide a free, no-obligation quote upfront so you know the cost before we start.",
+        },
       }
-    ]
+    ],
   }
 ];
     const scripts: HTMLScriptElement[] = [];
@@ -148,7 +148,7 @@ export default function AfterBuildersCleaningPage({ onNavigate }: ServicePagePro
     <div>
       <ServiceSchema />
 
-      {/* Band-style hero */}
+      {/* */}
       <section className="relative flex items-center overflow-hidden bg-[#0a1f44] py-10 sm:py-12">
         
         <div className="absolute inset-0 bg-gradient-to-r from-[#0a1f44] via-[#0a1f44]/95 to-[#0a1f44]/60" />
@@ -165,29 +165,29 @@ export default function AfterBuildersCleaningPage({ onNavigate }: ServicePagePro
               Professional post-construction and renovation cleaning, dust and
               debris fully removed
             </p>
-            <p>
+            <p className="mt-4 text-base text-slate-300">
               For ongoing maintenance after your refurbishment, explore our <button onClick={() => onNavigate("/services/commercial-cleaning")} className="font-semibold text-[#3b82f6] hover:text-[#2563eb] underline">commercial cleaning services</button> across Luton &amp; Bedfordshire.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Main content */}
+      {/* */}
       <section className="bg-white py-8 sm:py-10">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <div className="space-y-6 text-lg leading-relaxed text-slate-600">
+          <div className="space-y-6 text-lg leading-relaxed text-slate-700">
             <p>
               When building work finishes, the real work of making a space
               livable often begins. Our after builders cleaning service tackles
               the dust, debris and residue left behind by construction and
-              renovation projects, transforming a building site into a clean,
+              renovation projects, transforming a building site into a clean
               ready-to-use space. We handle everything from newly built homes to
               freshly renovated kitchens, extensions and full commercial
               refurbishments.
             </p>
             <p>
               Post-construction dust isn't like ordinary household dust. It's
-              incredibly fine and gets everywhere — into air vents, behind
+              incredibly fine and gets everywhere, into air vents, behind
               radiators, on top of door frames, inside light fittings and deep
               into flooring and grout lines. Left unchecked, it continues to
               circulate every time a door opens or a vent kicks in, affecting
@@ -199,29 +199,29 @@ export default function AfterBuildersCleaningPage({ onNavigate }: ServicePagePro
             <p>
               Our after builders service covers three core areas.{" "}
               <strong className="text-[#0a1f44]">Post Construction Cleaning</strong>{" "}
-              is for newly built or extended properties that need a full,
+              is for newly built or extended properties that need a full
               top-to-bottom clean before furniture or occupants move in.{" "}
               <strong className="text-[#0a1f44]">Renovation Cleaning</strong>{" "}
-              covers spaces that have been remodelled — kitchens, bathrooms,
-              living areas — where dust, plaster and paint residue need clearing
+              covers spaces that have been remodelled, kitchens, bathrooms
+              living areas, where dust, plaster and paint residue need clearing
               before the room can be used again. And{" "}
               <strong className="text-[#0a1f44]">Dust &amp; Debris Removal</strong>{" "}
-              handles the heavier clearing work: bagging up rubble, offcuts,
+              handles the heavier clearing work: bagging up rubble, offcuts
               packaging and leftover materials so the space is left clean and
               clear.
             </p>
             <p>
               The Prime One Cleaning team is experienced in handling heavy-duty
-              cleans safely and efficiently. We use professional-grade equipment
-              — HEPA-filtered vacuums, steam cleaners and specialist surface
-              products — to lift fine construction dust without spreading it
+              cleans safely and efficiently. We use professional-grade equipment, HEPA-filtered vacuums, steam cleaners and specialist surface
+              products, to lift fine construction dust without spreading it
               further. Our team works methodically, room by room, from ceiling to
               floor, so no area is missed. We're fully insured, trained in safe
               handling of post-construction waste, and used to working alongside
               contractors, developers and homeowners to tight deadlines.
             </p>
-            <p className="mt-4 text-base text-slate-300"> it's a home renovation, a new-build handover or a
-              commercial refurbishment, we tailor the scope to what's needed —
+            <p>
+              Whether it's a home renovation, a new-build handover or a
+              commercial refurbishment, we tailor the scope to what's needed
               from a light dust-down to a full deep clean with floor and grout
               treatment. Every clean includes debris removal, dusting of all
               surfaces and fixtures, floor cleaning, window and glass residue
@@ -235,7 +235,7 @@ export default function AfterBuildersCleaningPage({ onNavigate }: ServicePagePro
         </div>
       </section>
 
-      {/* What's included */}
+      {/* */}
       <section className="bg-slate-50 py-8 sm:py-10">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#0a1f44]">What's Included</h2>
@@ -252,7 +252,7 @@ export default function AfterBuildersCleaningPage({ onNavigate }: ServicePagePro
         </div>
       </section>
 
-      {/* FAQ */}
+      {/* */}
       <section className="bg-white py-6 sm:py-8">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-center text-3xl font-bold text-[#0a1f44]">
@@ -268,7 +268,7 @@ export default function AfterBuildersCleaningPage({ onNavigate }: ServicePagePro
                   {faq.q}
                   <ChevronDown className="h-5 w-5 shrink-0 text-[#3b82f6] transition-transform group-open:rotate-180" />
                 </summary>
-                <p className="mt-4 text-slate-600">{faq.a}</p>
+                <p className="mt-4 text-slate-700">{faq.a}</p>
               </details>
             ))}
           </div>

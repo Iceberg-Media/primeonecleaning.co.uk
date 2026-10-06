@@ -47,7 +47,7 @@ const SEO_MAP: Record<string, SeoEntry> = {
   "/about": {
     title: "About Us | Prime One Cleaning",
     description:
-      "Learn about Prime One Cleaning — a fully insured, local cleaning company serving Luton & Bedfordshire with reliable, high-quality results.",
+      "Learn about Prime One Cleaning, a fully insured, local cleaning company serving Luton & Bedfordshire with reliable, high-quality results.",
   },
   "/services": {
     title: "Our Cleaning Services | Prime One Cleaning",
@@ -62,7 +62,7 @@ const SEO_MAP: Record<string, SeoEntry> = {
   "/services/end-of-tenancy-cleaning": {
     title: "End of Tenancy Cleaning in Luton & Bedfordshire | Prime One Cleaning",
     description:
-      "Thorough end of tenancy cleaning in Luton & Bedfordshire. Get your full deposit back. Free quote — call 07512 345 678 today.",
+      "Thorough end of tenancy cleaning in Luton & Bedfordshire. Get your full deposit back. Free quote, call 07512 345 678 today.",
   },
   "/services/after-builders-cleaning": {
     title: "After Builders Cleaning in Luton & Bedfordshire | Prime One Cleaning",
@@ -158,12 +158,12 @@ const SEO_MAP: Record<string, SeoEntry> = {
     title: "Terms & Conditions | Prime One Cleaning",
     description:
       "Read the terms and conditions for Prime One Cleaning services in Luton & Bedfordshire.",
-  },
+  }
 };
 
 const NOT_FOUND_SEO = {
   title: "Page Not Found | Prime One Cleaning",
-  description: "The page you are looking for does not exist. Please return to the homepage.",
+  description: "The page you are looking for does not exist. Please return to the homepage."
 };
 
 function upsertMetaName(name: string, content: string) {

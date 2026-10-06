@@ -6,7 +6,7 @@ import {
   HardHat,
   Building2,
   Sofa,
-  ArrowRight,
+  ArrowRight
 } from "lucide-react";
 import CtaBlock from "@/components/CtaBlock";
 
@@ -39,7 +39,7 @@ const services = [
     icon: Sofa,
     title: "Carpet & Upholstery Cleaning",
     slug: "carpet-upholstery-cleaning",
-  },
+  }
 ];
 
 function AreaSchema() {
@@ -64,7 +64,7 @@ function AreaSchema() {
       "@type": "LocalBusiness",
       name: "Prime One Cleaning",
       description:
-        "Cleaning Services Hemel Hempstead — professional residential and commercial cleaning for homes and businesses across Hemel Hempstead.",
+        "Cleaning Services Hemel Hempstead, professional residential and commercial cleaning for homes and businesses across Hemel Hempstead.",
       telephone: "07512 345 678",
       areaServed: {
         "@type": "City",
@@ -86,7 +86,7 @@ function AreaSchema() {
           description:
             "Reliable residential and commercial cleaning for homes and businesses across Hemel Hempstead.",
         },
-      },
+      }
     };
 
     const script = document.createElement("script");
@@ -104,21 +104,21 @@ function AreaSchema() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://primeonecleaning.co.uk/"
+        "item": "https://primeonecleaning.co.uk/",
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Areas We Cover",
-        "item": "https://primeonecleaning.co.uk/areas"
+        "item": "https://primeonecleaning.co.uk/areas",
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Hemel Hempstead",
-        "item": "https://primeonecleaning.co.uk/areas/hemel-hempstead"
+        "item": "https://primeonecleaning.co.uk/areas/hemel-hempstead",
       }
-    ]
+    ],
   }
 ];
     const breadcrumbScript = document.createElement("script");
@@ -144,7 +144,7 @@ export default function HemelHempsteadAreaPage({ onNavigate }: AreaPageProps) {
     <div>
       <AreaSchema />
 
-      {/* Band-style hero */}
+      {/* Service icons row */}
       <section className="relative flex items-center overflow-hidden bg-[#0a1f44] py-10 sm:py-12">
         
         <div className="absolute inset-0 bg-gradient-to-r from-[#0a1f44] via-[#0a1f44]/95 to-[#0a1f44]/60" />
@@ -161,28 +161,28 @@ export default function HemelHempsteadAreaPage({ onNavigate }: AreaPageProps) {
               Reliable residential and commercial cleaning for homes and
               businesses across Hemel Hempstead
             </p>
-            <p className="mt-4 text-base text-slate-300"> for <strong>cleaning services near me</strong> in Hemel Hempstead? As a locally based company, Prime One Cleaning offers reliable <strong>local cleaners in Hemel Hempstead</strong> who know the area and can reach you quickly. Whether you need a one-off deep clean, a regular weekly schedule or an end of tenancy clean, our insured and vetted team delivers consistent, high-quality results every time.
+            <p className="mt-4 text-base text-slate-300">Searching for <strong>cleaning services near me</strong> in Hemel Hempstead? As a locally based company, Prime One Cleaning offers reliable <strong>local cleaners in Hemel Hempstead</strong> who know the area and can reach you quickly. Whether you need a one-off deep clean, a regular weekly schedule or an end of tenancy clean, our insured and vetted team delivers consistent, high-quality results every time.
             </p>
-            <p className="mt-4 text-base text-slate-300"> for a specific service in Hemel Hempstead? Explore our <button onClick={() => onNavigate("/services/residential-cleaning")} className="font-semibold text-[#3b82f6] hover:text-[#2563eb] underline">residential cleaning services</button> designed for homes and businesses across the area.
+            <p className="mt-4 text-base text-slate-300">Looking for a specific service in Hemel Hempstead? Explore our <button onClick={() => onNavigate("/services/residential-cleaning")} className="font-semibold text-[#3b82f6] hover:text-[#2563eb] underline">residential cleaning services</button> designed for homes and businesses across the area.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Main content */}
+      {/* Service icons row */}
       <section className="bg-white py-8 sm:py-10">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <div className="prose-content space-y-6 text-lg leading-relaxed text-slate-600">
+          <div className="prose-content space-y-6 text-lg leading-relaxed text-slate-700">
             <p>
               Prime One Cleaning brings trusted, professional cleaning services
               to homes and businesses right across Hemel Hempstead. As a
               well-connected New Town with real variety, Hemel Hempstead blends
               established residential neighbourhoods, busy business parks and a
               town centre full of retail and office space in a way few places
-              can match. Our cleaners know the town well — from the family homes
+              can match. Our cleaners know the town well, from the family homes
               in Bennetts End, Chaulden and Warners End to the modern apartments
               near the town centre and the offices and units around Maylands
-              Avenue and the industrial estates — and we tailor every clean to
+              Avenue and the industrial estates, and we tailor every clean to
               suit the character of your space.
             </p>
             <p>
@@ -199,9 +199,9 @@ export default function HemelHempsteadAreaPage({ onNavigate }: AreaPageProps) {
               confidence.
             </p>
             <p>
-              We're proud to serve Hemel Hempstead with the same friendly,
+              We're proud to serve Hemel Hempstead with the same friendly
               reliable service our customers across the region have come to
-              expect. Get in touch today for a free, no-obligation quote — we'll
+              expect. Get in touch today for a free, no-obligation quote, we'll
               help you find the right cleaning solution for your home or business
               in Hemel Hempstead.
             </p>
@@ -215,7 +215,7 @@ export default function HemelHempsteadAreaPage({ onNavigate }: AreaPageProps) {
           <h2 className="text-center text-3xl font-bold text-[#0a1f44]">
             Our Cleaning Services in Hemel Hempstead
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-center text-lg text-slate-600">
+          <p className="mx-auto mt-4 max-w-2xl text-center text-lg text-slate-700">
             Whatever your cleaning needs, we have a service to match.
           </p>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

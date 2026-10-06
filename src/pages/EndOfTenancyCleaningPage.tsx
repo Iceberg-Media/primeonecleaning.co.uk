@@ -9,7 +9,7 @@ interface ServicePageProps {
 const faqs = [
   {
     q: "Will this guarantee I get my deposit back?",
-    a: "Our end of tenancy clean is carried out to the standard letting agents and landlords expect, covering every area typically checked at inspection. While we can't guarantee the deposit return itself — that depends on the landlord or agent's final inspection — our thorough, checklist-based approach gives you the best possible chance of a full return.",
+    a: "Our end of tenancy clean is carried out to the standard letting agents and landlords expect, covering every area typically checked at inspection. While we can't guarantee the deposit return itself, that depends on the landlord or agent's final inspection, our thorough, checklist-based approach gives you the best possible chance of a full return.",
   },
   {
     q: "How long does an end of tenancy clean take?",
@@ -22,7 +22,7 @@ const faqs = [
   {
     q: "Can letting agents book directly?",
     a: "Absolutely. We work with landlords and letting agents across Luton and Bedfordshire on a regular basis, and can set up recurring arrangements for multiple properties. Just get in touch to discuss your portfolio.",
-  },
+  }
 ];
 
 const included = [
@@ -31,7 +31,7 @@ const included = [
   "Inside all cupboards and wardrobes wiped down",
   "Skirting boards, light fittings and switches cleaned",
   "Carpet cleaning available as an add-on",
-  "Window sills and internal glass cleaned",
+  "Window sills and internal glass cleaned"
 ];
 
 function ServiceSchema() {
@@ -55,13 +55,13 @@ function ServiceSchema() {
         "@type": "PostalAddress",
         "addressLocality": "Milton Keynes",
         "addressRegion": "Buckinghamshire",
-        "addressCountry": "GB"
-      }
+        "addressCountry": "GB",
+      },
     },
     "areaServed": [
       "Luton",
       "Bedfordshire"
-    ]
+    ],
   },
   {
     "@context": "https://schema.org",
@@ -71,21 +71,21 @@ function ServiceSchema() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://primeonecleaning.co.uk/"
+        "item": "https://primeonecleaning.co.uk/",
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Services",
-        "item": "https://primeonecleaning.co.uk/services"
+        "item": "https://primeonecleaning.co.uk/services",
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "End of Tenancy Cleaning",
-        "item": "https://primeonecleaning.co.uk/services/end-of-tenancy-cleaning"
+        "item": "https://primeonecleaning.co.uk/services/end-of-tenancy-cleaning",
       }
-    ]
+    ],
   },
   {
     "@context": "https://schema.org",
@@ -96,7 +96,7 @@ function ServiceSchema() {
         "name": "Will this guarantee I get my deposit back?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Our end of tenancy clean is carried out to the standard letting agents and landlords expect, covering every area typically checked at inspection. While we cannot guarantee the deposit return itself, our thorough, checklist-based approach gives you the best possible chance of a full return."
+          "text": "Our end of tenancy clean is carried out to the standard letting agents and landlords expect, covering every area typically checked at inspection. While we cannot guarantee the deposit return itself, our thorough, checklist-based approach gives you the best possible chance of a full return.",
         }
       },
       {
@@ -104,7 +104,7 @@ function ServiceSchema() {
         "name": "How long does an end of tenancy clean take?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Typically between 3 and 6 hours depending on the size and condition of the property. A standard one-bedroom flat may take around 3 hours, while a larger family home could take a full day. We will give you a clear time estimate when you book."
+          "text": "Typically between 3 and 6 hours depending on the size and condition of the property. A standard one-bedroom flat may take around 3 hours, while a larger family home could take a full day. We will give you a clear time estimate when you book.",
         }
       },
       {
@@ -112,7 +112,7 @@ function ServiceSchema() {
         "name": "Do you offer a re-clean guarantee?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. If your landlord or letting agent flags any missed areas within 48 hours of the clean, we will return to put them right at no extra cost. We stand behind the quality of our work."
+          "text": "Yes. If your landlord or letting agent flags any missed areas within 48 hours of the clean, we will return to put them right at no extra cost. We stand behind the quality of our work.",
         }
       },
       {
@@ -120,10 +120,10 @@ function ServiceSchema() {
         "name": "Can letting agents book directly?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Absolutely. We work with landlords and letting agents across Luton and Bedfordshire on a regular basis, and can set up recurring arrangements for multiple properties. Just get in touch to discuss your portfolio."
-        }
+          "text": "Absolutely. We work with landlords and letting agents across Luton and Bedfordshire on a regular basis, and can set up recurring arrangements for multiple properties. Just get in touch to discuss your portfolio.",
+        },
       }
-    ]
+    ],
   }
 ];
     const scripts: HTMLScriptElement[] = [];
@@ -148,7 +148,7 @@ export default function EndOfTenancyCleaningPage({ onNavigate }: ServicePageProp
     <div>
       <ServiceSchema />
 
-      {/* Band-style hero */}
+      {/* */}
       <section className="relative flex items-center overflow-hidden bg-[#0a1f44] py-10 sm:py-12">
         
         <div className="absolute inset-0 bg-gradient-to-r from-[#0a1f44] via-[#0a1f44]/95 to-[#0a1f44]/60" />
@@ -165,23 +165,23 @@ export default function EndOfTenancyCleaningPage({ onNavigate }: ServicePageProp
               Deposit-back guaranteed cleaning for tenants, landlords and
               letting agents
             </p>
-            <p>
+            <p className="mt-4 text-base text-slate-300">
               Need carpets cleaned too? We also offer professional <button onClick={() => onNavigate("/services/carpet-upholstery-cleaning")} className="font-semibold text-[#3b82f6] hover:text-[#2563eb] underline">carpet and upholstery cleaning</button> across Luton &amp; Bedfordshire.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Main content */}
+      {/* */}
       <section className="bg-white py-8 sm:py-10">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <div className="space-y-6 text-lg leading-relaxed text-slate-600">
+          <div className="space-y-6 text-lg leading-relaxed text-slate-700">
             <p>
               Moving out of a property is stressful enough without the worry of
               whether the clean will pass inspection. Our end of tenancy cleaning
               service is designed to take that pressure off entirely. We carry out
               a comprehensive, top-to-bottom clean of the entire property to the
-              standard that letting agents and landlords expect — covering
+              standard that letting agents and landlords expect, covering
               kitchens, bathrooms, living areas, bedrooms and every detail in
               between.
             </p>
@@ -189,7 +189,7 @@ export default function EndOfTenancyCleaningPage({ onNavigate }: ServicePageProp
               Getting your full deposit back often hinges on the condition the
               property is left in. Landlords and agents look for limescale in
               bathrooms, grease in ovens, dust on skirting boards and marks on
-              surfaces — the kind of things that are easy to miss but costly when
+              surfaces, the kind of things that are easy to miss but costly when
               flagged. A professional end of tenancy clean tackles all of these
               head-on, dramatically improving your chances of a full deposit
               return and avoiding unfair deductions.
@@ -207,7 +207,7 @@ export default function EndOfTenancyCleaningPage({ onNavigate }: ServicePageProp
             <p>
               What sets Prime One Cleaning apart is our checklist-based approach.
               Every end of tenancy clean follows a detailed, room-by-room
-              checklist so that nothing gets missed — from inside the oven and
+              checklist so that nothing gets missed, from inside the oven and
               behind the fridge to skirting boards, light fittings and inside
               cupboards. Our team works through each item methodically, and the
               property isn't finished until every box is ticked. This means when
@@ -219,7 +219,7 @@ export default function EndOfTenancyCleaningPage({ onNavigate }: ServicePageProp
               our teams are fully trained, vetted and insured. Carpet cleaning is
               available as an add-on if the property needs it, and we can tailor
               the scope to match specific agent requirements. With our 48-hour
-              re-clean guarantee, you have complete peace of mind — if anything is
+              re-clean guarantee, you have complete peace of mind, if anything is
               flagged after the clean, we come back and put it right. Book your
               end of tenancy clean with Prime One Cleaning and move on with
               confidence.
@@ -228,7 +228,7 @@ export default function EndOfTenancyCleaningPage({ onNavigate }: ServicePageProp
         </div>
       </section>
 
-      {/* What's included */}
+      {/* */}
       <section className="bg-slate-50 py-8 sm:py-10">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#0a1f44]">What's Included</h2>
@@ -245,7 +245,7 @@ export default function EndOfTenancyCleaningPage({ onNavigate }: ServicePageProp
         </div>
       </section>
 
-      {/* FAQ */}
+      {/* */}
       <section className="bg-white py-6 sm:py-8">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-center text-3xl font-bold text-[#0a1f44]">
@@ -261,7 +261,7 @@ export default function EndOfTenancyCleaningPage({ onNavigate }: ServicePageProp
                   {faq.q}
                   <ChevronDown className="h-5 w-5 shrink-0 text-[#3b82f6] transition-transform group-open:rotate-180" />
                 </summary>
-                <p className="mt-4 text-slate-600">{faq.a}</p>
+                <p className="mt-4 text-slate-700">{faq.a}</p>
               </details>
             ))}
           </div>

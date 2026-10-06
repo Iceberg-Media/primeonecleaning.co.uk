@@ -21,8 +21,8 @@ const faqs = [
   },
   {
     q: "Do you supply your own cleaning equipment and products?",
-    a: "Yes. We bring all our own professional, eco-friendly cleaning equipment and supplies, so there's nothing for you to source or store. If you have specific products you'd prefer us to use — for example in a clinical setting — we're happy to accommodate.",
-  },
+    a: "Yes. We bring all our own professional, eco-friendly cleaning equipment and supplies, so there's nothing for you to source or store. If you have specific products you'd prefer us to use, for example in a clinical setting, we're happy to accommodate.",
+  }
 ];
 
 const included = [
@@ -31,7 +31,7 @@ const included = [
   "Washroom sanitisation and restocking",
   "Floor cleaning and maintenance",
   "Waste removal",
-  "Desk and surface wiping",
+  "Desk and surface wiping"
 ];
 
 function ServiceSchema() {
@@ -55,13 +55,13 @@ function ServiceSchema() {
         "@type": "PostalAddress",
         "addressLocality": "Milton Keynes",
         "addressRegion": "Buckinghamshire",
-        "addressCountry": "GB"
-      }
+        "addressCountry": "GB",
+      },
     },
     "areaServed": [
       "Luton",
       "Bedfordshire"
-    ]
+    ],
   },
   {
     "@context": "https://schema.org",
@@ -71,21 +71,21 @@ function ServiceSchema() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://primeonecleaning.co.uk/"
+        "item": "https://primeonecleaning.co.uk/",
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Services",
-        "item": "https://primeonecleaning.co.uk/services"
+        "item": "https://primeonecleaning.co.uk/services",
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Commercial Cleaning",
-        "item": "https://primeonecleaning.co.uk/services/commercial-cleaning"
+        "item": "https://primeonecleaning.co.uk/services/commercial-cleaning",
       }
-    ]
+    ],
   },
   {
     "@context": "https://schema.org",
@@ -96,7 +96,7 @@ function ServiceSchema() {
         "name": "Can cleaning be scheduled outside business hours?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. We offer early morning, evening and weekend slots so your premises are cleaned at the times that least disrupt your operations. We will agree a schedule that works around your opening hours and staff."
+          "text": "Yes. We offer early morning, evening and weekend slots so your premises are cleaned at the times that least disrupt your operations. We will agree a schedule that works around your opening hours and staff.",
         }
       },
       {
@@ -104,7 +104,7 @@ function ServiceSchema() {
         "name": "Do you offer ongoing contracts or one-off cleans?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Both. We can set up flexible daily, weekly or fortnightly contracts for ongoing maintenance, or carry out one-off deep cleans for things like end-of-lease, post-refurbishment or seasonal refreshes. There is no obligation to commit to a long-term arrangement."
+          "text": "Both. We can set up flexible daily, weekly or fortnightly contracts for ongoing maintenance, or carry out one-off deep cleans for things like end-of-lease, post-refurbishment or seasonal refreshes. There is no obligation to commit to a long-term arrangement.",
         }
       },
       {
@@ -112,7 +112,7 @@ function ServiceSchema() {
         "name": "Is your team DBS-checked and insured?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. Every member of our commercial cleaning team is DBS-checked, fully vetted, trained and insured. We understand that trust and discretion are essential when working in business premises, and we hold ourselves to the highest safeguarding standards."
+          "text": "Yes. Every member of our commercial cleaning team is DBS-checked, fully vetted, trained and insured. We understand that trust and discretion are essential when working in business premises, and we hold ourselves to the highest safeguarding standards.",
         }
       },
       {
@@ -120,10 +120,10 @@ function ServiceSchema() {
         "name": "Do you supply your own cleaning equipment and products?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. We bring all our own professional, eco-friendly cleaning equipment and supplies, so there is nothing for you to source or store. If you have specific products you would prefer us to use, for example in a clinical setting, we are happy to accommodate."
-        }
+          "text": "Yes. We bring all our own professional, eco-friendly cleaning equipment and supplies, so there is nothing for you to source or store. If you have specific products you would prefer us to use, for example in a clinical setting, we are happy to accommodate.",
+        },
       }
-    ]
+    ],
   }
 ];
     const scripts: HTMLScriptElement[] = [];
@@ -148,7 +148,7 @@ export default function CommercialCleaningPage({ onNavigate }: ServicePageProps)
     <div>
       <ServiceSchema />
 
-      {/* Band-style hero */}
+      {/* */}
       <section className="relative flex items-center overflow-hidden bg-[#0a1f44] py-10 sm:py-12">
         
         <div className="absolute inset-0 bg-gradient-to-r from-[#0a1f44] via-[#0a1f44]/95 to-[#0a1f44]/60" />
@@ -164,22 +164,23 @@ export default function CommercialCleaningPage({ onNavigate }: ServicePageProps)
             <p className="mt-4 text-lg text-slate-300 sm:text-xl">
               Reliable, flexible cleaning for offices, clinics, retail and gyms
             </p>
-            <p className="mt-4 text-base text-slate-300"> provide homes with the same high standard through our <button onClick={() => onNavigate("/services/residential-cleaning")} className="font-semibold text-[#3b82f6] hover:text-[#2563eb] underline">residential cleaning services</button> across Luton &amp; Bedfordshire.
+            <p className="mt-4 text-base text-slate-300">
+              We also provide homes with the same high standard through our <button onClick={() => onNavigate("/services/residential-cleaning")} className="font-semibold text-[#3b82f6] hover:text-[#2563eb] underline">residential cleaning services</button> across Luton &amp; Bedfordshire.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Main content */}
+      {/* */}
       <section className="bg-white py-8 sm:py-10">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <div className="space-y-6 text-lg leading-relaxed text-slate-600">
+          <div className="space-y-6 text-lg leading-relaxed text-slate-700">
             <p>
-              A clean premises isn't just about appearances — it's about the
+              A clean premises isn't just about appearances, it's about the
               impression you make on customers, the wellbeing of your staff and
               the smooth day-to-day running of your business. Our commercial
               cleaning service keeps offices, clinics, shops, gyms and salons
-              across Luton and Bedfordshire spotless, hygienic and welcoming,
+              across Luton and Bedfordshire spotless, hygienic and welcoming
               with flexible arrangements built around how you operate.
             </p>
             <p>
@@ -187,7 +188,7 @@ export default function CommercialCleaningPage({ onNavigate }: ServicePageProps)
               need for consistency, reliability and discretion. Businesses
               across Luton and Bedfordshire trust Prime One Cleaning because we
               deliver on all three. We schedule cleaning around your business
-              hours — early mornings, evenings or weekends — so your team and
+              hours, early mornings, evenings or weekends, so your team and
               customers are never disrupted. Our staff are uniformed, vetted and
               DBS-checked, and we assign a consistent cleaning team to your
               premises wherever possible, so the people looking after your
@@ -196,12 +197,12 @@ export default function CommercialCleaningPage({ onNavigate }: ServicePageProps)
             <p>
               Quality is maintained through clear cleaning schedules and regular
               checks, not left to chance. Every visit follows a tailored
-              checklist for your premises, covering reception areas, workspaces,
+              checklist for your premises, covering reception areas, workspaces
               washrooms, kitchens, communal zones and floors. We use
               professional-grade, eco-friendly products throughout, and bring
-              all our own equipment and supplies — so there's nothing for you to
-              manage or store. If your needs change — extra visits during a busy
-              period, a one-off deep clean, or a shift in opening hours — we
+              all our own equipment and supplies, so there's nothing for you to
+              manage or store. If your needs change, extra visits during a busy
+              period, a one-off deep clean, or a shift in opening hours, we
               adapt quickly and without fuss.
             </p>
             <p>
@@ -213,18 +214,19 @@ export default function CommercialCleaningPage({ onNavigate }: ServicePageProps)
               receive a higher standard of hygiene focus, with sanitisation of
               touchpoints, waiting areas and treatment surfaces to meet health
               expectations. <strong className="text-[#0a1f44]">Shops &amp; Retail</strong>{" "}
-              spaces are kept customer-ready, with floors, fitting rooms,
+              spaces are kept customer-ready, with floors, fitting rooms
               displays and staff areas maintained throughout trading. And{" "}
               <strong className="text-[#0a1f44]">Gyms &amp; Salons</strong> get
               the deep, frequent attention high-traffic, high-hygiene
-              environments demand — from equipment wipe-downs to changing room
+              environments demand, from equipment wipe-downs to changing room
               and shower sanitisation.
             </p>
-            <p className="mt-4 text-base text-slate-300"> you need a daily visit, a weekly refresh or a one-off deep
-              clean, we'll build a schedule that fits. Our team is fully insured,
+            <p>
+              Whether you need a daily visit, a weekly refresh or a one-off deep
+              clean, we'll build a schedule that fits. Our team is fully insured
               trained and reliable, and we work with everyone from single-unit
               independents to multi-site operators. With transparent pricing and
-              a free, no-obligation quote, getting started is straightforward —
+              a free, no-obligation quote, getting started is straightforward
               just get in touch and we'll put together a cleaning plan that works
               for your premises and your budget.
             </p>
@@ -232,7 +234,7 @@ export default function CommercialCleaningPage({ onNavigate }: ServicePageProps)
         </div>
       </section>
 
-      {/* What's included */}
+      {/* */}
       <section className="bg-slate-50 py-8 sm:py-10">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#0a1f44]">What's Included</h2>
@@ -249,7 +251,7 @@ export default function CommercialCleaningPage({ onNavigate }: ServicePageProps)
         </div>
       </section>
 
-      {/* FAQ */}
+      {/* */}
       <section className="bg-white py-6 sm:py-8">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-center text-3xl font-bold text-[#0a1f44]">
@@ -265,7 +267,7 @@ export default function CommercialCleaningPage({ onNavigate }: ServicePageProps)
                   {faq.q}
                   <ChevronDown className="h-5 w-5 shrink-0 text-[#3b82f6] transition-transform group-open:rotate-180" />
                 </summary>
-                <p className="mt-4 text-slate-600">{faq.a}</p>
+                <p className="mt-4 text-slate-700">{faq.a}</p>
               </details>
             ))}
           </div>

@@ -41,7 +41,7 @@ export default function AreasPage({ onNavigate }: AreasPageProps) {
       "Hemel Hempstead",
       "Watford",
       "Aylesbury",
-    ],
+    ]
   };
 
   useEffect(() => {
@@ -104,8 +104,8 @@ export default function AreasPage({ onNavigate }: AreasPageProps) {
             ))}
           </div>
 
-          <p className="mt-12 text-center text-lg text-slate-600">
-            Don't see your area listed? We likely still cover it — get in touch
+          <p className="mt-12 text-center text-lg text-slate-700">
+            Don't see your area listed? We likely still cover it, get in touch
             to check availability.
           </p>
         </div>

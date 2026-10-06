@@ -38,13 +38,13 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
                 themselves. What began as a small local team in Luton has grown
                 into a trusted cleaning company serving homes, offices and
                 commercial spaces across Bedfordshire. We built our reputation
-                on three things — trust, high standards and an unwavering
-                attention to detail. Every member of our team is fully trained,
+                on three things, trust, high standards and an unwavering
+                attention to detail. Every member of our team is fully trained
                 vetted and insured, and we use only eco-friendly products that
                 are safe for your family, your staff and the environment. Whether
                 you need a regular domestic clean, a one-off deep clean or a
                 reliable commercial cleaning partner, we tailor every service to
-                fit your space and your schedule. We don't just clean — we care
+                fit your space and your schedule. We don't just clean, we care
                 for the spaces where you live and work, so you can focus on what
                 matters most.
               </p>

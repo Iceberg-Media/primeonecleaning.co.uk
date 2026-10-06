@@ -11,7 +11,7 @@ const services = [
   "After Builders Cleaning",
   "Commercial Cleaning",
   "Carpet & Upholstery Cleaning",
-  "Other",
+  "Other"
 ];
 
 type Status = "idle" | "submitting" | "success" | "error";
@@ -30,7 +30,7 @@ export default function ContactPage({ onNavigate: _onNavigate }: ContactPageProp
       const response = await fetch(BASIN_ENDPOINT, {
         method: "POST",
         body: formData,
-        headers: { Accept: "application/json" },
+        headers: { Accept: "application/json" }
       });
       if (response.ok) {
         form.reset();
@@ -50,7 +50,7 @@ export default function ContactPage({ onNavigate: _onNavigate }: ContactPageProp
         <div className="relative text-center px-4">
           <h1 className="text-4xl font-bold text-white sm:text-5xl">Get In Touch</h1>
           <p className="mt-4 text-lg text-slate-300 sm:text-xl">
-            Request your free, no-obligation quote today — we reply fast
+            Request your free, no-obligation quote today, we reply fast
           </p>
         </div>
       </section>
@@ -216,7 +216,7 @@ export default function ContactPage({ onNavigate: _onNavigate }: ContactPageProp
 
           <div className="mt-8 overflow-hidden rounded-2xl border border-slate-200 shadow-sm">
             <iframe
-              title="Prime One Cleaning service area — Milton Keynes"
+              title="Prime One Cleaning service area, Milton Keynes"
               src="https://www.google.com/maps?q=Milton%20Keynes,MK9%202BQ,UK&output=embed"
               width="100%"
               height="360"
@@ -279,7 +279,7 @@ export default function ContactPage({ onNavigate: _onNavigate }: ContactPageProp
                 closes: "18:00",
               },
             ],
-          }),
+          })
         }}
       />
     </div>

@@ -6,7 +6,7 @@ import {
   HardHat,
   Building2,
   Sofa,
-  ArrowRight,
+  ArrowRight
 } from "lucide-react";
 import CtaBlock from "@/components/CtaBlock";
 
@@ -39,7 +39,7 @@ const services = [
     icon: Sofa,
     title: "Carpet & Upholstery Cleaning",
     slug: "carpet-upholstery-cleaning",
-  },
+  }
 ];
 
 function AreaSchema() {
@@ -63,7 +63,7 @@ function AreaSchema() {
       "@type": "LocalBusiness",
       name: "Prime One Cleaning",
       description:
-        "Cleaning Services Dunstable — professional residential and commercial cleaning for homes and businesses across Dunstable.",
+        "Cleaning Services Dunstable, professional residential and commercial cleaning for homes and businesses across Dunstable.",
       telephone: "07512 345 678",
       areaServed: {
         "@type": "City",
@@ -85,7 +85,7 @@ function AreaSchema() {
           description:
             "Reliable residential and commercial cleaning for homes and businesses across Dunstable.",
         },
-      },
+      }
     };
 
     const script = document.createElement("script");
@@ -103,21 +103,21 @@ function AreaSchema() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://primeonecleaning.co.uk/"
+        "item": "https://primeonecleaning.co.uk/",
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Areas We Cover",
-        "item": "https://primeonecleaning.co.uk/areas"
+        "item": "https://primeonecleaning.co.uk/areas",
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Dunstable",
-        "item": "https://primeonecleaning.co.uk/areas/dunstable"
+        "item": "https://primeonecleaning.co.uk/areas/dunstable",
       }
-    ]
+    ],
   }
 ];
     const breadcrumbScript = document.createElement("script");
@@ -143,7 +143,7 @@ export default function DunstableAreaPage({ onNavigate }: AreaPageProps) {
     <div>
       <AreaSchema />
 
-      {/* Band-style hero */}
+      {/* Service icons row */}
       <section className="relative flex items-center overflow-hidden bg-[#0a1f44] py-10 sm:py-12">
         
         <div className="absolute inset-0 bg-gradient-to-r from-[#0a1f44] via-[#0a1f44]/95 to-[#0a1f44]/60" />
@@ -160,23 +160,23 @@ export default function DunstableAreaPage({ onNavigate }: AreaPageProps) {
               Reliable residential and commercial cleaning for homes and
               businesses across Dunstable
             </p>
-            <p className="mt-4 text-base text-slate-300"> for <strong>cleaning services near me</strong> in Dunstable? As a locally based company, Prime One Cleaning offers reliable <strong>local cleaners in Dunstable</strong> who know the area and can reach you quickly. Whether you need a one-off deep clean, a regular weekly schedule or an end of tenancy clean, our insured and vetted team delivers consistent, high-quality results every time.
+            <p className="mt-4 text-base text-slate-300">Searching for <strong>cleaning services near me</strong> in Dunstable? As a locally based company, Prime One Cleaning offers reliable <strong>local cleaners in Dunstable</strong> who know the area and can reach you quickly. Whether you need a one-off deep clean, a regular weekly schedule or an end of tenancy clean, our insured and vetted team delivers consistent, high-quality results every time.
             </p>
-            <p className="mt-4 text-base text-slate-300"> for a specific service in Dunstable? Explore our <button onClick={() => onNavigate("/services/after-builders-cleaning")} className="font-semibold text-[#3b82f6] hover:text-[#2563eb] underline">after builders cleaning</button> designed for homes and businesses across the area.
+            <p className="mt-4 text-base text-slate-300">Looking for a specific service in Dunstable? Explore our <button onClick={() => onNavigate("/services/after-builders-cleaning")} className="font-semibold text-[#3b82f6] hover:text-[#2563eb] underline">after builders cleaning</button> designed for homes and businesses across the area.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Main content */}
+      {/* Service icons row */}
       <section className="bg-white py-8 sm:py-10">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <div className="prose-content space-y-6 text-lg leading-relaxed text-slate-600">
+          <div className="prose-content space-y-6 text-lg leading-relaxed text-slate-700">
             <p>
               Prime One Cleaning brings trusted, professional cleaning services
               to homes and businesses right across Dunstable. Sitting just a
               stone's throw from our Luton base, Dunstable is a close neighbour
-              we know well — a growing town with a pleasant mix of established
+              we know well, a growing town with a pleasant mix of established
               residential estates, modern developments and a busy stretch of
               local businesses along the high street and surrounding industrial
               parks. Our cleaners know the area inside out, from family homes in
@@ -191,15 +191,15 @@ export default function DunstableAreaPage({ onNavigate }: AreaPageProps) {
               town's commercial units, we arrive prepared and ready to deliver a
               spotless finish every time. Every cleaner on our team is fully
               insured, DBS-checked and trained to the same high standard, so
-              whether you need a regular weekly home clean, a one-off deep clean,
+              whether you need a regular weekly home clean, a one-off deep clean
               an end-of-tenancy handover or a commercial contract for your office
               or shop, you can book with complete confidence.
             </p>
             <p>
               Being so close to Luton means we can offer Dunstable customers the
-              same quick response, flexible appointment times and friendly,
+              same quick response, flexible appointment times and friendly
               reliable service as our home-town clients. Get in touch today for a
-              free, no-obligation quote — we'll help you find the right cleaning
+              free, no-obligation quote, we'll help you find the right cleaning
               solution for your home or business in Dunstable.
             </p>
           </div>
@@ -212,7 +212,7 @@ export default function DunstableAreaPage({ onNavigate }: AreaPageProps) {
           <h2 className="text-center text-3xl font-bold text-[#0a1f44]">
             Our Cleaning Services in Dunstable
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-center text-lg text-slate-600">
+          <p className="mx-auto mt-4 max-w-2xl text-center text-lg text-slate-700">
             Whatever your cleaning needs, we have a service to match.
           </p>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

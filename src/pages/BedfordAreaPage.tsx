@@ -6,7 +6,7 @@ import {
   HardHat,
   Building2,
   Sofa,
-  ArrowRight,
+  ArrowRight
 } from "lucide-react";
 import CtaBlock from "@/components/CtaBlock";
 
@@ -39,7 +39,7 @@ const services = [
     icon: Sofa,
     title: "Carpet & Upholstery Cleaning",
     slug: "carpet-upholstery-cleaning",
-  },
+  }
 ];
 
 function AreaSchema() {
@@ -63,7 +63,7 @@ function AreaSchema() {
       "@type": "LocalBusiness",
       name: "Prime One Cleaning",
       description:
-        "Cleaning Services Bedford — professional residential and commercial cleaning for homes and businesses across Bedford.",
+        "Cleaning Services Bedford, professional residential and commercial cleaning for homes and businesses across Bedford.",
       telephone: "07512 345 678",
       areaServed: {
         "@type": "City",
@@ -85,7 +85,7 @@ function AreaSchema() {
           description:
             "Reliable residential and commercial cleaning for homes and businesses across Bedford.",
         },
-      },
+      }
     };
 
     const script = document.createElement("script");
@@ -103,21 +103,21 @@ function AreaSchema() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://primeonecleaning.co.uk/"
+        "item": "https://primeonecleaning.co.uk/",
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Areas We Cover",
-        "item": "https://primeonecleaning.co.uk/areas"
+        "item": "https://primeonecleaning.co.uk/areas",
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Bedford",
-        "item": "https://primeonecleaning.co.uk/areas/bedford"
+        "item": "https://primeonecleaning.co.uk/areas/bedford",
       }
-    ]
+    ],
   }
 ];
     const breadcrumbScript = document.createElement("script");
@@ -143,7 +143,7 @@ export default function BedfordAreaPage({ onNavigate }: AreaPageProps) {
     <div>
       <AreaSchema />
 
-      {/* Band-style hero */}
+      {/* Service icons row */}
       <section className="relative flex items-center overflow-hidden bg-[#0a1f44] py-10 sm:py-12">
         
         <div className="absolute inset-0 bg-gradient-to-r from-[#0a1f44] via-[#0a1f44]/95 to-[#0a1f44]/60" />
@@ -160,26 +160,26 @@ export default function BedfordAreaPage({ onNavigate }: AreaPageProps) {
               Reliable residential and commercial cleaning for homes and
               businesses across Bedford
             </p>
-            <p className="mt-4 text-base text-slate-300"> for <strong>cleaning services near me</strong> in Bedford? As a locally based company, Prime One Cleaning offers reliable <strong>local cleaners in Bedford</strong> who know the area and can reach you quickly. Whether you need a one-off deep clean, a regular weekly schedule or an end of tenancy clean, our insured and vetted team delivers consistent, high-quality results every time.
+            <p className="mt-4 text-base text-slate-300">Searching for <strong>cleaning services near me</strong> in Bedford? As a locally based company, Prime One Cleaning offers reliable <strong>local cleaners in Bedford</strong> who know the area and can reach you quickly. Whether you need a one-off deep clean, a regular weekly schedule or an end of tenancy clean, our insured and vetted team delivers consistent, high-quality results every time.
             </p>
-            <p className="mt-4 text-base text-slate-300"> for a specific service in Bedford? Explore our <button onClick={() => onNavigate("/services/end-of-tenancy-cleaning")} className="font-semibold text-[#3b82f6] hover:text-[#2563eb] underline">end of tenancy cleaning</button> designed for homes and businesses across the area.
+            <p className="mt-4 text-base text-slate-300">Looking for a specific service in Bedford? Explore our <button onClick={() => onNavigate("/services/end-of-tenancy-cleaning")} className="font-semibold text-[#3b82f6] hover:text-[#2563eb] underline">end of tenancy cleaning</button> designed for homes and businesses across the area.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Main content */}
+      {/* Service icons row */}
       <section className="bg-white py-8 sm:py-10">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <div className="prose-content space-y-6 text-lg leading-relaxed text-slate-600">
+          <div className="prose-content space-y-6 text-lg leading-relaxed text-slate-700">
             <p>
               Prime One Cleaning brings trusted, professional cleaning services
               to homes and businesses right across Bedford. As a historic market
               town with a rich heritage, Bedford blends charming residential
               streets, period properties and a thriving town centre full of
               independent shops, cafes and offices. Our cleaners know the area
-              well — from the riverside homes along the Great Ouse to the busy
-              commercial premises around the High Street — and we tailor every
+              well, from the riverside homes along the Great Ouse to the busy
+              commercial premises around the High Street, and we tailor every
               clean to suit the character of your space.
             </p>
             <p>
@@ -200,7 +200,7 @@ export default function BedfordAreaPage({ onNavigate }: AreaPageProps) {
               live and work in and around Bedford, we can offer flexible
               appointment times, quick response on short-notice bookings and a
               friendly, reliable service you'll want to come back to. Get in
-              touch today for a free, no-obligation quote — we'll help you find
+              touch today for a free, no-obligation quote, we'll help you find
               the right cleaning solution for your home or business in Bedford.
             </p>
           </div>
@@ -213,7 +213,7 @@ export default function BedfordAreaPage({ onNavigate }: AreaPageProps) {
           <h2 className="text-center text-3xl font-bold text-[#0a1f44]">
             Our Cleaning Services in Bedford
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-center text-lg text-slate-600">
+          <p className="mx-auto mt-4 max-w-2xl text-center text-lg text-slate-700">
             Whatever your cleaning needs, we have a service to match.
           </p>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

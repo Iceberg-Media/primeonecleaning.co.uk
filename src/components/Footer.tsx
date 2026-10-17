@@ -56,7 +56,7 @@ export default function Footer({ onNavigate }: FooterProps) {
             <p className="mt-4 max-w-[260px] text-sm text-slate-300">
               Professional cleaning services you can trust.
               <br />
-              Clean spaces, better places.
+              Creating Cleaner Spaces for a Better Tomorrow.
             </p>
             <div className="mt-5 flex items-center gap-3">
               <a

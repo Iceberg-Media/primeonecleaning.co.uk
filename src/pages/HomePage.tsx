@@ -69,6 +69,8 @@ const whyChoose = [
   "Honest pricing with no hidden fees",
   "Satisfaction guaranteed",
   "Local company that cares",
+  "Tailored to your needs",
+  "Trusted by businesses & hosts",
 ];
 
 export default function HomePage({ onNavigate }: HomePageProps) {

@@ -1,4 +1,4 @@
-import { ArrowRight, Image } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import TrustBar from "@/components/TrustBar";
 import CtaBlock from "@/components/CtaBlock";
 
@@ -57,10 +57,11 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
               </button>
             </div>
             <div className="relative">
-              <div className="flex h-full min-h-[24rem] w-full flex-col items-center justify-center overflow-hidden rounded-2xl bg-slate-100 shadow-xl">
-                <Image className="h-12 w-12 text-slate-300" />
-                <p className="mt-3 text-sm text-slate-400">Photo coming soon</p>
-              </div>
+              <img
+                src="/momo_air-cleaning-services-9663247.jpg"
+                alt="Prime One Cleaning team cleaning office windows in Milton Keynes"
+                className="h-full min-h-[24rem] w-full rounded-2xl object-cover object-top shadow-xl"
+              />
               <div className="absolute -bottom-6 -left-6 hidden rounded-xl bg-[#0a1f44] px-6 py-4 shadow-xl ring-1 ring-black/5 sm:block">
                 <p className="text-2xl font-bold text-white">100%</p>
                 <p className="text-sm text-slate-300">Satisfaction guaranteed</p>

@@ -47,7 +47,7 @@ function AreaSchema() {
     document.title = "Cleaning Services in Luton | Prime One Cleaning";
 
     const metaDesc =
-      "Professional cleaning services in Luton. Local, trained, insured cleaners for homes and businesses. Free quotes. Call 07512 345 678.";
+      "Professional cleaning services in Luton. Local, trained, insured cleaners for homes and businesses. Free quotes. Call 07432 625688.";
     let meta = document.querySelector(
       'meta[name="description"]'
     ) as HTMLMetaElement | null;
@@ -64,7 +64,7 @@ function AreaSchema() {
       name: "Prime One Cleaning",
       description:
         "Cleaning Services Luton, professional residential and commercial cleaning for homes and businesses across Luton.",
-      telephone: "07512 345 678",
+      telephone: "07432 625688",
       areaServed: {
         "@type": "City",
         name: "Luton",

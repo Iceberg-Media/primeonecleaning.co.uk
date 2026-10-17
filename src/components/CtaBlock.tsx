@@ -19,11 +19,11 @@ export default function CtaBlock({ onNavigate, variant = "dark" }: CtaBlockProps
         </p>
         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
-            href="tel:07512345678"
+            href="tel:07432625688"
             className={isLight ? "flex items-center gap-2 rounded-xl border border-[#0a1f44] px-6 py-3.5 text-base font-semibold text-[#0a1f44] transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-[#0a1f44]/5 hover:shadow-lg" : "flex items-center gap-2 rounded-xl bg-white px-6 py-3.5 text-base font-semibold text-[#0a1f44] transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-slate-100 hover:shadow-lg"}
           >
             <Phone className="h-5 w-5" />
-            07512 345 678
+            07432 625688
           </a>
           <button
             onClick={() => onNavigate("/contact")}

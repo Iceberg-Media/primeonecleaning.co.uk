@@ -48,7 +48,7 @@ function AreaSchema() {
       "Cleaning Services in Hemel Hempstead | Prime One Cleaning";
 
     const metaDesc =
-      "Professional cleaning services in Hemel Hempstead. Trained, insured local cleaners for homes and businesses. Free quotes. Call 07512 345 678.";
+      "Professional cleaning services in Hemel Hempstead. Trained, insured local cleaners for homes and businesses. Free quotes. Call 07432 625688.";
     let meta = document.querySelector(
       'meta[name="description"]'
     ) as HTMLMetaElement | null;
@@ -65,7 +65,7 @@ function AreaSchema() {
       name: "Prime One Cleaning",
       description:
         "Cleaning Services Hemel Hempstead, professional residential and commercial cleaning for homes and businesses across Hemel Hempstead.",
-      telephone: "07512 345 678",
+      telephone: "07432 625688",
       areaServed: {
         "@type": "City",
         name: "Hemel Hempstead",

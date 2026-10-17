@@ -129,7 +129,7 @@ export default function Footer({ onNavigate }: FooterProps) {
             <ul className="mt-4 space-y-3 text-sm text-slate-300">
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-[#60a5fa]" />
-                <a href="tel:07512345678" className="hover:text-white">07512 345 678</a>
+                <a href="tel:07432625688" className="hover:text-white">07432 625688</a>
               </li>
               <li className="flex items-center gap-2">
                 <MapPin className="h-4 w-4 text-[#60a5fa]" />

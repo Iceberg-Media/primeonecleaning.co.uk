@@ -41,7 +41,7 @@ const SEO_MAP: Record<string, SeoEntry> = {
   "/": {
     title: "Prime One Cleaning | Professional Cleaning Services in Luton & Bedfordshire",
     description:
-      "Professional cleaning services for homes & offices in Luton & Bedfordshire. Fully insured team. Call 07512 345 678 for a free quote today.",
+      "Professional cleaning services for homes & offices in Luton & Bedfordshire. Fully insured team. Call 07432 625688 for a free quote today.",
     ogType: "website",
   },
   "/about": {
@@ -57,27 +57,27 @@ const SEO_MAP: Record<string, SeoEntry> = {
   "/services/residential-cleaning": {
     title: "Residential Cleaning in Luton & Bedfordshire | Prime One Cleaning",
     description:
-      "Professional residential cleaning for homes in Luton & Bedfordshire. Regular, deep and one-off cleans by insured staff. Call 07512 345 678.",
+      "Professional residential cleaning for homes in Luton & Bedfordshire. Regular, deep and one-off cleans by insured staff. Call 07432 625688.",
   },
   "/services/end-of-tenancy-cleaning": {
     title: "End of Tenancy Cleaning in Luton & Bedfordshire | Prime One Cleaning",
     description:
-      "Thorough end of tenancy cleaning in Luton & Bedfordshire. Get your full deposit back. Free quote, call 07512 345 678 today.",
+      "Thorough end of tenancy cleaning in Luton & Bedfordshire. Get your full deposit back. Free quote, call 07432 625688 today.",
   },
   "/services/after-builders-cleaning": {
     title: "After Builders Cleaning in Luton & Bedfordshire | Prime One Cleaning",
     description:
-      "Post-construction and renovation cleaning in Luton & Bedfordshire. Dust & debris removal by insured professionals. Call 07512 345 678.",
+      "Post-construction and renovation cleaning in Luton & Bedfordshire. Dust & debris removal by insured professionals. Call 07432 625688.",
   },
   "/services/commercial-cleaning": {
     title: "Commercial Cleaning in Luton & Bedfordshire | Prime One Cleaning",
     description:
-      "Office, clinic, retail & gym cleaning in Luton & Bedfordshire. Reliable commercial cleaning contracts. Call 07512 345 678 for a free quote.",
+      "Office, clinic, retail & gym cleaning in Luton & Bedfordshire. Reliable commercial cleaning contracts. Call 07432 625688 for a free quote.",
   },
   "/services/carpet-upholstery-cleaning": {
     title: "Carpet & Upholstery Cleaning in Luton & Bedfordshire | Prime One Cleaning",
     description:
-      "Carpet, rug & upholstery cleaning in Luton & Bedfordshire. Deep clean by insured professionals. Call 07512 345 678 for a free quote.",
+      "Carpet, rug & upholstery cleaning in Luton & Bedfordshire. Deep clean by insured professionals. Call 07432 625688 for a free quote.",
   },
   "/areas": {
     title: "Areas We Cover | Prime One Cleaning",
@@ -87,52 +87,52 @@ const SEO_MAP: Record<string, SeoEntry> = {
   "/areas/milton-keynes": {
     title: "Cleaning Services in Milton Keynes | Prime One Cleaning",
     description:
-      "Professional cleaning services in Milton Keynes. Residential, commercial & end of tenancy cleaning. Call 07512 345 678 for a free quote.",
+      "Professional cleaning services in Milton Keynes. Residential, commercial & end of tenancy cleaning. Call 07432 625688 for a free quote.",
   },
   "/areas/bedford": {
     title: "Cleaning Services in Bedford | Prime One Cleaning",
     description:
-      "Professional cleaning services in Bedford. Residential, commercial & end of tenancy cleaning. Call 07512 345 678 for a free quote.",
+      "Professional cleaning services in Bedford. Residential, commercial & end of tenancy cleaning. Call 07432 625688 for a free quote.",
   },
   "/areas/leighton-buzzard": {
     title: "Cleaning Services in Leighton Buzzard | Prime One Cleaning",
     description:
-      "Professional cleaning services in Leighton Buzzard. Residential, commercial & end of tenancy cleaning. Call 07512 345 678 for a free quote.",
+      "Professional cleaning services in Leighton Buzzard. Residential, commercial & end of tenancy cleaning. Call 07432 625688 for a free quote.",
   },
   "/areas/luton": {
     title: "Cleaning Services in Luton | Prime One Cleaning",
     description:
-      "Professional cleaning services in Luton. Residential, commercial & end of tenancy cleaning. Call 07512 345 678 for a free quote.",
+      "Professional cleaning services in Luton. Residential, commercial & end of tenancy cleaning. Call 07432 625688 for a free quote.",
   },
   "/areas/dunstable": {
     title: "Cleaning Services in Dunstable | Prime One Cleaning",
     description:
-      "Professional cleaning services in Dunstable. Residential, commercial & end of tenancy cleaning. Call 07512 345 678 for a free quote.",
+      "Professional cleaning services in Dunstable. Residential, commercial & end of tenancy cleaning. Call 07432 625688 for a free quote.",
   },
   "/areas/hitchin": {
     title: "Cleaning Services in Hitchin | Prime One Cleaning",
     description:
-      "Professional cleaning services in Hitchin. Residential, commercial & end of tenancy cleaning. Call 07512 345 678 for a free quote.",
+      "Professional cleaning services in Hitchin. Residential, commercial & end of tenancy cleaning. Call 07432 625688 for a free quote.",
   },
   "/areas/st-albans": {
     title: "Cleaning Services in St Albans | Prime One Cleaning",
     description:
-      "Professional cleaning services in St Albans. Residential, commercial & end of tenancy cleaning. Call 07512 345 678 for a free quote.",
+      "Professional cleaning services in St Albans. Residential, commercial & end of tenancy cleaning. Call 07432 625688 for a free quote.",
   },
   "/areas/hemel-hempstead": {
     title: "Cleaning Services in Hemel Hempstead | Prime One Cleaning",
     description:
-      "Professional cleaning services in Hemel Hempstead. Residential, commercial & end of tenancy cleaning. Call 07512 345 678 for a free quote.",
+      "Professional cleaning services in Hemel Hempstead. Residential, commercial & end of tenancy cleaning. Call 07432 625688 for a free quote.",
   },
   "/areas/watford": {
     title: "Cleaning Services in Watford | Prime One Cleaning",
     description:
-      "Professional cleaning services in Watford. Residential, commercial & end of tenancy cleaning. Call 07512 345 678 for a free quote.",
+      "Professional cleaning services in Watford. Residential, commercial & end of tenancy cleaning. Call 07432 625688 for a free quote.",
   },
   "/areas/aylesbury": {
     title: "Cleaning Services in Aylesbury | Prime One Cleaning",
     description:
-      "Professional cleaning services in Aylesbury. Residential, commercial & end of tenancy cleaning. Call 07512 345 678 for a free quote.",
+      "Professional cleaning services in Aylesbury. Residential, commercial & end of tenancy cleaning. Call 07432 625688 for a free quote.",
   },
   "/gallery": {
     title: "Gallery | Prime One Cleaning",
@@ -142,12 +142,12 @@ const SEO_MAP: Record<string, SeoEntry> = {
   "/reviews": {
     title: "Customer Reviews | Prime One Cleaning",
     description:
-      "Read what our clients say about Prime One Cleaning. Happy customers across Luton & Bedfordshire. Call 07512 345 678 for a free quote.",
+      "Read what our clients say about Prime One Cleaning. Happy customers across Luton & Bedfordshire. Call 07432 625688 for a free quote.",
   },
   "/contact": {
     title: "Contact Us | Prime One Cleaning",
     description:
-      "Contact Prime One Cleaning for a free, no-obligation quote. Call 07512 345 678. We reply fast!",
+      "Contact Prime One Cleaning for a free, no-obligation quote. Call 07432 625688. We reply fast!",
   },
   "/privacy-policy": {
     title: "Privacy Policy | Prime One Cleaning",

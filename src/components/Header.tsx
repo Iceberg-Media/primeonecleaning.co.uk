@@ -174,11 +174,11 @@ export default function Header({ currentPath, onNavigate }: HeaderProps) {
 
         <div className="hidden items-center gap-4 md:flex">
           <a
-            href="tel:07512345678"
+            href="tel:07432625688"
             className="flex items-center gap-2 text-sm font-medium text-[#0a1f44] transition-colors hover:text-[#3b82f6]"
           >
             <Phone className="h-4 w-4" />
-            07512 345 678
+            07432 625688
           </a>
           <button
             onClick={() => go("/contact")}
@@ -190,7 +190,7 @@ export default function Header({ currentPath, onNavigate }: HeaderProps) {
 
         <div className="flex items-center gap-3 md:hidden">
           <a
-            href="tel:07512345678"
+            href="tel:07432625688"
             className="flex items-center gap-1.5 text-sm font-medium text-[#0a1f44] transition-colors hover:text-[#3b82f6]"
             aria-label="Call us"
           >
@@ -228,9 +228,9 @@ export default function Header({ currentPath, onNavigate }: HeaderProps) {
 
           {/* Contact info bar */}
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2 border-b border-white/10 px-4 py-3 text-sm text-slate-300">
-            <a href="tel:07512345678" className="flex items-center gap-1.5 text-white">
+            <a href="tel:07432625688" className="flex items-center gap-1.5 text-white">
               <Phone className="h-4 w-4 text-[#60a5fa]" />
-              07512 345 678
+              07432 625688
             </a>
             <span className="flex items-center gap-1.5">
               <Clock className="h-4 w-4 text-[#60a5fa]" />

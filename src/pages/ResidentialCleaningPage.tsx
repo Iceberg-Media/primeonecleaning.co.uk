@@ -52,7 +52,7 @@ function ServiceSchema() {
     "provider": {
       "@type": "LocalBusiness",
       "name": "Prime One Cleaning",
-      "telephone": "07512 345 678",
+      "telephone": "07432 625688",
       "areaServed": [
         "Luton",
         "Bedfordshire"

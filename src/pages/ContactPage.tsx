@@ -75,7 +75,7 @@ export default function ContactPage({ onNavigate: _onNavigate }: ContactPageProp
               ) : status === "error" ? (
                 <div className="mt-6 rounded-lg bg-red-50 border border-red-200 p-6 text-center">
                   <p className="text-red-800 font-semibold">
-                    Sorry, something went wrong. Please try again or call us on 07512 345 678.
+                    Sorry, something went wrong. Please try again or call us on 07432 625688.
                   </p>
                 </div>
               ) : (
@@ -183,8 +183,8 @@ export default function ContactPage({ onNavigate: _onNavigate }: ContactPageProp
                     </span>
                     <div>
                       <p className="text-sm text-slate-500">Phone</p>
-                      <a href="tel:07512345678" className="text-lg font-semibold text-[#0a1f44] hover:text-[#3b82f6]">
-                        07512 345 678
+                      <a href="tel:07432625688" className="text-lg font-semibold text-[#0a1f44] hover:text-[#3b82f6]">
+                        07432 625688
                       </a>
                     </div>
                   </li>
@@ -238,7 +238,7 @@ export default function ContactPage({ onNavigate: _onNavigate }: ContactPageProp
             name: "Prime One Cleaning",
             legalName: "Prime One Cleaning Ltd",
             description: "Professional cleaning services for homes, offices and commercial spaces in Luton & Bedfordshire.",
-            telephone: "07512345678",
+            telephone: "07432625688",
             url: "https://primeonecleaning.co.uk",
             image: "https://primeonecleaning.co.uk/WhatsApp_Image_2026-07-30_at_13.16.18.jpeg",
             logo: "https://primeonecleaning.co.uk/WhatsApp_Image_2026-07-30_at_13.16.18.jpeg",

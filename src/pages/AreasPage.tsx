@@ -28,7 +28,7 @@ export default function AreasPage({ onNavigate }: AreasPageProps) {
     "@type": "LocalBusiness",
     name: "Prime One Cleaning",
     description: "Professional cleaning services across Luton, Bedfordshire and surrounding areas.",
-    telephone: "07512345678",
+    telephone: "07432625688",
     url: "https://primeonecleaning.co.uk",
     areaServed: [
       "Luton",

@@ -100,7 +100,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
                 <ArrowRight className="h-5 w-5" />
               </button>
               <a
-                href="tel:07512345678"
+                href="tel:07432625688"
                 className="flex items-center justify-center gap-2 rounded-xl border border-white/40 px-7 py-4 text-base font-semibold text-white transition-all duration-200 ease-out hover:bg-white/10"
               >
                 <Phone className="h-5 w-5" />
@@ -244,11 +244,11 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               </p>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <a
-                  href="tel:07512345678"
+                  href="tel:07432625688"
                   className="flex items-center justify-center gap-2 rounded-xl bg-white px-6 py-3.5 text-base font-semibold text-[#0a1f44] transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-slate-100 hover:shadow-lg"
                 >
                   <Phone className="h-5 w-5" />
-                  07512 345 678
+                  07432 625688
                 </a>
                 <button
                   onClick={() => onNavigate("/contact")}
@@ -313,7 +313,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             name: "Prime One Cleaning",
             legalName: "Prime One Cleaning Ltd",
             description: "Professional cleaning services for homes, offices and commercial spaces in Luton & Bedfordshire. Residential, end of tenancy, after builders, commercial and carpet cleaning.",
-            telephone: "07512345678",
+            telephone: "07432625688",
             url: "https://primeonecleaning.co.uk",
             image: "https://primeonecleaning.co.uk/WhatsApp_Image_2026-07-30_at_13.16.18.jpeg",
             logo: "https://primeonecleaning.co.uk/WhatsApp_Image_2026-07-30_at_13.16.18.jpeg",

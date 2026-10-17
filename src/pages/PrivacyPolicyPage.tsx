@@ -122,10 +122,10 @@ export default function PrivacyPolicyPage({ onNavigate }: PrivacyPolicyPageProps
                 If you have any questions about this Privacy Policy or how we
                 handle your information, please contact us at{" "}
                 <a
-                  href="tel:07512345678"
+                  href="tel:07432625688"
                   className="font-semibold text-[#3b82f6] hover:text-[#2563eb]"
                 >
-                  07512 345 678
+                  07432 625688
                 </a>
                 .
               </p>

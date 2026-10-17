@@ -113,10 +113,10 @@ export default function TermsConditionsPage({ onNavigate }: TermsConditionsPageP
                 If you have any questions about these Terms &amp; Conditions,
                 please contact us at{" "}
                 <a
-                  href="tel:07512345678"
+                  href="tel:07432625688"
                   className="font-semibold text-[#3b82f6] hover:text-[#2563eb]"
                 >
-                  07512 345 678
+                  07432 625688
                 </a>
                 .
               </p>

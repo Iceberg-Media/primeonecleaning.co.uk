@@ -47,7 +47,7 @@ function AreaSchema() {
     document.title = "Cleaning Services in Aylesbury | Prime One Cleaning";
 
     const metaDesc =
-      "Professional cleaning services in Aylesbury. Trained, insured local cleaners for homes and businesses. Free quotes. Call 07512 345 678.";
+      "Professional cleaning services in Aylesbury. Trained, insured local cleaners for homes and businesses. Free quotes. Call 07432 625688.";
     let meta = document.querySelector(
       'meta[name="description"]'
     ) as HTMLMetaElement | null;
@@ -64,7 +64,7 @@ function AreaSchema() {
       name: "Prime One Cleaning",
       description:
         "Cleaning Services Aylesbury, professional residential and commercial cleaning for homes and businesses across Aylesbury.",
-      telephone: "07512 345 678",
+      telephone: "07432 625688",
       areaServed: {
         "@type": "City",
         name: "Aylesbury",

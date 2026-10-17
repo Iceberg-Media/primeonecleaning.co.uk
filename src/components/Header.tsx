@@ -100,22 +100,22 @@ export default function Header({ currentPath, onNavigate }: HeaderProps) {
       </div>
       {/* Main nav row */}
       <div className="bg-white">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8" style={{ height: "95px" }}>
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8" style={{ height: "120px" }}>
         <button
           onClick={() => go("/")}
           className="flex shrink-0 items-center border-0 bg-transparent p-0 outline-none"
-          style={{ height: "95px" }}
+          style={{ height: "120px" }}
           aria-label="Prime One Cleaning home"
         >
           <img
             src="/WhatsApp_Image_2026-07-30_at_13.16.18.jpeg"
             alt="Prime One Cleaning Ltd"
             className="object-contain"
-            style={{ height: "88px", width: "auto", maxWidth: "220px", mixBlendMode: "multiply" }}
+            style={{ height: "112px", width: "auto", maxWidth: "260px", mixBlendMode: "multiply" }}
           />
         </button>
 
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-6 md:flex">
           {navItems.map((item) =>
             "dropdown" in item && item.dropdown ? (
               <div key={item.path} className="group relative">
@@ -174,7 +174,7 @@ export default function Header({ currentPath, onNavigate }: HeaderProps) {
           )}
         </nav>
 
-        <div className="hidden items-center gap-4 md:flex">
+        <div className="hidden items-center gap-4 pl-4 md:flex">
           <a
             href="tel:07432625688"
             className="flex items-center gap-2 text-sm font-medium text-[#0a1f44] transition-colors hover:text-[#3b82f6]"

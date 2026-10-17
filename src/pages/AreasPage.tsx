@@ -27,7 +27,7 @@ export default function AreasPage({ onNavigate }: AreasPageProps) {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "Prime One Cleaning",
-    description: "Professional cleaning services across Luton, Bedfordshire and surrounding areas.",
+    description: "Professional cleaning services across Milton Keynes and surrounding areas.",
     telephone: "07432625688",
     url: "https://primeonecleaning.co.uk",
     areaServed: [
@@ -70,8 +70,8 @@ export default function AreasPage({ onNavigate }: AreasPageProps) {
               Areas We Cover
             </h1>
             <p className="mt-4 text-lg text-slate-300 sm:text-xl">
-              Proudly serving homes and businesses across Luton &amp;
-              Bedfordshire
+              Proudly serving homes and businesses across Milton Keynes &amp;
+              Surrounding Areas
             </p>
           </div>
         </div>

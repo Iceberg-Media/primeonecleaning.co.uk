@@ -78,7 +78,7 @@ export default function Header({ currentPath, onNavigate }: HeaderProps) {
           <div className="flex items-center gap-3 sm:gap-5">
             <span className="flex items-center gap-1.5">
               <MapPin className="h-3.5 w-3.5 text-[#60a5fa]" />
-              Luton &amp; Bedfordshire
+              Milton Keynes &amp; Surrounding Areas
             </span>
             <span className="hidden items-center gap-1.5 sm:flex">
               <Clock className="h-3.5 w-3.5 text-[#60a5fa]" />

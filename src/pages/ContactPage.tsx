@@ -204,7 +204,7 @@ export default function ContactPage({ onNavigate: _onNavigate }: ContactPageProp
                     <div>
                       <p className="text-sm text-slate-500">Service Area</p>
                       <p className="text-lg font-semibold text-[#0a1f44]">
-                        Proudly serving Luton &amp; Bedfordshire
+                        Proudly serving Milton Keynes &amp; Surrounding Areas
                       </p>
                     </div>
                   </li>
@@ -237,7 +237,7 @@ export default function ContactPage({ onNavigate: _onNavigate }: ContactPageProp
             "@type": "LocalBusiness",
             name: "Prime One Cleaning",
             legalName: "Prime One Cleaning Ltd",
-            description: "Professional cleaning services for homes, offices and commercial spaces in Luton & Bedfordshire.",
+            description: "Professional cleaning services for homes, offices and commercial spaces in Milton Keynes & Surrounding Areas.",
             telephone: "07432625688",
             url: "https://primeonecleaning.co.uk",
             image: "https://primeonecleaning.co.uk/WhatsApp_Image_2026-07-30_at_13.16.18.jpeg",

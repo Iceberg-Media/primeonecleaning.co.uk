@@ -89,7 +89,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               <span className="hidden md:inline">
                 <br />
               </span>
-              and commercial spaces in Luton &amp; Bedfordshire.
+              and commercial spaces in Milton Keynes &amp; Surrounding Areas.
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <button
@@ -144,12 +144,12 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             Welcome to Prime One Cleaning
           </p>
           <h2 className="mt-3 text-3xl font-bold tracking-tight text-[#0a1f44] sm:text-4xl">
-            Your Trusted Cleaning Partner in Luton &amp; Bedfordshire
+            Your Trusted Cleaning Partner in Milton Keynes &amp; Surrounding Areas
           </h2>
           <p className="mt-6 text-lg font-light leading-relaxed text-slate-600">
             Prime One Cleaning Ltd is a professional cleaning company serving
-            homes, offices and commercial spaces across Luton &amp;
-            Bedfordshire. Our fully trained and insured team is focused on
+            homes, offices and commercial spaces across Milton Keynes &amp;
+            Surrounding Areas. Our fully trained and insured team is focused on
             reliable, high-quality results with honest pricing and no hidden
             fees. Whether you need a one-off deep clean or a regular contract,
             you can expect the same consistent standard every time.
@@ -271,17 +271,18 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               AREAS WE SERVE
             </p>
             <h2 className="mt-2 text-3xl font-bold tracking-tight text-[#0a1f44] sm:text-4xl">
-              Serving Luton &amp; Bedfordshire
+              Serving Milton Keynes &amp; Surrounding Areas
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg font-light leading-relaxed text-slate-600">
-              We proudly provide professional cleaning services across Luton and the wider Bedfordshire area. Click your town to learn more.
+              We proudly provide professional cleaning services across Milton Keynes and the surrounding area. Click your town to learn more.
             </p>
           </div>
           <div className="mt-10 flex flex-wrap justify-center gap-3">
             {[
-              { label: "Luton", path: "/areas/luton" },
               { label: "Milton Keynes", path: "/areas/milton-keynes" },
               { label: "Bedford", path: "/areas/bedford" },
+              { label: "Leighton Buzzard", path: "/areas/leighton-buzzard" },
+              { label: "Luton", path: "/areas/luton" },
               { label: "Leighton Buzzard", path: "/areas/leighton-buzzard" },
               { label: "Dunstable", path: "/areas/dunstable" },
               { label: "Hitchin", path: "/areas/hitchin" },
@@ -312,7 +313,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             "@type": "LocalBusiness",
             name: "Prime One Cleaning",
             legalName: "Prime One Cleaning Ltd",
-            description: "Professional cleaning services for homes, offices and commercial spaces in Luton & Bedfordshire. Residential, end of tenancy, after builders, commercial and carpet cleaning.",
+            description: "Professional cleaning services for homes, offices and commercial spaces in Milton Keynes & Surrounding Areas. Residential, end of tenancy, after builders, commercial and carpet cleaning.",
             telephone: "07432625688",
             url: "https://primeonecleaning.co.uk",
             image: "https://primeonecleaning.co.uk/WhatsApp_Image_2026-07-30_at_13.16.18.jpeg",

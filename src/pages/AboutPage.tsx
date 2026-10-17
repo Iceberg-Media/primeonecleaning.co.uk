@@ -18,7 +18,7 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
               About Prime One Cleaning
             </h1>
             <p className="mt-4 text-lg text-slate-300 sm:text-xl">
-              Trusted cleaning professionals serving Luton &amp; Bedfordshire
+              Trusted cleaning professionals serving Milton Keynes &amp; Surrounding Areas
             </p>
           </div>
         </div>
@@ -35,9 +35,9 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
               <p className="mt-6 text-lg leading-relaxed text-slate-600">
                 Prime One Cleaning was founded on a simple belief: that everyone
                 deserves a spotless, healthy space without the stress of doing it
-                themselves. What began as a small local team in Luton has grown
+                themselves. What began as a small local team in Milton Keynes has grown
                 into a trusted cleaning company serving homes, offices and
-                commercial spaces across Bedfordshire. We built our reputation
+                commercial spaces across the surrounding area. We built our reputation
                 on three things, trust, high standards and an unwavering
                 attention to detail. Every member of our team is fully trained
                 vetted and insured, and we use only eco-friendly products that

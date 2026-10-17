@@ -42,7 +42,7 @@ function ServiceSchema() {
     "@type": "Service",
     "name": "Commercial Cleaning",
     "serviceType": "Commercial Cleaning Luton, Commercial Cleaning Bedfordshire",
-    "description": "Reliable, flexible commercial cleaning for offices, clinics, shops, retail, gyms and salons across Luton & Bedfordshire. Includes scheduled cleaning, washroom sanitisation, floor maintenance and waste removal.",
+    "description": "Reliable, flexible commercial cleaning for offices, clinics, shops, retail, gyms and salons across Milton Keynes & Surrounding Areas. Includes scheduled cleaning, washroom sanitisation, floor maintenance and waste removal.",
     "provider": {
       "@type": "LocalBusiness",
       "name": "Prime One Cleaning",
@@ -159,13 +159,13 @@ export default function CommercialCleaningPage({ onNavigate }: ServicePageProps)
               Business Premises
             </div>
             <h1 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
-              Commercial Cleaning in Luton &amp; Bedfordshire
+              Commercial Cleaning in Milton Keynes &amp; Surrounding Areas
             </h1>
             <p className="mt-4 text-lg text-slate-300 sm:text-xl">
               Reliable, flexible cleaning for offices, clinics, retail and gyms
             </p>
             <p className="mt-4 text-base text-slate-300">
-              We also provide homes with the same high standard through our <button onClick={() => onNavigate("/services/residential-cleaning")} className="font-semibold text-[#3b82f6] hover:text-[#2563eb] underline">residential cleaning services</button> across Luton &amp; Bedfordshire.
+              We also provide homes with the same high standard through our <button onClick={() => onNavigate("/services/residential-cleaning")} className="font-semibold text-[#3b82f6] hover:text-[#2563eb] underline">residential cleaning services</button> across Milton Keynes &amp; Surrounding Areas.
             </p>
           </div>
         </div>
@@ -180,13 +180,13 @@ export default function CommercialCleaningPage({ onNavigate }: ServicePageProps)
               impression you make on customers, the wellbeing of your staff and
               the smooth day-to-day running of your business. Our commercial
               cleaning service keeps offices, clinics, shops, gyms and salons
-              across Luton and Bedfordshire spotless, hygienic and welcoming
+              across Milton Keynes and the surrounding area spotless, hygienic and welcoming
               with flexible arrangements built around how you operate.
             </p>
             <p>
               What sets commercial cleaning apart from domestic work is the
               need for consistency, reliability and discretion. Businesses
-              across Luton and Bedfordshire trust Prime One Cleaning because we
+              across Milton Keynes and the surrounding area trust Prime One Cleaning because we
               deliver on all three. We schedule cleaning around your business
               hours, early mornings, evenings or weekends, so your team and
               customers are never disrupted. Our staff are uniformed, vetted and

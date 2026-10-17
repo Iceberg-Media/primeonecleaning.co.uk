@@ -22,7 +22,7 @@ export default function GalleryPage({ onNavigate }: GalleryPageProps) {
             </h1>
             <p className="mt-4 text-lg text-slate-300 sm:text-xl">
               See the Prime One Cleaning difference across homes and businesses
-              in Luton &amp; Bedfordshire
+              in Milton Keynes &amp; Surrounding Areas
             </p>
           </div>
         </div>
@@ -38,7 +38,7 @@ export default function GalleryPage({ onNavigate }: GalleryPageProps) {
             </h2>
             <p className="mx-auto mt-3 max-w-xl text-slate-600">
               We're putting together a portfolio of our cleaning work across
-              Luton &amp; Bedfordshire. Check back shortly to see real photos
+              Milton Keynes &amp; Surrounding Areas. Check back shortly to see real photos
               of our residential, commercial and specialist cleaning results.
             </p>
           </div>

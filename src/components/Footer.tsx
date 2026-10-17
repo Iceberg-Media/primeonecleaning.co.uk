@@ -21,10 +21,10 @@ const serviceLinks = [
 ];
 
 const areaLinks = [
-  { label: "Luton", path: "/areas/luton" },
   { label: "Milton Keynes", path: "/areas/milton-keynes" },
   { label: "Bedford", path: "/areas/bedford" },
   { label: "Leighton Buzzard", path: "/areas/leighton-buzzard" },
+  { label: "Luton", path: "/areas/luton" },
   { label: "Dunstable", path: "/areas/dunstable" },
   { label: "Hitchin", path: "/areas/hitchin" },
   { label: "St Albans", path: "/areas/st-albans" },
@@ -133,7 +133,7 @@ export default function Footer({ onNavigate }: FooterProps) {
               </li>
               <li className="flex items-center gap-2">
                 <MapPin className="h-4 w-4 text-[#60a5fa]" />
-                Milton Keynes, Buckinghamshire
+                Milton Keynes &amp; Surrounding Areas
               </li>
             </ul>
           </div>

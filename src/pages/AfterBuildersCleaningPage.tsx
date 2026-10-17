@@ -42,7 +42,7 @@ function ServiceSchema() {
     "@type": "Service",
     "name": "After Builders Cleaning",
     "serviceType": "After Builders Cleaning Luton, After Builders Cleaning Bedfordshire",
-    "description": "Post-construction and renovation cleaning for homes and commercial refurbishments across Luton & Bedfordshire. Includes debris removal, dust removal, deep floor cleaning, window and glass cleaning and fixture clean-up.",
+    "description": "Post-construction and renovation cleaning for homes and commercial refurbishments across Milton Keynes & Surrounding Areas. Includes debris removal, dust removal, deep floor cleaning, window and glass cleaning and fixture clean-up.",
     "provider": {
       "@type": "LocalBusiness",
       "name": "Prime One Cleaning",
@@ -159,14 +159,14 @@ export default function AfterBuildersCleaningPage({ onNavigate }: ServicePagePro
               Post-Construction
             </div>
             <h1 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
-              After Builders Cleaning in Luton &amp; Bedfordshire
+              After Builders Cleaning in Milton Keynes &amp; Surrounding Areas
             </h1>
             <p className="mt-4 text-lg text-slate-300 sm:text-xl">
               Professional post-construction and renovation cleaning, dust and
               debris fully removed
             </p>
             <p className="mt-4 text-base text-slate-300">
-              For ongoing maintenance after your refurbishment, explore our <button onClick={() => onNavigate("/services/commercial-cleaning")} className="font-semibold text-[#3b82f6] hover:text-[#2563eb] underline">commercial cleaning services</button> across Luton &amp; Bedfordshire.
+              For ongoing maintenance after your refurbishment, explore our <button onClick={() => onNavigate("/services/commercial-cleaning")} className="font-semibold text-[#3b82f6] hover:text-[#2563eb] underline">commercial cleaning services</button> across Milton Keynes &amp; Surrounding Areas.
             </p>
           </div>
         </div>

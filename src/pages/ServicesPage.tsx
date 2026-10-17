@@ -84,7 +84,7 @@ export default function ServicesPage({ onNavigate }: ServicesPageProps) {
             </h1>
             <p className="mt-4 text-lg text-slate-300 sm:text-xl">
               Complete cleaning solutions for homes, offices and commercial
-              spaces across Luton &amp; Bedfordshire
+              spaces across Milton Keynes &amp; Surrounding Areas
             </p>
           </div>
         </div>

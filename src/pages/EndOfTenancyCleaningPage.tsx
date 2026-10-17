@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     q: "Can letting agents book directly?",
-    a: "Absolutely. We work with landlords and letting agents across Luton and Bedfordshire on a regular basis, and can set up recurring arrangements for multiple properties. Just get in touch to discuss your portfolio.",
+    a: "Absolutely. We work with landlords and letting agents across Milton Keynes and the surrounding area on a regular basis, and can set up recurring arrangements for multiple properties. Just get in touch to discuss your portfolio.",
   }
 ];
 
@@ -42,7 +42,7 @@ function ServiceSchema() {
     "@type": "Service",
     "name": "End of Tenancy Cleaning",
     "serviceType": "End of Tenancy Cleaning Luton, End of Tenancy Cleaning Bedfordshire",
-    "description": "Thorough checklist-based end of tenancy cleaning for tenants, landlords and letting agents across Luton & Bedfordshire. Includes kitchen deep clean, bathroom descale, cupboards, skirting boards and more.",
+    "description": "Thorough checklist-based end of tenancy cleaning for tenants, landlords and letting agents across Milton Keynes & Surrounding Areas. Includes kitchen deep clean, bathroom descale, cupboards, skirting boards and more.",
     "provider": {
       "@type": "LocalBusiness",
       "name": "Prime One Cleaning",
@@ -159,14 +159,14 @@ export default function EndOfTenancyCleaningPage({ onNavigate }: ServicePageProp
               Moving Out
             </div>
             <h1 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
-              End of Tenancy Cleaning in Luton &amp; Bedfordshire
+              End of Tenancy Cleaning in Milton Keynes &amp; Surrounding Areas
             </h1>
             <p className="mt-4 text-lg text-slate-300 sm:text-xl">
               Deposit-back guaranteed cleaning for tenants, landlords and
               letting agents
             </p>
             <p className="mt-4 text-base text-slate-300">
-              Need carpets cleaned too? We also offer professional <button onClick={() => onNavigate("/services/carpet-upholstery-cleaning")} className="font-semibold text-[#3b82f6] hover:text-[#2563eb] underline">carpet and upholstery cleaning</button> across Luton &amp; Bedfordshire.
+              Need carpets cleaned too? We also offer professional <button onClick={() => onNavigate("/services/carpet-upholstery-cleaning")} className="font-semibold text-[#3b82f6] hover:text-[#2563eb] underline">carpet and upholstery cleaning</button> across Milton Keynes &amp; Surrounding Areas.
             </p>
           </div>
         </div>

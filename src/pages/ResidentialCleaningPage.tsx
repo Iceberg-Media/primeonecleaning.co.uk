@@ -48,7 +48,7 @@ function ServiceSchema() {
     "@type": "Service",
     "name": "Residential Cleaning",
     "serviceType": "Residential Cleaning Luton, Residential Cleaning Bedfordshire",
-    "description": "Reliable, thorough home cleaning tailored to your schedule. Regular, deep, one-off and spring cleaning for homes across Luton & Bedfordshire.",
+    "description": "Reliable, thorough home cleaning tailored to your schedule. Regular, deep, one-off and spring cleaning for homes across Milton Keynes & Surrounding Areas.",
     "provider": {
       "@type": "LocalBusiness",
       "name": "Prime One Cleaning",
@@ -165,13 +165,13 @@ export default function ResidentialCleaningPage({ onNavigate }: ServicePageProps
               Home Cleaning
             </div>
             <h1 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
-              Residential Cleaning in Luton &amp; Bedfordshire
+              Residential Cleaning in Milton Keynes &amp; Surrounding Areas
             </h1>
             <p className="mt-4 text-lg text-slate-300 sm:text-xl">
               Reliable, thorough home cleaning tailored to your schedule
             </p>
             <p className="mt-4 text-base text-slate-300">
-              If you are moving out, we also offer a thorough <button onClick={() => onNavigate("/services/end-of-tenancy-cleaning")} className="font-semibold text-[#3b82f6] hover:text-[#2563eb] underline">end of tenancy cleaning</button> across Luton &amp; Bedfordshire.
+              If you are moving out, we also offer a thorough <button onClick={() => onNavigate("/services/end-of-tenancy-cleaning")} className="font-semibold text-[#3b82f6] hover:text-[#2563eb] underline">end of tenancy cleaning</button> across Milton Keynes &amp; Surrounding Areas.
             </p>
           </div>
         </div>
@@ -183,7 +183,7 @@ export default function ResidentialCleaningPage({ onNavigate }: ServicePageProps
           <div className="prose-content space-y-6 text-lg leading-relaxed text-slate-700">
             <p>
               Keeping a home clean shouldn't feel like a second job. At Prime One
-              Cleaning, we provide professional residential cleaning across Luton
+              Cleaning, we provide professional residential cleaning across Milton Keynes
               and Bedfordshire designed to give you back your time without
               compromising on standards. Whether you need a regular weekly clean
               to stay on top of things, a deep clean to tackle every corner, a
@@ -203,7 +203,7 @@ export default function ResidentialCleaningPage({ onNavigate }: ServicePageProps
               it most.
             </p>
             <p>
-              Homeowners across Luton and Bedfordshire choose Prime One Cleaning
+              Homeowners across Milton Keynes and the surrounding area choose Prime One Cleaning
               because we're dependable, detail-orientated and genuinely care about
               the results. We don't cut corners, we clean them. Every member of
               our team is fully trained, vetted and insured, so you can feel

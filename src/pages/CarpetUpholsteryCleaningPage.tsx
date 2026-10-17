@@ -42,7 +42,7 @@ function ServiceSchema() {
     "@type": "Service",
     "name": "Carpet & Upholstery Cleaning",
     "serviceType": "Carpet Cleaning Luton, Upholstery Cleaning Bedfordshire",
-    "description": "Deep, professional carpet, sofa, upholstery and rug cleaning for homes and businesses across Luton & Bedfordshire. Includes stain pre-treatment, steam cleaning, deodorising and fast drying times.",
+    "description": "Deep, professional carpet, sofa, upholstery and rug cleaning for homes and businesses across Milton Keynes & Surrounding Areas. Includes stain pre-treatment, steam cleaning, deodorising and fast drying times.",
     "provider": {
       "@type": "LocalBusiness",
       "name": "Prime One Cleaning",
@@ -159,13 +159,13 @@ export default function CarpetUpholsteryCleaningPage({ onNavigate }: ServicePage
               Deep Clean
             </div>
             <h1 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
-              Carpet &amp; Upholstery Cleaning in Luton &amp; Bedfordshire
+              Carpet &amp; Upholstery Cleaning in Milton Keynes &amp; Surrounding Areas
             </h1>
             <p className="mt-4 text-lg text-slate-300 sm:text-xl">
               Professional deep cleaning that restores carpets, sofas and rugs
             </p>
             <p className="mt-4 text-base text-slate-300">
-              This can be booked as a standalone service or combined with our <button onClick={() => onNavigate("/services/residential-cleaning")} className="font-semibold text-[#3b82f6] hover:text-[#2563eb] underline">residential cleaning service</button> across Luton &amp; Bedfordshire.
+              This can be booked as a standalone service or combined with our <button onClick={() => onNavigate("/services/residential-cleaning")} className="font-semibold text-[#3b82f6] hover:text-[#2563eb] underline">residential cleaning service</button> across Milton Keynes &amp; Surrounding Areas.
             </p>
           </div>
         </div>

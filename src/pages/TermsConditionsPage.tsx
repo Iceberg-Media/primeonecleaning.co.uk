@@ -46,7 +46,7 @@ export default function TermsConditionsPage({ onNavigate }: TermsConditionsPageP
               <p className="mt-4 leading-relaxed text-slate-600">
                 Prime One Cleaning Ltd provides professional cleaning services
                 for residential, commercial and end-of-tenancy properties across
-                Luton and the wider Bedfordshire area. The scope of each cleaning
+                Milton Keynes and the surrounding area. The scope of each cleaning
                 service will be agreed at the time of booking. We reserve the
                 right to decline any service request at our discretion.
               </p>

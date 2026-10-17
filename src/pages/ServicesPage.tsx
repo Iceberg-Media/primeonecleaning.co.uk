@@ -20,6 +20,7 @@ const services = [
     icon: Home,
     title: "Residential Cleaning",
     slug: "residential-cleaning",
+    image: "/residential-cleaning.jpg.jpg",
     bullets: [
       "Regular weekly or fortnightly cleans",
       "Deep cleaning of kitchens, bathrooms & living areas",
@@ -31,6 +32,7 @@ const services = [
     icon: KeyRound,
     title: "End of Tenancy Cleaning",
     slug: "end-of-tenancy-cleaning",
+    image: "/end-of-tenancy-cleaning.jpg.jpg",
     bullets: [
       "Full property deep clean for move-outs",
       "Oven, fridge & appliance cleaning included",
@@ -42,6 +44,7 @@ const services = [
     icon: HardHat,
     title: "After Builders Cleaning",
     slug: "after-builders-cleaning",
+    image: "/after-builders-cleaning.jpg.jpg",
     bullets: [
       "Removal of dust, plaster & debris",
       "Detailed clean of all surfaces & fixtures",
@@ -53,6 +56,7 @@ const services = [
     icon: Building2,
     title: "Commercial Cleaning",
     slug: "commercial-cleaning",
+    image: "/commercial-cleaning.jpg.jpg",
     bullets: [
       "Offices, retail units & commercial spaces",
       "Flexible scheduling outside working hours",
@@ -64,6 +68,7 @@ const services = [
     icon: Sofa,
     title: "Carpet & Upholstery Cleaning",
     slug: "carpet-upholstery-cleaning",
+    image: "/carpet-upholstery-cleaning.jpg.jpg",
     bullets: [
       "Hot water extraction for deep clean",
       "Stain & odour removal treatment",
@@ -75,6 +80,7 @@ const services = [
     icon: Sparkles,
     title: "Deep Cleaning",
     slug: "deep-cleaning",
+    image: "/deep-cleaning.jpg.jpg",
     bullets: [
       "Detailed top-to-bottom cleaning",
       "Ideal for end of tenancy",
@@ -86,6 +92,7 @@ const services = [
     icon: BedDouble,
     title: "Airbnb & Short-Let Cleaning",
     slug: "airbnb-short-let-cleaning",
+    image: "/airbnb-short-let-cleaning.jpg.jpg",
     bullets: [
       "Fast turnaround cleans between guests",
       "High standards for guest-ready presentation",
@@ -124,10 +131,11 @@ export default function ServicesPage({ onNavigate }: ServicesPageProps) {
                 key={s.slug}
                 className="group flex flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-md transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl"
               >
-                {/* Placeholder image */}
-                <div className="flex h-40 items-center justify-center bg-slate-100">
-                  <s.icon className="h-10 w-10 text-slate-300" />
-                </div>
+                <img
+                  src={s.image}
+                  alt={`${s.title} in Milton Keynes by Prime One Cleaning`}
+                  className="h-40 w-full object-cover object-center"
+                />
 
                 {/* Card body */}
                 <div className="flex flex-1 flex-col p-6 sm:p-8">

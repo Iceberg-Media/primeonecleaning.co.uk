@@ -10,6 +10,7 @@ import AfterBuildersCleaningPage from "@/pages/AfterBuildersCleaningPage";
 import CommercialCleaningPage from "@/pages/CommercialCleaningPage";
 import CarpetUpholsteryCleaningPage from "@/pages/CarpetUpholsteryCleaningPage";
 import DeepCleaningPage from "@/pages/DeepCleaningPage";
+import AirbnbShortLetCleaningPage from "@/pages/AirbnbShortLetCleaningPage";
 import AreasPage from "@/pages/AreasPage";
 import MiltonKeynesAreaPage from "@/pages/MiltonKeynesAreaPage";
 import BedfordAreaPage from "@/pages/BedfordAreaPage";
@@ -84,6 +85,11 @@ const SEO_MAP: Record<string, SeoEntry> = {
     title: "Deep Cleaning in Milton Keynes & Surrounding Areas | Prime One Cleaning",
     description:
       "Detailed top-to-bottom deep cleaning for homes & businesses in Milton Keynes. Kitchens, bathrooms, skirting & more. Free quote.",
+  },
+  "/services/airbnb-short-let-cleaning": {
+    title: "Airbnb & Short-Let Cleaning in Milton Keynes & Surrounding Areas | Prime One Cleaning",
+    description:
+      "Fast turnaround Airbnb & short-let cleaning in Milton Keynes. Guest-ready cleans for hosts & property managers. Free quote.",
   },
   "/areas": {
     title: "Areas We Cover | Prime One Cleaning",
@@ -284,6 +290,8 @@ function App() {
         return <CarpetUpholsteryCleaningPage onNavigate={navigate} />;
       case "/services/deep-cleaning":
         return <DeepCleaningPage onNavigate={navigate} />;
+      case "/services/airbnb-short-let-cleaning":
+        return <AirbnbShortLetCleaningPage onNavigate={navigate} />;
       case "/areas":
         return <AreasPage onNavigate={navigate} />;
       case "/areas/milton-keynes":

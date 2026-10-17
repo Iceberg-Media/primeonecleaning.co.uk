@@ -124,7 +124,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
         </div>
 
         {/* Floating stat card - bottom-right area */}
-        <div className="absolute bottom-28 right-6 z-10 hidden lg:block">
+        <div className="absolute bottom-28 right-[100px] z-10 hidden lg:block">
           <div className="flex items-center gap-3 rounded-2xl border border-slate-200/60 bg-white px-5 py-4 shadow-layered-lg">
             <span className="icon-badge-blue flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full">
               <ShieldCheck className="h-5 w-5 text-white" strokeWidth={2} />

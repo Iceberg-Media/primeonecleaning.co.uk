@@ -78,7 +78,12 @@ export default function HomePage({ onNavigate }: HomePageProps) {
     <div>
       {/* Hero */}
       <section className="relative flex h-[90vh] items-center overflow-hidden bg-[#0a1f44]">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0a1f44] via-[#0a1f44] to-[#102a5c]" />
+        <img
+          src="/vlad-khmara-esXPBDblcXw-unsplash.jpg"
+          alt="Clean modern office cleaned by Prime One Cleaning in Milton Keynes"
+          className="absolute inset-0 h-full w-full object-cover object-right"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0a1f44]/[0.85] via-[#0a1f44]/[0.6] to-[#0a1f44]/[0.35]" />
         {/* Decorative blurred blue circle - back-left corner, low opacity */}
         <div
           className="pointer-events-none absolute -left-20 top-1/4 h-96 w-96 rounded-full opacity-[0.07] blur-3xl"

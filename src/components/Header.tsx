@@ -100,7 +100,7 @@ export default function Header({ currentPath, onNavigate }: HeaderProps) {
       </div>
       {/* Main nav row */}
       <div className="bg-white">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8" style={{ height: "95px" }}>
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-6 min-[1440px]:px-8" style={{ height: "95px" }}>
         <button
           onClick={() => go("/")}
           className="flex shrink-0 items-center border-0 bg-transparent p-0 outline-none"
@@ -115,13 +115,13 @@ export default function Header({ currentPath, onNavigate }: HeaderProps) {
           />
         </button>
 
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden shrink-0 items-center gap-4 whitespace-nowrap lg:flex min-[1440px]:gap-8">
           {navItems.map((item) =>
             "dropdown" in item && item.dropdown ? (
               <div key={item.path} className="group relative">
                 <button
                   onClick={() => go(item.path)}
-                  className={`flex items-center gap-1 text-sm font-medium transition-colors duration-200 hover:text-[#3b82f6] ${
+                  className={`flex items-center gap-1 whitespace-nowrap shrink-0 text-[15px] font-medium transition-colors duration-200 hover:text-[#3b82f6] min-[1440px]:text-sm ${
                     (item.path === "/services"
                       ? currentPath.startsWith("/services")
                       : currentPath.startsWith("/areas"))
@@ -163,7 +163,7 @@ export default function Header({ currentPath, onNavigate }: HeaderProps) {
               <button
                 key={item.path}
                 onClick={() => go(item.path)}
-                className={`group relative text-sm font-medium transition-colors duration-200 hover:text-[#3b82f6] ${
+                className={`group relative whitespace-nowrap shrink-0 text-[15px] font-medium transition-colors duration-200 hover:text-[#3b82f6] min-[1440px]:text-sm ${
                   currentPath === item.path ? "text-[#3b82f6]" : "text-[#0a1f44]"
                 }`}
               >
@@ -174,23 +174,23 @@ export default function Header({ currentPath, onNavigate }: HeaderProps) {
           )}
         </nav>
 
-        <div className="hidden items-center gap-4 md:flex">
+        <div className="hidden shrink-0 items-center gap-4 whitespace-nowrap lg:flex">
           <a
             href="tel:07432625688"
-            className="flex items-center gap-2 text-sm font-medium text-[#0a1f44] transition-colors hover:text-[#3b82f6]"
+            className="flex items-center gap-2 whitespace-nowrap shrink-0 text-[15px] font-medium text-[#0a1f44] transition-colors hover:text-[#3b82f6] min-[1440px]:text-sm"
           >
             <Phone className="h-4 w-4" />
             07432 625688
           </a>
           <button
             onClick={() => go("/contact")}
-            className="rounded-lg bg-[#3b82f6] px-5 py-2.5 text-sm font-semibold text-white transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-[#2563eb] hover:shadow-lg hover:shadow-blue-500/30"
+            className="whitespace-nowrap shrink-0 rounded-lg bg-[#3b82f6] px-4 py-2.5 text-sm font-semibold text-white transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-[#2563eb] hover:shadow-lg hover:shadow-blue-500/30 min-[1440px]:px-5"
           >
             Get a Free Quote
           </button>
         </div>
 
-        <div className="flex items-center gap-3 md:hidden">
+        <div className="flex items-center gap-3 lg:hidden">
           <a
             href="tel:07432625688"
             className="flex items-center gap-1.5 text-sm font-medium text-[#0a1f44] transition-colors hover:text-[#3b82f6]"
@@ -211,7 +211,7 @@ export default function Header({ currentPath, onNavigate }: HeaderProps) {
 
       {/* Mobile menu - full-screen overlay */}
       {open && (
-        <div className="fixed inset-0 top-0 z-50 flex flex-col bg-[#0a1f44] md:hidden">
+        <div className="fixed inset-0 top-0 z-50 flex flex-col bg-[#0a1f44] lg:hidden">
           {/* Menu header */}
           <div className="flex items-center justify-between px-4 py-3">
             <img

@@ -74,7 +74,7 @@ export default function Header({ currentPath, onNavigate }: HeaderProps) {
     <header className="sticky top-0 z-50 shadow-lg">
       {/* Top mini bar */}
       <div className="bg-[#0a1f44] text-white">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-1.5 text-xs sm:px-6 min-[1100px]:px-6 min-[1440px]:px-8">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-1.5 text-xs sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 sm:gap-5">
             <span className="flex items-center gap-1.5">
               <MapPin className="h-3.5 w-3.5 text-[#60a5fa]" />
@@ -100,28 +100,28 @@ export default function Header({ currentPath, onNavigate }: HeaderProps) {
       </div>
       {/* Main nav row */}
       <div className="bg-white">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 min-[1100px]:px-6 min-[1440px]:px-8" style={{ height: "120px" }}>
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8" style={{ height: "95px" }}>
         <button
           onClick={() => go("/")}
           className="flex shrink-0 items-center border-0 bg-transparent p-0 outline-none"
-          style={{ height: "120px" }}
+          style={{ height: "95px" }}
           aria-label="Prime One Cleaning home"
         >
           <img
             src="/WhatsApp_Image_2026-07-30_at_13.16.18.jpeg"
             alt="Prime One Cleaning Ltd"
-            className="object-contain max-w-[220px] min-[1100px]:max-w-[150px] min-[1440px]:max-w-[220px]"
-            style={{ height: "112px", width: "auto", mixBlendMode: "multiply" }}
+            className="object-contain"
+            style={{ height: "88px", width: "auto", maxWidth: "220px", mixBlendMode: "multiply" }}
           />
         </button>
 
-        <nav className="hidden min-[1100px]:flex min-[1100px]:gap-5 min-[1440px]:gap-8 items-center">
+        <nav className="hidden items-center gap-8 md:flex">
           {navItems.map((item) =>
             "dropdown" in item && item.dropdown ? (
               <div key={item.path} className="group relative">
                 <button
                   onClick={() => go(item.path)}
-                  className={`flex items-center gap-1 whitespace-nowrap shrink-0 text-sm font-medium transition-colors duration-200 hover:text-[#3b82f6] min-[1100px]:text-[15px] min-[1440px]:text-sm ${
+                  className={`flex items-center gap-1 text-sm font-medium transition-colors duration-200 hover:text-[#3b82f6] ${
                     (item.path === "/services"
                       ? currentPath.startsWith("/services")
                       : currentPath.startsWith("/areas"))
@@ -163,7 +163,7 @@ export default function Header({ currentPath, onNavigate }: HeaderProps) {
               <button
                 key={item.path}
                 onClick={() => go(item.path)}
-                className={`group relative whitespace-nowrap shrink-0 text-sm font-medium transition-colors duration-200 hover:text-[#3b82f6] min-[1100px]:text-[15px] min-[1440px]:text-sm ${
+                className={`group relative text-sm font-medium transition-colors duration-200 hover:text-[#3b82f6] ${
                   currentPath === item.path ? "text-[#3b82f6]" : "text-[#0a1f44]"
                 }`}
               >
@@ -174,23 +174,23 @@ export default function Header({ currentPath, onNavigate }: HeaderProps) {
           )}
         </nav>
 
-        <div className="hidden min-[1100px]:flex items-center gap-4">
+        <div className="hidden items-center gap-4 md:flex">
           <a
             href="tel:07432625688"
-            className="flex items-center gap-2 whitespace-nowrap shrink-0 text-sm font-medium text-[#0a1f44] transition-colors hover:text-[#3b82f6] min-[1100px]:text-[15px] min-[1440px]:text-sm"
+            className="flex items-center gap-2 text-sm font-medium text-[#0a1f44] transition-colors hover:text-[#3b82f6]"
           >
             <Phone className="h-4 w-4" />
             07432 625688
           </a>
           <button
             onClick={() => go("/contact")}
-            className="rounded-lg bg-[#3b82f6] px-5 py-2.5 text-sm font-semibold text-white whitespace-nowrap shrink-0 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-[#2563eb] hover:shadow-lg hover:shadow-blue-500/30 min-[1100px]:px-[18px] min-[1100px]:py-3 min-[1440px]:px-5 min-[1440px]:py-2.5"
+            className="rounded-lg bg-[#3b82f6] px-5 py-2.5 text-sm font-semibold text-white transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-[#2563eb] hover:shadow-lg hover:shadow-blue-500/30"
           >
             Get a Free Quote
           </button>
         </div>
 
-        <div className="flex items-center gap-3 min-[1100px]:hidden">
+        <div className="flex items-center gap-3 md:hidden">
           <a
             href="tel:07432625688"
             className="flex items-center gap-1.5 text-sm font-medium text-[#0a1f44] transition-colors hover:text-[#3b82f6]"
@@ -211,7 +211,7 @@ export default function Header({ currentPath, onNavigate }: HeaderProps) {
 
       {/* Mobile menu - full-screen overlay */}
       {open && (
-        <div className="fixed inset-0 top-0 z-50 flex flex-col bg-[#0a1f44] min-[1100px]:hidden">
+        <div className="fixed inset-0 top-0 z-50 flex flex-col bg-[#0a1f44] md:hidden">
           {/* Menu header */}
           <div className="flex items-center justify-between px-4 py-3">
             <img

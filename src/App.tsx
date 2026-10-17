@@ -9,7 +9,6 @@ import EndOfTenancyCleaningPage from "@/pages/EndOfTenancyCleaningPage";
 import AfterBuildersCleaningPage from "@/pages/AfterBuildersCleaningPage";
 import CommercialCleaningPage from "@/pages/CommercialCleaningPage";
 import CarpetUpholsteryCleaningPage from "@/pages/CarpetUpholsteryCleaningPage";
-import DeepCleaningPage from "@/pages/DeepCleaningPage";
 import AreasPage from "@/pages/AreasPage";
 import MiltonKeynesAreaPage from "@/pages/MiltonKeynesAreaPage";
 import BedfordAreaPage from "@/pages/BedfordAreaPage";
@@ -79,11 +78,6 @@ const SEO_MAP: Record<string, SeoEntry> = {
     title: "Carpet & Upholstery Cleaning in Milton Keynes & Surrounding Areas | Prime One Cleaning",
     description:
       "Carpet, rug & upholstery cleaning in Milton Keynes & Surrounding Areas. Deep clean by insured professionals. Call 07432 625688.",
-  },
-  "/services/deep-cleaning": {
-    title: "Deep Cleaning in Milton Keynes & Surrounding Areas | Prime One Cleaning",
-    description:
-      "Detailed top-to-bottom deep cleaning in Milton Keynes & Surrounding Areas. Kitchens, bathrooms & more by insured local cleaners. Free quote.",
   },
   "/areas": {
     title: "Areas We Cover | Prime One Cleaning",
@@ -282,8 +276,6 @@ function App() {
         return <CommercialCleaningPage onNavigate={navigate} />;
       case "/services/carpet-upholstery-cleaning":
         return <CarpetUpholsteryCleaningPage onNavigate={navigate} />;
-      case "/services/deep-cleaning":
-        return <DeepCleaningPage onNavigate={navigate} />;
       case "/areas":
         return <AreasPage onNavigate={navigate} />;
       case "/areas/milton-keynes":

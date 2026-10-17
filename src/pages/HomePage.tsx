@@ -9,6 +9,7 @@ import {
   HardHat,
   Building2,
   Sofa,
+  BedDouble,
   MapPin,
 } from "lucide-react";
 import TrustBar from "@/components/TrustBar";
@@ -47,6 +48,18 @@ const services = [
     title: "Carpet & Upholstery Cleaning",
     slug: "carpet-upholstery-cleaning",
     bullets: ["Carpet Cleaning", "Sofa & Upholstery", "Rug Cleaning"],
+  },
+  {
+    icon: Sparkles,
+    title: "Deep Cleaning",
+    slug: "deep-cleaning",
+    bullets: ["Detailed top-to-bottom cleaning", "Ideal for end of tenancy", "Before and after renovation"],
+  },
+  {
+    icon: BedDouble,
+    title: "Airbnb & Short-Let Cleaning",
+    slug: "airbnb-short-let-cleaning",
+    bullets: ["Fast turnaround cleans", "Linen change (optional)", "Fully equipped service"],
   },
 ];
 
@@ -175,7 +188,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               commercial properties.
             </p>
           </div>
-          <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-5">
+          <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {services.map((s) => (
               <div
                 key={s.slug}
@@ -196,13 +209,31 @@ export default function HomePage({ onNavigate }: HomePageProps) {
                   </ul>
                   <button
                     onClick={() => onNavigate(`/services/${s.slug}`)}
-                    className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-[#3b82f6] hover:text-[#2563eb]"
+                    className="mt-auto inline-flex items-center gap-1 pt-5 text-sm font-semibold text-[#3b82f6] hover:text-[#2563eb]"
                   >
-                    {s.title} <ArrowRight className="h-4 w-4" />
+                    Learn More <ArrowRight className="h-4 w-4" />
                   </button>
                 </div>
               </div>
             ))}
+
+            {/* Quote card - fills the last slot on desktop, spans both columns on tablet */}
+            <div className="group flex flex-col justify-between rounded-2xl bg-gradient-to-br from-[#0a1f44] to-[#16306b] p-6 shadow-layered transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-layered-lg sm:col-span-2 lg:col-span-1">
+              <div>
+                <h3 className="text-lg font-bold text-white sm:text-xl">
+                  Not sure which service you need?
+                </h3>
+                <p className="mt-3 text-sm font-light leading-relaxed text-slate-300">
+                  Free, no-obligation quote.
+                </p>
+              </div>
+              <button
+                onClick={() => onNavigate("/contact")}
+                className="mt-5 inline-flex items-center gap-2 self-start rounded-lg bg-[#3b82f6] px-5 py-3 text-sm font-semibold text-white transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-[#2563eb] hover:shadow-lg hover:shadow-blue-500/30"
+              >
+                Get a Free Quote <ArrowRight className="h-4 w-4" />
+              </button>
+            </div>
           </div>
         </div>
       </section>

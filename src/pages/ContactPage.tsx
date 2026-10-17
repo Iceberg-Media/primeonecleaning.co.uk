@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Phone, Clock, MapPin, Send, Mail } from "lucide-react";
+import { WhatsAppIcon, WHATSAPP_URL } from "@/components/WhatsAppFloat";
 
 interface ContactPageProps {
   onNavigate: (path: string) => void;
@@ -196,6 +197,22 @@ export default function ContactPage({ onNavigate: _onNavigate }: ContactPageProp
                       <p className="text-sm text-slate-500">Email</p>
                       <a href="mailto:info@primeonecleaning.co.uk" className="text-lg font-semibold text-[#0a1f44] hover:text-[#3b82f6]">
                         info@primeonecleaning.co.uk
+                      </a>
+                    </div>
+                  </li>
+                  <li className="flex items-center gap-4">
+                    <span className="flex h-12 w-12 items-center justify-center rounded-full bg-[#0a1f44]">
+                      <WhatsAppIcon className="h-6 w-6 text-[#60a5fa]" />
+                    </span>
+                    <div>
+                      <p className="text-sm text-slate-500">WhatsApp</p>
+                      <a
+                        href={WHATSAPP_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-lg font-semibold text-[#0a1f44] hover:text-[#3b82f6]"
+                      >
+                        Chat on WhatsApp
                       </a>
                     </div>
                   </li>

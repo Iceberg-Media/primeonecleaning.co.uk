@@ -28,6 +28,7 @@ import ContactPage from "@/pages/ContactPage";
 import PrivacyPolicyPage from "@/pages/PrivacyPolicyPage";
 import TermsConditionsPage from "@/pages/TermsConditionsPage";
 import NotFoundPage from "@/pages/NotFoundPage";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 const SITE_URL = "https://primeonecleaning.co.uk";
 const DEFAULT_OG_IMAGE = "https://primeonecleaning.co.uk/WhatsApp_Image_2026-07-30_at_13.16.18.jpeg";
@@ -336,6 +337,7 @@ function App() {
       <Header currentPath={path} onNavigate={navigate} />
       <main className="flex-1">{renderPage()}</main>
       <Footer onNavigate={navigate} />
+      <WhatsAppFloat />
     </div>
   );
 }

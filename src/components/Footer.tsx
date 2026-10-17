@@ -1,4 +1,5 @@
 import { Phone, MapPin, Mail } from "lucide-react";
+import { WhatsAppIcon, WHATSAPP_URL } from "@/components/WhatsAppFloat";
 
 interface FooterProps {
   onNavigate: (path: string) => void;
@@ -144,6 +145,17 @@ export default function Footer({ onNavigate }: FooterProps) {
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 shrink-0 text-[#60a5fa]" />
                 <a href="mailto:info@primeonecleaning.co.uk" className="hover:text-white">info@primeonecleaning.co.uk</a>
+              </li>
+              <li className="flex items-center gap-2">
+                <WhatsAppIcon className="h-4 w-4 shrink-0 text-[#60a5fa]" />
+                <a
+                  href={WHATSAPP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="whitespace-nowrap hover:text-white"
+                >
+                  Chat on WhatsApp
+                </a>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 shrink-0 text-[#60a5fa]" />

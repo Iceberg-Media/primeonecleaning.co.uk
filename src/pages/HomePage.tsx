@@ -270,31 +270,39 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             </div>
 
             {/* Get a Free Quote */}
-            <div className="flex flex-col justify-center rounded-2xl bg-gradient-to-br from-[#0a1f44] to-[#16306b] p-8 shadow-layered-lg sm:p-10">
-              <p className="text-sm font-semibold uppercase tracking-wider text-[#60a5fa]">
-                GET A FREE QUOTE
-              </p>
-              <h2 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                Let us take care of the cleaning.
-              </h2>
-              <p className="mt-4 text-lg font-light leading-relaxed text-slate-300">
-                Contact us today for a free, no obligation quote. We reply fast!
-              </p>
-              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                <a
-                  href="tel:07432625688"
-                  className="flex items-center justify-center gap-2 rounded-xl bg-white px-6 py-3.5 text-base font-semibold text-[#0a1f44] transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-slate-100 hover:shadow-lg"
-                >
-                  <Phone className="h-5 w-5" />
-                  07432 625688
-                </a>
-                <button
-                  onClick={() => onNavigate("/contact")}
-                  className="btn-primary flex items-center justify-center gap-2 rounded-xl px-6 py-3.5 text-base font-semibold text-white transition-all duration-200 ease-out hover:-translate-y-0.5"
-                >
-                  Request a Free Quote
-                  <ArrowRight className="h-5 w-5" />
-                </button>
+            <div className="relative flex flex-col justify-center overflow-hidden rounded-2xl bg-gradient-to-br from-[#0a1f44] to-[#16306b] p-8 shadow-layered-lg sm:p-10">
+              <img
+                src="/raj-rana-zCQsBI7ZltQ-unsplash.jpg"
+                alt="Bright modern office cleaned by Prime One Cleaning in Milton Keynes"
+                className="absolute inset-0 h-full w-full object-cover object-center"
+              />
+              <div className="absolute inset-0 bg-[#0a1f44]/[0.85]" />
+              <div className="relative z-10">
+                <p className="text-sm font-semibold uppercase tracking-wider text-[#60a5fa]">
+                  GET A FREE QUOTE
+                </p>
+                <h2 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                  Let us take care of the cleaning.
+                </h2>
+                <p className="mt-4 text-lg font-light leading-relaxed text-slate-300">
+                  Contact us today for a free, no obligation quote. We reply fast!
+                </p>
+                <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+                  <a
+                    href="tel:07432625688"
+                    className="flex items-center justify-center gap-2 rounded-xl bg-white px-6 py-3.5 text-base font-semibold text-[#0a1f44] transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-slate-100 hover:shadow-lg"
+                  >
+                    <Phone className="h-5 w-5" />
+                    07432 625688
+                  </a>
+                  <button
+                    onClick={() => onNavigate("/contact")}
+                    className="btn-primary flex items-center justify-center gap-2 rounded-xl px-6 py-3.5 text-base font-semibold text-white transition-all duration-200 ease-out hover:-translate-y-0.5"
+                  >
+                    Request a Free Quote
+                    <ArrowRight className="h-5 w-5" />
+                  </button>
+                </div>
               </div>
             </div>
           </div>

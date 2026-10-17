@@ -1,4 +1,4 @@
-import { Phone, MapPin } from "lucide-react";
+import { Phone, MapPin, Mail } from "lucide-react";
 
 interface FooterProps {
   onNavigate: (path: string) => void;
@@ -139,6 +139,10 @@ export default function Footer({ onNavigate }: FooterProps) {
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 shrink-0 text-[#60a5fa]" />
                 <a href="tel:07432625688" className="whitespace-nowrap hover:text-white">07432 625688</a>
+              </li>
+              <li className="flex items-center gap-2">
+                <Mail className="h-4 w-4 shrink-0 text-[#60a5fa]" />
+                <a href="mailto:info@primeonecleaning.co.uk" className="hover:text-white">info@primeonecleaning.co.uk</a>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 shrink-0 text-[#60a5fa]" />

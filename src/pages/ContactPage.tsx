@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Phone, Clock, MapPin, Send } from "lucide-react";
+import { Phone, Clock, MapPin, Send, Mail } from "lucide-react";
 
 interface ContactPageProps {
   onNavigate: (path: string) => void;
@@ -185,6 +185,17 @@ export default function ContactPage({ onNavigate: _onNavigate }: ContactPageProp
                       <p className="text-sm text-slate-500">Phone</p>
                       <a href="tel:07432625688" className="text-lg font-semibold text-[#0a1f44] hover:text-[#3b82f6]">
                         07432 625688
+                      </a>
+                    </div>
+                  </li>
+                  <li className="flex items-center gap-4">
+                    <span className="flex h-12 w-12 items-center justify-center rounded-full bg-[#0a1f44]">
+                      <Mail className="h-6 w-6 text-[#60a5fa]" />
+                    </span>
+                    <div>
+                      <p className="text-sm text-slate-500">Email</p>
+                      <a href="mailto:info@primeonecleaning.co.uk" className="text-lg font-semibold text-[#0a1f44] hover:text-[#3b82f6]">
+                        info@primeonecleaning.co.uk
                       </a>
                     </div>
                   </li>

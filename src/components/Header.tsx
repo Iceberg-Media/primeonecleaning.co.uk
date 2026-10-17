@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Phone, Menu, X, ChevronDown, MapPin, Sparkles, Clock } from "lucide-react";
+import { Phone, Menu, X, ChevronDown, MapPin, Sparkles, Clock, Mail } from "lucide-react";
 
 function GoogleIcon({ className }: { className?: string }) {
   return (
@@ -87,6 +87,13 @@ export default function Header({ currentPath, onNavigate }: HeaderProps) {
             </span>
           </div>
           <div className="flex items-center gap-3 sm:gap-5">
+            <a
+              href="mailto:info@primeonecleaning.co.uk"
+              className="hidden items-center gap-1.5 text-xs transition-colors hover:text-[#60a5fa] sm:flex"
+            >
+              <Mail className="h-3.5 w-3.5 text-[#60a5fa]" />
+              info@primeonecleaning.co.uk
+            </a>
             <a
               href="https://www.google.com/maps/search/?api=1&query=Prime+One+Cleaning+Milton+Keynes"
               target="_blank"

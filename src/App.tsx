@@ -31,7 +31,8 @@ import NotFoundPage from "@/pages/NotFoundPage";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 const SITE_URL = "https://primeonecleaning.co.uk";
-const DEFAULT_OG_IMAGE = "https://primeonecleaning.co.uk/WhatsApp_Image_2026-07-30_at_13.16.18.jpeg";
+const DEFAULT_OG_IMAGE = "https://primeonecleaning.co.uk/og-image.jpg";
+const OG_IMAGE_ALT = "Prime One Cleaning - professional cleaning in Milton Keynes";
 
 interface SeoEntry {
   title: string;
@@ -225,12 +226,16 @@ function useDocumentSeo(path: string) {
     upsertMetaProperty("og:url", canonicalUrl);
     upsertMetaProperty("og:type", ogType);
     upsertMetaProperty("og:image", ogImage);
+    upsertMetaProperty("og:image:width", "1200");
+    upsertMetaProperty("og:image:height", "630");
+    upsertMetaProperty("og:image:alt", OG_IMAGE_ALT);
     upsertMetaProperty("og:site_name", "Prime One Cleaning");
 
     upsertMetaName("twitter:card", "summary_large_image");
     upsertMetaName("twitter:title", seo.title);
     upsertMetaName("twitter:description", seo.description);
     upsertMetaName("twitter:image", ogImage);
+    upsertMetaName("twitter:image:alt", OG_IMAGE_ALT);
 
     upsertLink("canonical", canonicalUrl);
   }, [path]);

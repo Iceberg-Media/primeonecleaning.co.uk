@@ -101,20 +101,22 @@ export default function Header({ currentPath, onNavigate }: HeaderProps) {
       {/* Main nav row */}
       <div className="bg-white">
       <div className="mx-auto flex max-w-7xl items-stretch justify-between px-4 py-3 sm:px-6 lg:px-8">
-        <button
-          onClick={() => go("/")}
-          className="flex shrink-0 items-center border-0 bg-transparent p-0 outline-none"
-          aria-label="Prime One Cleaning home"
-        >
-          <img
-            src="/WhatsApp_Image_2026-07-30_at_13.16.18.jpeg"
-            alt="Prime One Cleaning Ltd"
-            className="h-full max-h-[72px] w-auto object-contain object-center"
-            style={{ marginTop: "-10px", marginBottom: "-10px", mixBlendMode: "multiply" }}
-          />
-        </button>
+        <div className="flex h-full shrink-0 items-center overflow-hidden p-0">
+          <button
+            onClick={() => go("/")}
+            className="flex h-full items-center border-0 bg-transparent p-0 outline-none"
+            aria-label="Prime One Cleaning home"
+          >
+            <img
+              src="/WhatsApp_Image_2026-07-30_at_13.16.18.jpeg"
+              alt="Prime One Cleaning Ltd"
+              className="h-full w-auto object-contain object-left"
+              style={{ mixBlendMode: "multiply", transform: "scale(1.4)", transformOrigin: "left center" }}
+            />
+          </button>
+        </div>
 
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-8 pl-6 md:flex">
           {navItems.map((item) =>
             "dropdown" in item && item.dropdown ? (
               <div key={item.path} className="group relative">
@@ -213,12 +215,14 @@ export default function Header({ currentPath, onNavigate }: HeaderProps) {
         <div className="fixed inset-0 top-0 z-50 flex flex-col bg-[#0a1f44] md:hidden">
           {/* Menu header */}
           <div className="flex items-center justify-between px-4 py-3">
-            <img
-              src="/WhatsApp_Image_2026-07-30_at_13.16.18.jpeg"
-              alt="Prime One Cleaning Ltd"
-              className="h-full max-h-[72px] w-auto object-contain object-center"
-              style={{ marginTop: "-10px", marginBottom: "-10px", mixBlendMode: "multiply" }}
-            />
+            <div className="flex h-full items-center overflow-hidden p-0">
+              <img
+                src="/WhatsApp_Image_2026-07-30_at_13.16.18.jpeg"
+                alt="Prime One Cleaning Ltd"
+                className="h-full w-auto object-contain object-left"
+                style={{ mixBlendMode: "multiply", transform: "scale(1.4)", transformOrigin: "left center" }}
+              />
+            </div>
             <button
               onClick={() => setOpen(false)}
               aria-label="Close menu"

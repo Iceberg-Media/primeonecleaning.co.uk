@@ -39,50 +39,50 @@ interface SeoEntry {
 
 const SEO_MAP: Record<string, SeoEntry> = {
   "/": {
-    title: "Prime One Cleaning | Professional Cleaning Services in Luton & Bedfordshire",
+    title: "Prime One Cleaning | Professional Cleaning Services in Milton Keynes & Surrounding Areas",
     description:
-      "Professional cleaning services for homes & offices in Luton & Bedfordshire. Fully insured team. Call 07432 625688 for a free quote today.",
+      "Professional cleaning services for homes & offices in Milton Keynes & Surrounding Areas. Fully insured team. Call 07432 625688.",
     ogType: "website",
   },
   "/about": {
     title: "About Us | Prime One Cleaning",
     description:
-      "Learn about Prime One Cleaning, a fully insured, local cleaning company serving Luton & Bedfordshire with reliable, high-quality results.",
+      "Learn about Prime One Cleaning, a fully insured, local cleaning company serving Milton Keynes & Surrounding Areas with reliable results.",
   },
   "/services": {
     title: "Our Cleaning Services | Prime One Cleaning",
     description:
-      "Residential, end of tenancy, after builders, commercial & carpet cleaning in Luton & Bedfordshire. Get a free quote from Prime One Cleaning.",
+      "Residential, end of tenancy, after builders, commercial & carpet cleaning in Milton Keynes & Surrounding Areas. Get a free quote.",
   },
   "/services/residential-cleaning": {
-    title: "Residential Cleaning in Luton & Bedfordshire | Prime One Cleaning",
+    title: "Residential Cleaning in Milton Keynes & Surrounding Areas | Prime One Cleaning",
     description:
-      "Professional residential cleaning for homes in Luton & Bedfordshire. Regular, deep and one-off cleans by insured staff. Call 07432 625688.",
+      "Professional residential cleaning for homes in Milton Keynes & Surrounding Areas. Regular, deep and one-off cleans by insured staff.",
   },
   "/services/end-of-tenancy-cleaning": {
-    title: "End of Tenancy Cleaning in Luton & Bedfordshire | Prime One Cleaning",
+    title: "End of Tenancy Cleaning in Milton Keynes & Surrounding Areas | Prime One Cleaning",
     description:
-      "Thorough end of tenancy cleaning in Luton & Bedfordshire. Get your full deposit back. Free quote, call 07432 625688 today.",
+      "Thorough end of tenancy cleaning in Milton Keynes & Surrounding Areas. Get your full deposit back. Free quote, call 07432 625688.",
   },
   "/services/after-builders-cleaning": {
-    title: "After Builders Cleaning in Luton & Bedfordshire | Prime One Cleaning",
+    title: "After Builders Cleaning in Milton Keynes & Surrounding Areas | Prime One Cleaning",
     description:
-      "Post-construction and renovation cleaning in Luton & Bedfordshire. Dust & debris removal by insured professionals. Call 07432 625688.",
+      "Post-construction and renovation cleaning in Milton Keynes & Surrounding Areas. Dust & debris removal by insured professionals.",
   },
   "/services/commercial-cleaning": {
-    title: "Commercial Cleaning in Luton & Bedfordshire | Prime One Cleaning",
+    title: "Commercial Cleaning in Milton Keynes & Surrounding Areas | Prime One Cleaning",
     description:
-      "Office, clinic, retail & gym cleaning in Luton & Bedfordshire. Reliable commercial cleaning contracts. Call 07432 625688 for a free quote.",
+      "Office, clinic, retail & gym cleaning in Milton Keynes & Surrounding Areas. Reliable commercial cleaning contracts. Call 07432 625688.",
   },
   "/services/carpet-upholstery-cleaning": {
-    title: "Carpet & Upholstery Cleaning in Luton & Bedfordshire | Prime One Cleaning",
+    title: "Carpet & Upholstery Cleaning in Milton Keynes & Surrounding Areas | Prime One Cleaning",
     description:
-      "Carpet, rug & upholstery cleaning in Luton & Bedfordshire. Deep clean by insured professionals. Call 07432 625688 for a free quote.",
+      "Carpet, rug & upholstery cleaning in Milton Keynes & Surrounding Areas. Deep clean by insured professionals. Call 07432 625688.",
   },
   "/areas": {
     title: "Areas We Cover | Prime One Cleaning",
     description:
-      "Prime One Cleaning serves Luton, Milton Keynes, Bedford, Dunstable, Hitchin, St Albans, Watford, Aylesbury & across Bedfordshire.",
+      "Prime One Cleaning serves Milton Keynes, Bedford, Luton, Dunstable, Hitchin, St Albans, Watford, Aylesbury & surrounding areas.",
   },
   "/areas/milton-keynes": {
     title: "Cleaning Services in Milton Keynes | Prime One Cleaning",
@@ -137,12 +137,12 @@ const SEO_MAP: Record<string, SeoEntry> = {
   "/gallery": {
     title: "Gallery | Prime One Cleaning",
     description:
-      "See our cleaning work in action. Photos of residential, commercial & end of tenancy cleans by Prime One Cleaning in Luton & Bedfordshire.",
+      "See our cleaning work in action. Photos of residential, commercial & end of tenancy cleans by Prime One Cleaning in Milton Keynes.",
   },
   "/reviews": {
     title: "Customer Reviews | Prime One Cleaning",
     description:
-      "Read what our clients say about Prime One Cleaning. Happy customers across Luton & Bedfordshire. Call 07432 625688 for a free quote.",
+      "Read what our clients say about Prime One Cleaning. Happy customers across Milton Keynes & Surrounding Areas. Call 07432 625688.",
   },
   "/contact": {
     title: "Contact Us | Prime One Cleaning",
@@ -157,7 +157,7 @@ const SEO_MAP: Record<string, SeoEntry> = {
   "/terms-conditions": {
     title: "Terms & Conditions | Prime One Cleaning",
     description:
-      "Read the terms and conditions for Prime One Cleaning services in Luton & Bedfordshire.",
+      "Read the terms and conditions for Prime One Cleaning services in Milton Keynes & Surrounding Areas.",
   }
 };
 

@@ -47,16 +47,13 @@ function ServiceSchema() {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Residential Cleaning",
-    "serviceType": "Residential Cleaning Luton, Residential Cleaning Bedfordshire",
+    "serviceType": "Residential Cleaning Milton Keynes, Residential Cleaning Surrounding Areas",
     "description": "Reliable, thorough home cleaning tailored to your schedule. Regular, deep, one-off and spring cleaning for homes across Milton Keynes & Surrounding Areas.",
     "provider": {
       "@type": "LocalBusiness",
       "name": "Prime One Cleaning",
       "telephone": "07432 625688",
-      "areaServed": [
-        "Luton",
-        "Bedfordshire"
-      ],
+      "areaServed": ["Milton Keynes", "Buckinghamshire", "Bedfordshire"],
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Milton Keynes",
@@ -64,10 +61,7 @@ function ServiceSchema() {
         "addressCountry": "GB",
       },
     },
-    "areaServed": [
-      "Luton",
-      "Bedfordshire"
-    ],
+    "areaServed": ["Milton Keynes", "Buckinghamshire", "Bedfordshire"],
   },
   {
     "@context": "https://schema.org",

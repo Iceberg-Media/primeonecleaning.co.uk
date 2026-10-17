@@ -32,3 +32,4 @@ Allow: /contact
 # Phone: 07432 625688
 # Hours: Monday-Saturday 08:00-18:00
 # Services: Residential, End of Tenancy, After Builders, Commercial, Carpet & Upholstery Cleaning
+# Areas Served: Milton Keynes, Bedford, Leighton Buzzard, Luton, Dunstable, Hitchin, St Albans, Hemel Hempstead, Watford, Aylesbury

@@ -41,16 +41,13 @@ function ServiceSchema() {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Commercial Cleaning",
-    "serviceType": "Commercial Cleaning Luton, Commercial Cleaning Bedfordshire",
+    "serviceType": "Commercial Cleaning Milton Keynes, Commercial Cleaning Surrounding Areas",
     "description": "Reliable, flexible commercial cleaning for offices, clinics, shops, retail, gyms and salons across Milton Keynes & Surrounding Areas. Includes scheduled cleaning, washroom sanitisation, floor maintenance and waste removal.",
     "provider": {
       "@type": "LocalBusiness",
       "name": "Prime One Cleaning",
       "telephone": "07432 625688",
-      "areaServed": [
-        "Luton",
-        "Bedfordshire"
-      ],
+      "areaServed": ["Milton Keynes", "Buckinghamshire", "Bedfordshire"],
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Milton Keynes",
@@ -58,10 +55,7 @@ function ServiceSchema() {
         "addressCountry": "GB",
       },
     },
-    "areaServed": [
-      "Luton",
-      "Bedfordshire"
-    ],
+    "areaServed": ["Milton Keynes", "Buckinghamshire", "Bedfordshire"],
   },
   {
     "@context": "https://schema.org",

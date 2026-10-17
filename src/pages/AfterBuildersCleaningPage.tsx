@@ -41,16 +41,13 @@ function ServiceSchema() {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "After Builders Cleaning",
-    "serviceType": "After Builders Cleaning Luton, After Builders Cleaning Bedfordshire",
+    "serviceType": "After Builders Cleaning Milton Keynes, After Builders Cleaning Surrounding Areas",
     "description": "Post-construction and renovation cleaning for homes and commercial refurbishments across Milton Keynes & Surrounding Areas. Includes debris removal, dust removal, deep floor cleaning, window and glass cleaning and fixture clean-up.",
     "provider": {
       "@type": "LocalBusiness",
       "name": "Prime One Cleaning",
       "telephone": "07432 625688",
-      "areaServed": [
-        "Luton",
-        "Bedfordshire"
-      ],
+      "areaServed": ["Milton Keynes", "Buckinghamshire", "Bedfordshire"],
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Milton Keynes",
@@ -58,10 +55,7 @@ function ServiceSchema() {
         "addressCountry": "GB",
       },
     },
-    "areaServed": [
-      "Luton",
-      "Bedfordshire"
-    ],
+    "areaServed": ["Milton Keynes", "Buckinghamshire", "Bedfordshire"],
   },
   {
     "@context": "https://schema.org",

@@ -217,7 +217,7 @@ export default function ContactPage({ onNavigate: _onNavigate }: ContactPageProp
           <div className="mt-8 overflow-hidden rounded-2xl border border-slate-200 shadow-sm">
             <iframe
               title="Prime One Cleaning service area, Milton Keynes"
-              src="https://www.google.com/maps?q=Milton%20Keynes,MK9%202BQ,UK&output=embed"
+              src="https://www.google.com/maps?q=Milton%20Keynes%20Buckinghamshire%20UK&output=embed"
               width="100%"
               height="360"
               style={{ border: 0 }}
@@ -248,26 +248,26 @@ export default function ContactPage({ onNavigate: _onNavigate }: ContactPageProp
               streetAddress: "4 Manhattan House, 401 Witan Gate",
               addressLocality: "Milton Keynes",
               addressRegion: "Buckinghamshire",
-              postalCode: "MK9 2BQ",
-              addressCountry: "GB",
+                            addressCountry: "GB",
             },
             geo: {
               "@type": "GeoCoordinates",
               latitude: "52.0406",
-              longitude: "-0.7554",
+              longitude: "-0.7594",
             },
-            hasMap: "https://www.google.com/maps?q=Milton+Keynes,MK9+2BQ,UK",
+            hasMap: "https://www.google.com/maps?q=Milton+Keynes+Buckinghamshire+UK",
             areaServed: [
-              "Luton",
               "Milton Keynes",
               "Bedford",
               "Leighton Buzzard",
+              "Luton",
               "Dunstable",
               "Hitchin",
               "St Albans",
               "Hemel Hempstead",
               "Watford",
               "Aylesbury",
+              "Buckinghamshire",
               "Bedfordshire",
             ],
             sameAs: [],

@@ -31,16 +31,18 @@ export default function AreasPage({ onNavigate }: AreasPageProps) {
     telephone: "07432625688",
     url: "https://primeonecleaning.co.uk",
     areaServed: [
-      "Luton",
       "Milton Keynes",
       "Bedford",
       "Leighton Buzzard",
+      "Luton",
       "Dunstable",
       "Hitchin",
       "St Albans",
       "Hemel Hempstead",
       "Watford",
       "Aylesbury",
+      "Buckinghamshire",
+      "Bedfordshire",
     ]
   };
 

@@ -41,16 +41,13 @@ function ServiceSchema() {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Carpet & Upholstery Cleaning",
-    "serviceType": "Carpet Cleaning Luton, Upholstery Cleaning Bedfordshire",
+    "serviceType": "Carpet Cleaning Milton Keynes, Upholstery Cleaning Surrounding Areas",
     "description": "Deep, professional carpet, sofa, upholstery and rug cleaning for homes and businesses across Milton Keynes & Surrounding Areas. Includes stain pre-treatment, steam cleaning, deodorising and fast drying times.",
     "provider": {
       "@type": "LocalBusiness",
       "name": "Prime One Cleaning",
       "telephone": "07432 625688",
-      "areaServed": [
-        "Luton",
-        "Bedfordshire"
-      ],
+      "areaServed": ["Milton Keynes", "Buckinghamshire", "Bedfordshire"],
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Milton Keynes",
@@ -58,10 +55,7 @@ function ServiceSchema() {
         "addressCountry": "GB",
       },
     },
-    "areaServed": [
-      "Luton",
-      "Bedfordshire"
-    ],
+    "areaServed": ["Milton Keynes", "Buckinghamshire", "Bedfordshire"],
   },
   {
     "@context": "https://schema.org",

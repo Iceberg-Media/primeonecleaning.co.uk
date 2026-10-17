@@ -41,16 +41,13 @@ function ServiceSchema() {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "End of Tenancy Cleaning",
-    "serviceType": "End of Tenancy Cleaning Luton, End of Tenancy Cleaning Bedfordshire",
+    "serviceType": "End of Tenancy Cleaning Milton Keynes, End of Tenancy Cleaning Surrounding Areas",
     "description": "Thorough checklist-based end of tenancy cleaning for tenants, landlords and letting agents across Milton Keynes & Surrounding Areas. Includes kitchen deep clean, bathroom descale, cupboards, skirting boards and more.",
     "provider": {
       "@type": "LocalBusiness",
       "name": "Prime One Cleaning",
       "telephone": "07432 625688",
-      "areaServed": [
-        "Luton",
-        "Bedfordshire"
-      ],
+      "areaServed": ["Milton Keynes", "Buckinghamshire", "Bedfordshire"],
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Milton Keynes",
@@ -58,10 +55,7 @@ function ServiceSchema() {
         "addressCountry": "GB",
       },
     },
-    "areaServed": [
-      "Luton",
-      "Bedfordshire"
-    ],
+    "areaServed": ["Milton Keynes", "Buckinghamshire", "Bedfordshire"],
   },
   {
     "@context": "https://schema.org",
@@ -120,7 +114,7 @@ function ServiceSchema() {
         "name": "Can letting agents book directly?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Absolutely. We work with landlords and letting agents across Luton and Bedfordshire on a regular basis, and can set up recurring arrangements for multiple properties. Just get in touch to discuss your portfolio.",
+          "text": "Absolutely. We work with landlords and letting agents across Milton Keynes and the surrounding area on a regular basis, and can set up recurring arrangements for multiple properties. Just get in touch to discuss your portfolio.",
         },
       }
     ],

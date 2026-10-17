@@ -81,7 +81,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
         <img
           src="/vlad-khmara-esXPBDblcXw-unsplash.jpg"
           alt="Clean modern office cleaned by Prime One Cleaning in Milton Keynes"
-          className="absolute inset-0 h-full w-full object-cover object-right brightness-[1.2]"
+          className="absolute inset-0 h-full w-full object-cover object-right brightness-[1.4]"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0a1f44]/[0.85] via-[#0a1f44]/[0.6] to-[#0a1f44]/[0.35]" />
         {/* Decorative blurred blue circle - back-left corner, low opacity */}
@@ -274,7 +274,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               <img
                 src="/raj-rana-zCQsBI7ZltQ-unsplash.jpg"
                 alt="Bright modern office cleaned by Prime One Cleaning in Milton Keynes"
-                className="absolute inset-0 h-full w-full object-cover object-center brightness-[1.2]"
+                className="absolute inset-0 h-full w-full object-cover object-center brightness-[1.4]"
               />
               <div className="absolute inset-0 bg-[#0a1f44]/[0.85]" />
               <div className="relative z-10">

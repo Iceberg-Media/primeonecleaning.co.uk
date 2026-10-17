@@ -34,6 +34,7 @@ const serviceLinks = [
   "Commercial Cleaning",
   "Carpet & Upholstery Cleaning",
   "Deep Cleaning",
+  "Airbnb & Short-Let Cleaning",
 ];
 
 const areaTowns = [
@@ -140,7 +141,7 @@ export default function Header({ currentPath, onNavigate }: HeaderProps) {
                   {item.label}
                   <ChevronDown className="h-4 w-4 transition-transform duration-200 group-hover:rotate-180" />
                 </button>
-                <div className="invisible absolute left-1/2 top-full z-50 w-56 -translate-x-1/2 pt-2 opacity-0 transition-all duration-200 ease-out group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-hover:dropdown-animate">
+                <div className="invisible absolute left-1/2 top-full z-50 w-64 -translate-x-1/2 pt-2 opacity-0 transition-all duration-200 ease-out group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-hover:dropdown-animate">
                   <div className="overflow-hidden rounded-xl border border-slate-100 bg-white py-2 shadow-xl">
                     {(item.path === "/services" ? serviceLinks : areaTowns).map(
                       (label) => (

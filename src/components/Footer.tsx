@@ -19,6 +19,7 @@ const serviceLinks = [
   { label: "Commercial Cleaning", path: "/services/commercial-cleaning" },
   { label: "Carpet & Upholstery Cleaning", path: "/services/carpet-upholstery-cleaning" },
   { label: "Deep Cleaning", path: "/services/deep-cleaning" },
+  { label: "Airbnb & Short-Let Cleaning", path: "/services/airbnb-short-let-cleaning" },
 ];
 
 const areaLinks = [

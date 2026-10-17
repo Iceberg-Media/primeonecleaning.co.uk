@@ -100,16 +100,17 @@ export default function Header({ currentPath, onNavigate }: HeaderProps) {
       </div>
       {/* Main nav row */}
       <div className="bg-white">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+      <div className="mx-auto flex max-w-7xl items-stretch justify-between px-4 py-3 sm:px-6 lg:px-8">
         <button
           onClick={() => go("/")}
-          className="flex items-center"
+          className="flex shrink-0 items-center border-0 bg-transparent p-0 outline-none"
           aria-label="Prime One Cleaning home"
         >
           <img
             src="/WhatsApp_Image_2026-07-30_at_13.16.18.jpeg"
             alt="Prime One Cleaning Ltd"
-            className="h-16 w-auto object-contain"
+            className="h-full max-h-[72px] w-auto object-contain object-center"
+            style={{ marginTop: "-10px", marginBottom: "-10px", mixBlendMode: "multiply" }}
           />
         </button>
 
@@ -215,7 +216,8 @@ export default function Header({ currentPath, onNavigate }: HeaderProps) {
             <img
               src="/WhatsApp_Image_2026-07-30_at_13.16.18.jpeg"
               alt="Prime One Cleaning Ltd"
-              className="h-16 w-auto object-contain"
+              className="h-full max-h-[72px] w-auto object-contain object-center"
+              style={{ marginTop: "-10px", marginBottom: "-10px", mixBlendMode: "multiply" }}
             />
             <button
               onClick={() => setOpen(false)}

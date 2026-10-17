@@ -178,7 +178,7 @@ export default function ResidentialCleaningPage({ onNavigate }: ServicePageProps
             <p>
               Keeping a home clean shouldn't feel like a second job. At Prime One
               Cleaning, we provide professional residential cleaning across Milton Keynes
-              and Bedfordshire designed to give you back your time without
+              and surrounding areas designed to give you back your time without
               compromising on standards. Whether you need a regular weekly clean
               to stay on top of things, a deep clean to tackle every corner, a
               one-off clean for a special occasion, or a thorough spring clean to

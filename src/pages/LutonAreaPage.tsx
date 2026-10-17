@@ -47,7 +47,7 @@ function AreaSchema() {
     document.title = "Cleaning Services in Luton | Prime One Cleaning";
 
     const metaDesc =
-      "Professional cleaning services in Luton. Local, trained, insured cleaners for homes and businesses. Free quotes. Call 07432 625688.";
+      "Professional cleaning services in Luton. Based in Milton Keynes, our trained, insured cleaners cover Luton and surrounding areas. Free quotes. Call 07432 625688.";
     let meta = document.querySelector(
       'meta[name="description"]'
     ) as HTMLMetaElement | null;
@@ -63,7 +63,7 @@ function AreaSchema() {
       "@type": "LocalBusiness",
       name: "Prime One Cleaning",
       description:
-        "Cleaning Services Luton, professional residential and commercial cleaning for homes and businesses across Luton.",
+        "Professional cleaning services covering Luton. Based in Milton Keynes, our trained and insured cleaners serve homes and businesses in Luton and the surrounding area.",
       telephone: "07432 625688",
       areaServed: {
         "@type": "City",
@@ -143,7 +143,7 @@ export default function LutonAreaPage({ onNavigate }: AreaPageProps) {
     <div>
       <AreaSchema />
 
-      {/* Service icons row */}
+      {/* Hero */}
       <section className="relative flex items-center overflow-hidden bg-[#0a1f44] py-10 sm:py-12">
         
         <div className="absolute inset-0 bg-gradient-to-r from-[#0a1f44] via-[#0a1f44]/95 to-[#0a1f44]/60" />
@@ -151,7 +151,7 @@ export default function LutonAreaPage({ onNavigate }: AreaPageProps) {
           <div className="max-w-2xl">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-sm text-[#60a5fa]">
               <MapPin className="h-4 w-4" />
-              Luton, Our Home Town
+              Luton
             </div>
             <h1 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
               Cleaning Services in Luton
@@ -160,7 +160,7 @@ export default function LutonAreaPage({ onNavigate }: AreaPageProps) {
               Reliable residential and commercial cleaning for homes and
               businesses across Luton
             </p>
-            <p className="mt-4 text-base text-slate-300">Searching for <strong>cleaning services near me</strong> in Luton? As a locally based company, Prime One Cleaning offers reliable <strong>local cleaners in Luton</strong> who know the area and can reach you quickly. Whether you need a one-off deep clean, a regular weekly schedule or an end of tenancy clean, our insured and vetted team delivers consistent, high-quality results every time.
+            <p className="mt-4 text-base text-slate-300">Searching for <strong>cleaning services near me</strong> in Luton? Prime One Cleaning is based in Milton Keynes and covers Luton with trained, insured cleaners who reach you quickly. Whether you need a one-off deep clean, a regular weekly schedule or an end of tenancy clean, our vetted team delivers consistent, high-quality results every time.
             </p>
             <p className="mt-4 text-base text-slate-300">Looking for a specific service in Luton? Explore our <button onClick={() => onNavigate("/services/residential-cleaning")} className="font-semibold text-[#3b82f6] hover:text-[#2563eb] underline">residential cleaning services</button> designed for homes and businesses across the area.
             </p>
@@ -168,36 +168,30 @@ export default function LutonAreaPage({ onNavigate }: AreaPageProps) {
         </div>
       </section>
 
-      {/* Service icons row */}
+      {/* Body copy */}
       <section className="bg-white py-8 sm:py-10">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="prose-content space-y-6 text-lg leading-relaxed text-slate-700">
             <p>
-              Luton is home for Prime One Cleaning, it's where we're based and
-              where our story began. As a large, vibrant town with a diverse mix
-              of residential neighbourhoods, busy retail parks, modern office
-              developments and thriving commercial spaces, Luton keeps our team
-              busy every day of the week. From family homes in Stopsley
-              Bramingham and Leagrave to offices near the town centre and retail
-              units around the Galaxy Centre, we know the area inside out
-              because we live and work here too.
+              Prime One Cleaning is based in Milton Keynes and proudly covers
+              Luton as one of our key surrounding areas. With its mix of
+              residential neighbourhoods, busy retail parks and thriving
+              commercial spaces, Luton keeps our team busy throughout the
+              week. From family homes in Stopsley, Bramingham and Leagrave to
+              offices near the town centre and retail units around the Galaxy
+              Centre, our cleaners know Luton well and tailor every visit to
+              suit your space.
             </p>
             <p>
-              Being locally based means we can offer a truly responsive service
-              to our Luton customers. Our trained, insured and vetted cleaners
-              are just around the corner, so short-notice bookings, flexible
-              appointment times and same-week slots are all part of the package.
-              Every member of our team is fully insured, DBS-checked and trained
-              to the same consistent standard, whether you need a regular
-              weekly home clean, a one-off deep clean, an end-of-tenancy handover
-              or a commercial contract for your office, shop or showroom.
-            </p>
-            <p>
-              We're proud to serve the town we call home. When you book Prime
-              One Cleaning you're supporting a local business that genuinely
-              cares about the results and the people behind them. Get in touch
-              today for a free, no-obligation quote, we'll help you find the
-              right cleaning solution for your home or business in Luton.
+              Every member of our team is fully trained, insured and
+              DBS-checked, so whether you need a regular weekly home clean, a
+              one-off deep clean, an end-of-tenancy handover or a commercial
+              contract for your office or shop, you can book with complete
+              confidence. Being just a short drive from Luton means we can
+              offer flexible appointment times and quick response on
+              short-notice bookings. Get in touch today for a free,
+              no-obligation quote, and we'll help you find the right cleaning
+              solution for your home or business in Luton.
             </p>
           </div>
         </div>

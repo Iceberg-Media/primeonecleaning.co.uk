@@ -34,12 +34,16 @@ const areaLinks = [
   { label: "Aylesbury", path: "/areas/aylesbury" },
 ];
 
+const dividerMobile = "border-b border-white/10 sm:border-b lg:border-b-0 pb-8 sm:pb-8 lg:pb-0";
+const dividerDesktop = "lg:border-r lg:border-white/10";
+
 export default function Footer({ onNavigate }: FooterProps) {
   return (
     <footer className="bg-[#0a1f44] text-white">
       <div className="mx-auto max-w-7xl px-4 pt-16 pb-6 sm:px-6 lg:px-8">
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-8">
-          <div className="sm:col-span-2 lg:col-span-2 lg:pr-6 lg:border-r lg:border-white/10">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-[1.1fr_0.8fr_1.3fr_1.7fr_1.5fr] lg:gap-8">
+          {/* Logo column */}
+          <div className={`lg:pr-6 ${dividerMobile} ${dividerDesktop}`}>
             <button onClick={() => onNavigate("/")} className="inline-block">
               <img
                 src="/WhatsApp_Image_2026-07-30_at_13.16.18.jpeg"
@@ -47,7 +51,7 @@ export default function Footer({ onNavigate }: FooterProps) {
                 className="h-28 w-auto object-contain"
               />
             </button>
-            <p className="mt-4 max-w-sm text-sm text-slate-300">
+            <p className="mt-4 max-w-[260px] text-sm text-slate-300">
               Professional cleaning services you can trust.
               <br />
               Clean spaces, better places.
@@ -70,8 +74,9 @@ export default function Footer({ onNavigate }: FooterProps) {
             </div>
           </div>
 
-          <div className="lg:px-6 lg:border-r lg:border-white/10">
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-[#60a5fa]">
+          {/* Quick Links */}
+          <div className={`lg:px-6 ${dividerMobile} ${dividerDesktop}`}>
+            <h3 className="whitespace-nowrap text-sm font-semibold uppercase tracking-wider text-[#60a5fa]">
               Quick Links
             </h3>
             <ul className="mt-4 space-y-3 text-sm">
@@ -79,7 +84,7 @@ export default function Footer({ onNavigate }: FooterProps) {
                 <li key={l.path}>
                   <button
                     onClick={() => onNavigate(l.path)}
-                    className="text-slate-300 hover:text-white"
+                    className="whitespace-nowrap text-slate-300 hover:text-white"
                   >
                     {l.label}
                   </button>
@@ -88,8 +93,9 @@ export default function Footer({ onNavigate }: FooterProps) {
             </ul>
           </div>
 
-          <div className="sm:col-span-1 lg:col-span-2 lg:px-6 lg:border-r lg:border-white/10">
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-[#60a5fa]">
+          {/* Services */}
+          <div className={`lg:px-6 ${dividerMobile} ${dividerDesktop}`}>
+            <h3 className="whitespace-nowrap text-sm font-semibold uppercase tracking-wider text-[#60a5fa]">
               Services
             </h3>
             <ul className="mt-4 space-y-3 text-sm">
@@ -97,7 +103,7 @@ export default function Footer({ onNavigate }: FooterProps) {
                 <li key={l.path}>
                   <button
                     onClick={() => onNavigate(l.path)}
-                    className="block w-full text-left text-slate-300 hover:text-white"
+                    className="block w-full whitespace-nowrap text-left text-slate-300 hover:text-white"
                   >
                     {l.label}
                   </button>
@@ -106,16 +112,17 @@ export default function Footer({ onNavigate }: FooterProps) {
             </ul>
           </div>
 
-          <div className="sm:col-span-1 lg:col-span-2 lg:px-6 lg:border-r lg:border-white/10">
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-[#60a5fa]">
+          {/* Areas We Cover */}
+          <div className={`lg:px-6 ${dividerMobile} ${dividerDesktop}`}>
+            <h3 className="whitespace-nowrap text-sm font-semibold uppercase tracking-wider text-[#60a5fa]">
               Areas We Cover
             </h3>
-            <div className="mt-4 grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
+            <div className="mt-4 grid grid-cols-2 gap-x-4 gap-y-3 text-sm">
               {areaLinks.map((l) => (
                 <button
                   key={l.path}
                   onClick={() => onNavigate(l.path)}
-                  className="block w-full text-left text-slate-300 hover:text-white"
+                  className="block w-full whitespace-nowrap text-left text-slate-300 hover:text-white"
                 >
                   {l.label}
                 </button>
@@ -123,18 +130,19 @@ export default function Footer({ onNavigate }: FooterProps) {
             </div>
           </div>
 
-          <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-[#60a5fa]">
+          {/* Contact */}
+          <div className="lg:pl-6">
+            <h3 className="whitespace-nowrap text-sm font-semibold uppercase tracking-wider text-[#60a5fa]">
               Contact
             </h3>
             <ul className="mt-4 space-y-3 text-sm text-slate-300">
               <li className="flex items-center gap-2">
-                <Phone className="h-4 w-4 text-[#60a5fa]" />
-                <a href="tel:07432625688" className="hover:text-white">07432 625688</a>
+                <Phone className="h-4 w-4 shrink-0 text-[#60a5fa]" />
+                <a href="tel:07432625688" className="whitespace-nowrap hover:text-white">07432 625688</a>
               </li>
-              <li className="flex items-center gap-2">
-                <MapPin className="h-4 w-4 text-[#60a5fa]" />
-                Milton Keynes &amp; Surrounding Areas
+              <li className="flex items-start gap-2">
+                <MapPin className="h-4 w-4 shrink-0 text-[#60a5fa]" />
+                <span>Milton Keynes &amp; Surrounding Areas</span>
               </li>
             </ul>
           </div>

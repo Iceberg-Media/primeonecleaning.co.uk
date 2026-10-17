@@ -4,6 +4,7 @@ import {
   HardHat,
   Building2,
   Sofa,
+  Sparkles,
   ArrowRight,
 } from "lucide-react";
 import CtaBlock from "@/components/CtaBlock";
@@ -66,6 +67,17 @@ const services = [
       "Stain & odour removal treatment",
       "Safe for sofas, rugs & mattresses",
       "Fast-drying, eco-friendly products",
+    ],
+  },
+  {
+    icon: Sparkles,
+    title: "Deep Cleaning",
+    slug: "deep-cleaning",
+    bullets: [
+      "Detailed top-to-bottom cleaning",
+      "Ideal for end of tenancy",
+      "Before and after renovation",
+      "Kitchen and bathroom deep clean",
     ],
   },
 ];

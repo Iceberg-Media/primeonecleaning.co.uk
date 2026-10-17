@@ -33,6 +33,7 @@ const serviceLinks = [
   "After Builders Cleaning",
   "Commercial Cleaning",
   "Carpet & Upholstery Cleaning",
+  "Deep Cleaning",
 ];
 
 const areaTowns = [

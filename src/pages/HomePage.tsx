@@ -81,7 +81,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
         <img
           src="/WhatsApp_Image_2026-10-19_at_11.10.29.jpeg"
           alt="Professional cleaner vacuuming a bright modern home"
-          className="absolute inset-0 h-full w-full object-cover object-center brightness-[1.15]"
+          className="absolute inset-0 h-full w-full object-cover object-top brightness-[1.15]"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0a1f44]/[0.7] via-[#0a1f44]/[0.42] to-[#0a1f44]/[0.16]" />
         {/* Decorative blurred blue circle - back-left corner, low opacity */}

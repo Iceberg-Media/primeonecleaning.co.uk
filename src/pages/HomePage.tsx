@@ -104,7 +104,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               <br />
               BETTER PLACES.
             </h1>
-            <p className="mt-6 text-lg font-light leading-relaxed text-slate-200 sm:text-xl">
+            <p className="mt-5 text-lg font-normal leading-relaxed text-slate-100 sm:mt-6 sm:text-xl">
               Professional cleaning services for homes, offices
               <span className="hidden md:inline">
                 <br />
@@ -138,7 +138,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             </span>
             <div className="flex flex-col">
               <span className="text-sm font-bold text-[#0a1f44]">Fully Insured &amp; Vetted Team</span>
-              <span className="text-xs font-light text-slate-500">Trusted local professionals</span>
+              <span className="text-xs font-medium text-slate-600">Trusted local professionals</span>
             </div>
           </div>
         </div>
@@ -146,7 +146,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
         {/* Scroll indicator - bottom center */}
         <div className="absolute bottom-6 left-1/2 z-10 -translate-x-1/2">
           <div className="flex flex-col items-center gap-1">
-            <span className="text-xs font-light uppercase tracking-widest text-white/50">Scroll</span>
+            <span className="text-xs font-medium uppercase tracking-widest text-white/70">Scroll</span>
             <div className="flex h-9 w-6 items-start justify-center rounded-full border-2 border-white/30 p-1">
               <div
                 className="h-2 w-1 animate-bounce rounded-full bg-white/60"
@@ -158,7 +158,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Welcome intro */}
-      <section className="bg-blue-50/40 py-10 sm:py-12">
+      <section className="bg-blue-50/40 py-8 sm:py-12">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
           <p className="text-sm font-semibold uppercase tracking-wider text-[#3b82f6]">
             Welcome to Prime One Cleaning
@@ -166,7 +166,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
           <h2 className="mt-3 text-3xl font-bold tracking-tight text-[#0a1f44] sm:text-4xl">
             Your Trusted Cleaning Partner in Milton Keynes &amp; Surrounding Areas
           </h2>
-          <p className="mt-6 text-lg font-light leading-relaxed text-slate-600">
+          <p className="mt-5 text-lg font-normal leading-relaxed text-slate-700 sm:mt-6">
             Prime One Cleaning Ltd is a professional cleaning company serving
             homes, offices and commercial spaces across Milton Keynes &amp;
             Surrounding Areas. Our fully trained and insured team is focused on
@@ -181,7 +181,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       <TrustBar />
 
       {/* Services */}
-      <section className="section-depth-grey bg-slate-50 py-10 sm:py-12">
+      <section className="section-depth-grey bg-slate-50 py-8 sm:py-12">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <p className="text-sm font-semibold uppercase tracking-wider text-[#3b82f6]">
@@ -190,12 +190,12 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             <h2 className="mt-2 text-3xl font-bold tracking-tight text-[#0a1f44] sm:text-4xl">
               Complete Cleaning Solutions
             </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-lg font-light leading-relaxed text-slate-600">
+            <p className="mx-auto mt-4 max-w-2xl text-lg font-normal leading-relaxed text-slate-700">
               We offer a wide range of cleaning services for homes, offices and
               commercial properties.
             </p>
           </div>
-          <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-8 grid grid-cols-1 gap-6 sm:mt-12 sm:grid-cols-2 sm:gap-8 lg:grid-cols-4">
             {services.map((s) => (
               <div
                 key={s.slug}
@@ -206,7 +206,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
                     <s.icon className="h-7 w-7 text-[#60a5fa]" strokeWidth={1.75} />
                   </span>
                   <h3 className="mt-4 text-lg font-bold text-[#0a1f44]">{s.title}</h3>
-                  <ul className="mt-3 space-y-1.5 text-sm font-light leading-relaxed text-slate-600">
+                  <ul className="mt-3 space-y-1.5 text-sm font-medium leading-relaxed text-slate-700">
                     {s.bullets.map((b) => (
                       <li key={b} className="flex items-center gap-2">
                         <span className="h-1.5 w-1.5 rounded-full bg-[#3b82f6]" />
@@ -230,7 +230,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
                 <h3 className="text-lg font-bold text-white sm:text-xl">
                   Not sure which service you need?
                 </h3>
-                <p className="mt-3 text-sm font-light leading-relaxed text-slate-300">
+                <p className="mt-3 text-sm font-medium leading-relaxed text-slate-200">
                   Free, no-obligation quote.
                 </p>
               </div>
@@ -246,9 +246,9 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Why Choose Us + Free Quote side by side */}
-      <section className="section-depth-white bg-white py-10 sm:py-12">
+      <section className="section-depth-white bg-white py-8 sm:py-12">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-8 lg:grid-cols-2">
+          <div className="grid gap-7 sm:gap-8 lg:grid-cols-2">
             {/* Why Choose Us */}
             <div className="flex flex-col justify-center">
               <p className="text-sm font-semibold uppercase tracking-wider text-[#3b82f6]">
@@ -257,13 +257,13 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               <h2 className="mt-2 text-2xl font-bold tracking-tight text-[#0a1f44] sm:text-3xl">
                 We go the extra mile for every client.
               </h2>
-              <ul className="mt-8 space-y-4">
+              <ul className="mt-6 space-y-3 sm:mt-8 sm:space-y-4">
                 {whyChoose.map((w) => (
                   <li key={w} className="flex items-start gap-3 text-slate-700">
                     <span className="icon-badge-blue mt-0.5 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full">
                       <Check className="h-4 w-4 text-white" strokeWidth={2.5} />
                     </span>
-                    <span className="text-base font-light leading-relaxed">{w}</span>
+                    <span className="text-base font-medium leading-relaxed">{w}</span>
                   </li>
                 ))}
               </ul>
@@ -284,7 +284,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
                 <h2 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
                   Let us take care of the cleaning.
                 </h2>
-                <p className="mt-4 text-lg font-light leading-relaxed text-slate-300">
+                <p className="mt-4 text-lg font-normal leading-relaxed text-slate-200">
                   Contact us today for a free, no obligation quote. We reply fast!
                 </p>
                 <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -310,7 +310,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Areas we serve */}
-      <section className="bg-slate-50 py-10 sm:py-12">
+      <section className="bg-slate-50 py-8 sm:py-12">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <p className="text-sm font-semibold uppercase tracking-wider text-[#3b82f6]">
@@ -319,11 +319,11 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             <h2 className="mt-2 text-3xl font-bold tracking-tight text-[#0a1f44] sm:text-4xl">
               Serving Milton Keynes &amp; Surrounding Areas
             </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-lg font-light leading-relaxed text-slate-600">
+            <p className="mx-auto mt-4 max-w-2xl text-lg font-normal leading-relaxed text-slate-700">
               We proudly provide professional cleaning services across Milton Keynes and the surrounding area. Click your town to learn more.
             </p>
           </div>
-          <div className="mt-10 flex flex-wrap justify-center gap-3">
+          <div className="mt-8 flex flex-wrap justify-center gap-3 sm:mt-10">
             {[
               { label: "Milton Keynes", path: "/areas/milton-keynes" },
               { label: "Bedford", path: "/areas/bedford" },
@@ -340,7 +340,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               <button
                 key={area.path}
                 onClick={() => onNavigate(area.path)}
-                className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-5 py-2.5 text-sm font-medium text-[#0a1f44] shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-[#3b82f6] hover:text-[#3b82f6] hover:shadow-md"
+                className="inline-flex min-h-11 items-center gap-2 rounded-full border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-[#0a1f44] shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-[#3b82f6] hover:text-[#3b82f6] hover:shadow-md"
               >
                 <MapPin className="h-4 w-4 text-[#3b82f6]" />
                 {area.label}
